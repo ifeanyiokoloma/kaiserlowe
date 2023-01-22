@@ -8,7 +8,7 @@ import "@fontsource/roboto/700.css";
 
 // Default theme
 import "@splidejs/react-splide/css";
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 
 function App() {
   return (
