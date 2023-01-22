@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dark-bg {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.tablet-width {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mobile-width {
+  max-width: 425px;
+  margin: 0 auto;
+}
