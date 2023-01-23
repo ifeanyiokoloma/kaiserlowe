@@ -24,6 +24,8 @@ function App() {
         speed: 3000,
         reducedMotion: true,
         cover: true,
+        arrows: false,
+        pagination: false,
       }}
       aria-label="My Favorite Images"
       tag="section"
