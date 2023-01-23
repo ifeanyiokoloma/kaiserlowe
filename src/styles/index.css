@@ -10,10 +10,6 @@ img {
   object-fit: cover;
 }
 
-.dark-bg {
-  background: rgba(0, 0, 0, 0.7);
-}
-
 .tablet-width {
   max-width: 600px;
   margin: 0 auto;
