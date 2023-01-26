@@ -1,11 +1,13 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { useTranslation } from "react-i18next";
 
 // Default theme
 import "@splidejs/react-splide/css";
 import Overlay from "../styles/Overlay";
 
 const SlidingHero = () => {
+  const { t } = useTranslation();
   return (
     <Splide
       options={{
@@ -28,11 +30,11 @@ const SlidingHero = () => {
     >
       <SplideSlide>
         <Overlay>
-          <h1 className="display-1">Coming soon</h1>
+          <h1 className="display-1">{t("Coming soon")}</h1>
           <p className="lead tablet-width">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            labore voluptates sapiente molestiae itaque quaerat consequatur
-            velit aperiam, quos deserunt?
+            {t(
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore voluptates sapiente molestiae itaque quaerat consequatur velit aperiam, quos deserunt?"
+            )}
           </p>
         </Overlay>
         <img
@@ -42,22 +44,22 @@ const SlidingHero = () => {
       </SplideSlide>
       <SplideSlide>
         <Overlay>
-          <h1 className="display-1">Coming soon</h1>
+          <h1 className="display-1">{t("Coming soon")}</h1>
           <p className="lead tablet-width">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            labore voluptates sapiente molestiae itaque quaerat consequatur
-            velit aperiam, quos deserunt?
+            {t(
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore voluptates sapiente molestiae itaque quaerat consequatur velit aperiam, quos deserunt?"
+            )}
           </p>
         </Overlay>
         <img src="/images/hero/complex-road.jpg" alt="complex road" />
       </SplideSlide>
       <SplideSlide>
         <Overlay>
-          <h1 className="display-1">Coming soon</h1>
+          <h1 className="display-1">{t("Coming soon")}</h1>
           <p className="lead tablet-width">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            labore voluptates sapiente molestiae itaque quaerat consequatur
-            velit aperiam, quos deserunt?
+            {t(
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore voluptates sapiente molestiae itaque quaerat consequatur velit aperiam, quos deserunt?"
+            )}
           </p>
         </Overlay>
         <img

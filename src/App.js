@@ -1,23 +1,27 @@
 import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+import "@fontsource/raleway";
+import "@fontsource/roboto-slab";
+import "@fontsource/poppins";
 import SlidingHero from "./component/SlidingHero";
 import { ThemeProvider } from "@mui/material";
 import Theme from "./styles/theme";
 import NavbarProvider from "./context/NavbarContext";
 import Navbar from "./component/navbar/Navbar";
+import { createContext } from "react";
+
+export const LangContext = createContext();
 
 function App() {
   return (
-    <ThemeProvider theme={Theme}>
-      <NavbarProvider>
-        <Navbar />
-        <SlidingHero />
-      </NavbarProvider>
-    </ThemeProvider>
+    <LangContext.Provider value={{}}>
+      <ThemeProvider theme={Theme}>
+        <NavbarProvider>
+          <Navbar />
+          <SlidingHero />
+        </NavbarProvider>
+      </ThemeProvider>
+    </LangContext.Provider>
   );
 }
 
