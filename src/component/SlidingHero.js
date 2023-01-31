@@ -35,7 +35,7 @@ const SlidingHero = () => {
             <h1 className="display-4 text-uppercase">
               {t(text.h1)}
             </h1>
-            <p className="lead tablet-width" style={{color: "lightgray"}}>{t(text.p)}</p>
+            <p className="lead tablet-width raleway xs-fs-2" style={{color: "lightgray"}}>{t(text.p)}</p>
           </Overlay>
           <img src={text.img} alt="construction worker" />
         </SplideSlide>

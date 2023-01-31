@@ -9,6 +9,10 @@ export let Theme = createTheme({
     secondary: {
       main: blue[700],
     },
+    neutral: {
+      light: "white",
+      dark: "black",
+    },
   },
 
   components: {

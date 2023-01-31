@@ -13,6 +13,7 @@ import NavbarProvider from "./context/NavbarContext";
 import Navbar from "./component/navbar/Navbar";
 import { createContext } from "react";
 import About from "./component/About";
+import Training from "./component/Training";
 // import Services from "./component/Services";
 
 export const LangContext = createContext();
@@ -26,6 +27,7 @@ function App() {
           <SlidingHero />
           <About />
           {/* <Services /> */}
+          <Training />
         </NavbarProvider>
       </ThemeProvider>
     </LangContext.Provider>

@@ -29,3 +29,11 @@ img {
 h1 {
   font-family: roboto-slab;
 }
+
+.poppins {
+  font-family: poppins !important;
+}
+
+.raleway {
+  font-family: raleway !important;
+}

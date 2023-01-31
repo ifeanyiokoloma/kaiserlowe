@@ -38,3 +38,34 @@ export const about = [
       "Kaiser Löwe starts 2013 to operates in Nigeria as a building development company. We offer the whole spectrum of services in building and managing. If you are interested for more information just take a look an enjoy… Our business philosophy is based on continuity and organic growth, on team spirit, respect and partnership. For us, high tech, tradition and diligence go hand in hand with a sense for the more pleasant things in life.",
   },
 ];
+
+export const training = [
+  {
+    h2: "Welder",
+    list: [
+      "Introduction and Safety",
+      "Oxy-fuel Cutting",
+      "Welding and Brazing",
+    ],
+    img: "/images/training/welding.jpg",
+  },
+  {
+    h2: "Carpenter",
+    list: [
+      "Introduction and Safety",
+      "Building methods and construction technology",
+      "Material handling",
+    ],
+    img: "/images/training/carpentry.jpg",
+  },
+  {
+    h2: "Electrical Worker",
+    list: ["Introduction and Safety", "Installation", "Electrical maintenance"],
+    img: "/images/training/electrician.jpg",
+  },
+  {
+    h2: "Floor Tiler",
+    list: ["Introduction and Safety", "Material handling", "Building methods"],
+    img: "/images/training/floor-tiler.jpg",
+  },
+];
