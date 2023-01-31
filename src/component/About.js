@@ -29,12 +29,12 @@ const About = () => {
           >
             <div
               className="details"
-              style={{ flexBasis: "60%", padding: "3rem", color: "white" }}
+              style={{ flexBasis: "60%", padding: "5rem", color: "white" }}
             >
               <h2 className="display-4" style={{ fontWeight: "bolder" }}>
                 About us
               </h2>
-              <Typography variant="body2" style={{ fontWeight: "lighter" }}>
+              <Typography variant="body2" style={{ fontWeight: 300, fontSize: ".8rem" }}>
                 Kaiser Löwe starts 2013 to operates in Nigeria as a building
                 development company. We offer the whole spectrum of services in
                 building and managing. If you are interested for more
