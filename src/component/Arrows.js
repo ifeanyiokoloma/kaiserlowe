@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 
-const Arrows = ({show}) => {
-    // const [display, setDisplay] = useState(false)
+const Arrows = ({ show }) => {
+  // const [display, setDisplay] = useState(false)
   return (
     <div show={show}>
       <div

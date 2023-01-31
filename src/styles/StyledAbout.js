@@ -7,7 +7,6 @@ export const StyledAbout = styled.div`
   .content {
     display: flex;
     flex-direction: column;
-    height: 70%;
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
@@ -16,7 +15,6 @@ export const StyledAbout = styled.div`
   .articleContainer {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 60px);
     justify-content: center;
     padding-inline: 1rem;
     text-align: justify;
@@ -46,6 +44,11 @@ export const StyledAbout = styled.div`
     .content {
       flex-direction: row;
       background: rgba(0, 0, 0, 0.2);
+      height: 70%;
+    }
+
+    .articleContainer {
+      height: calc(100vh - 60px);
     }
 
     article {
