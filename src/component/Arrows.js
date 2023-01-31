@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 
 const Arrows = ({ show }) => {

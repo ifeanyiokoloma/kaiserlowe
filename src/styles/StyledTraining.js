@@ -15,6 +15,7 @@ export const StyledTraining = styled.section`
 
   .card {
     border-radius: 10px;
+    overflow: hidden;
   }
 
   .card-text {
