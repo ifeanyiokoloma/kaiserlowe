@@ -25,3 +25,7 @@ img {
   max-width: 425px;
   margin: 0 auto;
 }
+
+h1 {
+  font-family: roboto-slab;
+}

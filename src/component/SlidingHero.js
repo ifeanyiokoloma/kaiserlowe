@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 // Default theme
 import "@splidejs/react-splide/css";
 import Overlay from "../styles/Overlay";
+import { heroText } from "../asset/data";
 
 const SlidingHero = () => {
   const { t } = useTranslation();
@@ -28,45 +29,17 @@ const SlidingHero = () => {
       tag="section"
       className="text-white"
     >
-      <SplideSlide>
-        <Overlay>
-          <h1 className="display-1">{t("Coming soon")}</h1>
-          <p className="lead tablet-width">
-            {t(
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore voluptates sapiente molestiae itaque quaerat consequatur velit aperiam, quos deserunt?"
-            )}
-          </p>
-        </Overlay>
-        <img
-          src="/images/hero/construction-worker.jpg"
-          alt="construction worker"
-        />
-      </SplideSlide>
-      <SplideSlide>
-        <Overlay>
-          <h1 className="display-1">{t("Coming soon")}</h1>
-          <p className="lead tablet-width">
-            {t(
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore voluptates sapiente molestiae itaque quaerat consequatur velit aperiam, quos deserunt?"
-            )}
-          </p>
-        </Overlay>
-        <img src="/images/hero/complex-road.jpg" alt="complex road" />
-      </SplideSlide>
-      <SplideSlide>
-        <Overlay>
-          <h1 className="display-1">{t("Coming soon")}</h1>
-          <p className="lead tablet-width">
-            {t(
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore voluptates sapiente molestiae itaque quaerat consequatur velit aperiam, quos deserunt?"
-            )}
-          </p>
-        </Overlay>
-        <img
-          src="/images/hero/two-construction-workers.jpg"
-          alt="two construction workers"
-        />
-      </SplideSlide>
+      {heroText.map((text) => (
+        <SplideSlide>
+          <Overlay className="">
+            <h1 className="display-4 text-uppercase">
+              {t(text.h1)}
+            </h1>
+            <p className="lead tablet-width" style={{color: "lightgray"}}>{t(text.p)}</p>
+          </Overlay>
+          <img src={text.img} alt="construction worker" />
+        </SplideSlide>
+      ))}
     </Splide>
   );
 };
