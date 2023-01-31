@@ -1,5 +1,5 @@
 import { Container, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { about } from "../asset/data";
 import Arrows from "./Arrows";
@@ -7,7 +7,7 @@ import LearnMore from "./LearnMore";
 import { StyledAbout } from "../styles/StyledAbout";
 
 const About = () => {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
   const { t } = useTranslation();
 
   return (
@@ -17,9 +17,9 @@ const About = () => {
         <div className="articleContainer">
           <div className="content shadow">
             <article>
-              <h2 className="display-4">{t(about[index].h2)}</h2>
+              <h2 className="display-4">{t(about[0].h2)}</h2>
               <Typography variant="body2" component="p">
-                {t(about[index].content)}
+                {t(about[0].content)}
               </Typography>
             </article>
             <div className="img-box">
