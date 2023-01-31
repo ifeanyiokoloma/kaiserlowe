@@ -15,7 +15,7 @@ const About = () => {
       <Arrows />
       <Container>
         <div className="articleContainer">
-          <div className="content">
+          <div className="content shadow">
             <article>
               <h2 className="display-4">{t(about[index].h2)}</h2>
               <Typography variant="body2" component="p">

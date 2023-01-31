@@ -13,7 +13,7 @@ const Training = () => {
         <h1 className="text-center text-uppercase">{t("Training")}</h1>
         <div className="cards">
           {training.map((item) => (
-            <div className="card">
+            <div className="card shadow">
               <div className="img-box">
                 <img src={item.img} alt="" />
               </div>
