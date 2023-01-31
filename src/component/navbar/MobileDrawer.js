@@ -17,7 +17,7 @@ const MobileDrawer = () => {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={<span style={{fontFamily: "poppins", textTransform: "uppercase"}}>{item}</span>} />
             </ListItemButton>
           </ListItem>
         ))}

@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import { NavbarContext } from "../../context/NavbarContext";
 import { navItems } from "../../asset/data";
 import ControlDrawer from "./ControlDrawer";
-import { Container, Typography } from "@mui/material";
+import { Container,} from "@mui/material";
 import { useTranslation } from "react-i18next";
 import LangBtn from "../LangBtn";
 
@@ -24,11 +24,11 @@ function Navbar() {
         <Container maxWidth="xl">
           <Toolbar className="d-flex justify-content-between">
             <IconButton
-              color="primary"
+              
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { lg: "none" } }}
+              sx={{ mr: 2, display: { lg: "none" }, color: "black" }}
             >
               <MenuIcon />
             </IconButton>
@@ -40,31 +40,51 @@ function Navbar() {
                   justifyContent: "center",
                   display: {
                     xs: "none",
-                    sm: "flex"
-                  }
+                    sm: "flex",
+                  },
                 }}
               >
-                <Typography
-                  color="secondary"
-                  sx={{
-                    fontFamily: "roboto-slab",
-                    fontWeight: "bold",
-                    fontSize: ".9rem",
+                <span
+                  // color="secondary"
+                  // sx={{
+                  //   fontFamily: "roboto-slab",
+                  //   fontWeight: "bold",
+                  //   fontSize: ".9rem",
+                  // }}
+                  style={{
+                    padding: 0,
+                    lineHeight: 0.7,
                   }}
                 >
-                  Kaiser Lowe
+                  <span
+                    style={{
+                      color: "var(--secondary)",
+                      padding: 0,
+                      lineHeight: 0.7,
+                      fontFamily: "roboto-slab",
+                      fontWeight: "bolder",
+                      fontSize: ".8rem",
+                    }}
+                  >
+                    KAISER LOWE
+                  </span>
                   <br />
                   <span
-                    style={{ fontFamily: "roboto-slab", fontSize: ".65rem", color: "var(--primary)" }}
+                    style={{
+                      fontFamily: "roboto-slab",
+                      fontSize: ".65rem",
+                      color: "var(--primary)",
+                      fontWeight: "lighter",
+                    }}
                   >
                     {t("Construction")}
                   </span>
-                </Typography>
+                </span>
               </Box>
             </Box>
             <Box sx={{ display: { xs: "none", lg: "block" } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#000" }}>
+                <Button key={item} sx={{ color: "#000", fontFamily: "poppins" }}>
                   {t(item)}
                 </Button>
               ))}
