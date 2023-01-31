@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const StyledAbout = styled.div`
   background: var(--primary);
+  position: relative;
 
   .content {
     display: flex;
@@ -42,8 +43,6 @@ export const StyledAbout = styled.div`
   }
 
   @media (min-width: 768px) {
-    position: relative;
-
     .content {
       flex-direction: row;
       background: rgba(0, 0, 0, 0.2);

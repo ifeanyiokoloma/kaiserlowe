@@ -9,7 +9,7 @@ const Arrows = ({show}) => {
         style={{
           position: "absolute",
           top: "40%",
-          left: "15px",
+          left: "1px",
           borderRadius: "50%",
           padding: ".3rem",
           background: "rgba(0,0,0,.2)",
@@ -25,7 +25,7 @@ const Arrows = ({show}) => {
         style={{
           position: "absolute",
           top: "40%",
-          right: "15px",
+          right: "1px",
           borderRadius: "50%",
           padding: ".3rem",
           background: "rgba(0,0,0,.2)",

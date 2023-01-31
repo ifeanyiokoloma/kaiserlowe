@@ -2,64 +2,33 @@ import React from "react";
 import { training } from "../asset/data";
 import { Container } from "@mui/material";
 import LearnMore from "./LearnMore";
+import { StyledTraining } from "../styles/StyledTraining";
 
 const Training = () => {
   return (
-    <section className="pb-5">
+    <StyledTraining className="pb-5">
       <Container>
-        <h1
-          style={{
-            fontFamily: "raleway",
-            paddingBlock: "1.5em",
-            fontWeight: "bold",
-          }}
-          className="text-center text-uppercase"
-        >
-          Training
-        </h1>
-        <div className="d-flex">
+        <h1 className="text-center text-uppercase">Training</h1>
+        <div className="cards">
           {training.map((item) => (
-            <div
-              className=""
-              style={{
-                flexBasis: "33.3%",
-                borderRadius: "10px",
-                height: "80vh",
-              }}
-            >
-              <div style={{ height: "60%" }}>
+            <div className="card">
+              <div className="img-box">
                 <img src={item.img} alt="" />
               </div>
-              <div
-                style={{ background: "var(--primary)", height: "35%" }}
-                className="pt-4 text-light"
-              >
-                <h2
-                  className="ps-3 text-uppercase"
-                  style={{ fontFamily: "poppins", fontSize: "1.5rem", fontWeight: 700 }}
-                >
-                  {item.h2}
-                </h2>
-                <ul style={{}} className="">
+              <section className="pt-4 text-light card-text">
+                <h2 className="ps-3 text-uppercase">{item.h2}</h2>
+                <ul>
                   {item.list.map((item) => (
-                    <li
-                      style={{
-                        fontSize: ".75rem",
-                        fontFamily: "poppins",
-                        fontWeight: 400,
-                      }}
-                    >
-                      {item}
-                    </li>
+                    <li>{item}</li>
                   ))}
                 </ul>
-              </div>
+              </section>
             </div>
           ))}
         </div>
         <LearnMore color="white" bgc="var(--primary)" />
       </Container>
-    </section>
+    </StyledTraining>
   );
 };
 
