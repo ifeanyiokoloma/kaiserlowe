@@ -10,7 +10,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <StyledAbout className="py-3">
+    <StyledAbout className="py-5">
       <Container>
         <div className="articleContainer">
           <div className="content shadow">
@@ -21,7 +21,7 @@ const About = () => {
               </Typography>
             </article>
             <div className="img-box">
-              <img src="/images/about/smiling.jpg" alt="pic" />
+              <img src={about[0].img} alt="pic" />
             </div>
           </div>
           <LearnMore color="var(--primary)" />

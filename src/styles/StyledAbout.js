@@ -8,7 +8,6 @@ export const StyledAbout = styled.div`
   .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -43,7 +42,6 @@ export const StyledAbout = styled.div`
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 0 0;
   }
 
   @media (min-width: 768px) {
@@ -59,8 +57,12 @@ export const StyledAbout = styled.div`
 
     article {
       flex-basis: 60%;
-      padding: 5rem;
+      padding-inline: 5rem;
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
     }
 
     .img-box {

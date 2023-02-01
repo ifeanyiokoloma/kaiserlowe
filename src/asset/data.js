@@ -12,7 +12,7 @@ export const heroText = [
   {
     h1: "Welcome to KaiserLowe",
     p: "Welcome to Kaiser Lowe, where construction excellence meets unparalleled customer service.",
-    img: "/images/hero/complex-road.jpg",
+    img: "/images/hero/engineers.jpg",
   },
   {
     h1: "Building the Future",
@@ -36,6 +36,7 @@ export const about = [
     h2: "About us",
     content:
       "Kaiser Löwe starts 2013 to operates in Nigeria as a building development company. We offer the whole spectrum of services in building and managing. If you are interested for more information just take a look an enjoy… Our business philosophy is based on continuity and organic growth, on team spirit, respect and partnership. For us, high tech, tradition and diligence go hand in hand with a sense for the more pleasant things in life.",
+    img: "/images/about/kaiserlowe.jpg",
   },
 ];
 
