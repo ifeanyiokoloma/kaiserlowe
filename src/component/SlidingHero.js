@@ -24,6 +24,7 @@ const SlidingHero = () => {
         cover: true,
         arrows: false,
         pagination: false,
+        drag: false,
       }}
       aria-label="Hero Images"
       tag="section"
