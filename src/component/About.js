@@ -2,7 +2,6 @@ import { Container, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { about } from "../asset/data";
-import Arrows from "./Arrows";
 import LearnMore from "./LearnMore";
 import { StyledAbout } from "../styles/StyledAbout";
 
@@ -11,8 +10,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <StyledAbout className="pb-3">
-      <Arrows />
+    <StyledAbout className="py-3">
       <Container>
         <div className="articleContainer">
           <div className="content shadow">

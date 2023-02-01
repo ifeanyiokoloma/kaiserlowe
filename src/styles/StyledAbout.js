@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const StyledAbout = styled.div`
   background: var(--primary);
   position: relative;
+  padding-block: 3rem;
 
   .content {
     display: flex;
@@ -22,6 +23,7 @@ export const StyledAbout = styled.div`
 
   article {
     padding: 1rem;
+    color: white !important;
   }
 
   p {
@@ -31,6 +33,10 @@ export const StyledAbout = styled.div`
 
   h2 {
     font-weight: bolder;
+  }
+
+  .img-box {
+    max-height: 60vh;
   }
 
   img {
