@@ -5,8 +5,7 @@ import { useTranslation } from "react-i18next";
 // Default theme
 import "@splidejs/react-splide/css";
 import { heroText } from "../asset/data";
-import StyledSplide, { Overlay } from "../styles/StyledSplide";
-import { Container } from "@mui/material";
+import StyledSplide, { Overlay, StyledContainer } from "../styles/StyledSplide";
 
 const SlidingHero = () => {
   const { t } = useTranslation();
@@ -34,10 +33,10 @@ const SlidingHero = () => {
       {heroText.map((text) => (
         <SplideSlide>
           <Overlay>
-            <Container class="content">
+            <StyledContainer>
               <h1 className="display-4 text-uppercase">{t(text.h1)}</h1>
               <p className="lead tablet-width raleway">{t(text.p)}</p>
-            </Container>
+            </StyledContainer>
           </Overlay>
           <img src={text.img} alt="background" />
         </SplideSlide>

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Container } from "@mui/material";
 import { Splide } from "@splidejs/react-splide";
 
 const StyledSplide = styled(Splide)`
@@ -14,15 +15,15 @@ const StyledSplide = styled(Splide)`
     color: d3d3d3;
     padding-inline: 3rem;
   }
+`;
 
-  .content {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
+export const StyledContainer = styled(Container)`
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 `;
 
 export const Overlay = styled.div`
