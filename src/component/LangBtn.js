@@ -23,7 +23,7 @@ const LangBtn = () => {
         defaultValue={language}
       >
         {langs.map((lang) => (
-          <option value={lang.code}>{t(lang.name)}</option>
+          <option key={lang.code} value={lang.code}>{t(lang.name)}</option>
         ))}
       </NativeSelect>
     </FormControl>

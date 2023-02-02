@@ -31,7 +31,7 @@ const SlidingHero = () => {
       className="text-white"
     >
       {heroText.map((text) => (
-        <SplideSlide>
+        <SplideSlide key={text.h1}>
           <Overlay>
             <StyledContainer>
               <h1 className="display-4 text-uppercase">{t(text.h1)}</h1>

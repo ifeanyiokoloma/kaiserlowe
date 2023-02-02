@@ -13,7 +13,7 @@ const Training = () => {
         <h1 className="text-center text-uppercase">{t("Training")}</h1>
         <div className="cards">
           {training.map((item) => (
-            <div className="card shadow">
+            <div key={item.h2} className="card shadow">
               <div className="img-box">
                 <img src={item.img} alt="" />
               </div>
@@ -21,7 +21,7 @@ const Training = () => {
                 <h2 className="ps-3 text-uppercase">{t(item.h2)}</h2>
                 <ul>
                   {item.list.map((item) => (
-                    <li>{t(item)}</li>
+                    <li key={item}>{t(item)}</li>
                   ))}
                 </ul>
               </section>
