@@ -9,7 +9,7 @@ import { IconButton } from "@mui/material";
 const MobileDrawer = () => {
   const { handleDrawerToggle } = useContext(NavbarContext);
   return (
-    <GlassBox onClick={handleDrawerToggle}>
+    <GlassBox>
       <TopBar>
         <Logo />
         <IconButton
