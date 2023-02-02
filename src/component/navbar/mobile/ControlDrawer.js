@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React, { useContext } from "react";
-import { NavbarContext } from "../../context/NavbarContext";
+import { NavbarContext } from "../../../context/NavbarContext";
 import MobileDrawer from "./MobileDrawer";
-import { GlassDrawer } from "../../styles/GlassDrawer";
+import { GlassDrawer } from "../../../styles/StyledNavBar";
 
 const ControlDrawer = () => {
   const { handleDrawerToggle, container, mobileOpen, drawerWidth } =

@@ -1,100 +1,30 @@
-import { useContext } from "react";
-import { ReactComponent as KaiserloweLogo } from "../../asset/kaiserlowe.svg";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
-import { NavbarContext } from "../../context/NavbarContext";
-import { navItems } from "../../asset/data";
-import ControlDrawer from "./ControlDrawer";
-import { Container,} from "@mui/material";
-import { useTranslation } from "react-i18next";
+import ControlDrawer from "./mobile/ControlDrawer";
+import { Container } from "@mui/material";
 import LangBtn from "../LangBtn";
+import StyledNavBar from "../../styles/StyledNavBar";
+import Logo from "./Logo";
+import MobileNav from "./NavList";
+import HamburgerIcon from "./mobile/HamburgerIcon"
 
 function Navbar() {
-  const { t } = useTranslation("translation");
-  const { handleDrawerToggle } = useContext(NavbarContext);
   return (
-    <Box sx={{ display: "flex" }}>
+    <StyledNavBar>
       <CssBaseline />
       <AppBar color="secondary" component="nav">
         <Container maxWidth="xl">
           <Toolbar className="d-flex justify-content-between">
-            <IconButton
-              
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { lg: "none" }, color: "black" }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <KaiserloweLogo />
-              <Box
-                sx={{
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  display: {
-                    xs: "none",
-                    sm: "flex",
-                  },
-                }}
-              >
-                <span
-                  // color="secondary"
-                  // sx={{
-                  //   fontFamily: "roboto-slab",
-                  //   fontWeight: "bold",
-                  //   fontSize: ".9rem",
-                  // }}
-                  style={{
-                    padding: 0,
-                    lineHeight: 0.7,
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "var(--secondary)",
-                      padding: 0,
-                      lineHeight: 0.7,
-                      fontFamily: "roboto-slab",
-                      fontWeight: "bolder",
-                      fontSize: ".8rem",
-                    }}
-                  >
-                    KAISER LOWE
-                  </span>
-                  <br />
-                  <span
-                    style={{
-                      fontFamily: "roboto-slab",
-                      fontSize: ".65rem",
-                      color: "var(--primary)",
-                      fontWeight: "lighter",
-                    }}
-                  >
-                    {t("Construction")}
-                  </span>
-                </span>
-              </Box>
-            </Box>
-            <Box sx={{ display: { xs: "none", lg: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#000", fontFamily: "poppins" }}>
-                  {t(item)}
-                </Button>
-              ))}
-            </Box>
+            <HamburgerIcon />
+            <Logo />
+            <MobileNav />
             <LangBtn />
           </Toolbar>
         </Container>
       </AppBar>
       <ControlDrawer />
-    </Box>
+    </StyledNavBar>
   );
 }
 

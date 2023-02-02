@@ -11,7 +11,7 @@ const StyledSplide = styled(Splide)`
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: d3d3d3;
     padding-inline: 3rem;
   }

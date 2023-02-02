@@ -48,7 +48,7 @@ export const StyledAbout = styled.div`
     .content {
       flex-direction: row;
       background: rgba(0, 0, 0, 0.2);
-      height: 70%;
+      height: 60%;
     }
 
     .articleContainer {
