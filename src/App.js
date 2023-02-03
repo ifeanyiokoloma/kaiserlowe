@@ -26,8 +26,8 @@ function App() {
           <Navbar />
           <SlidingHero />
           <About />
-          {/* <Services /> */}
           <Training />
+          {/* <Services /> */}
         </NavbarProvider>
       </ThemeProvider>
     </LangContext.Provider>

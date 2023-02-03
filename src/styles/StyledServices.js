@@ -7,55 +7,55 @@ const StyledServices = styled.section`
 
   & > .cards-box {
     display: inherit;
-    inline-size: 100%;
+    max-width: 100%;
     min-block-size: calc(100vh - 60px);
     align-items: center;
     // margin-inline: 1rem;
-    z-index: 10;
+    // z-index: 10;
+    overflow-x: auto;
   }
 
   /* Every item targetted collectly */
-  .cards-box > *:not(.bar, .bar2) {
-    flex-basis: 40%;
+  .cards-box > * {
+    flex-basis: 30%;
     block-size: 80%;
     flex-grow: 1;
-    box-shadow: -20px 0 40px rgba(0, 0, 0, 1);
+    box-shadow: -20px 0 40px rgba(128, 128, 128, 0.5);
     border-radius: 20px;
-    margin-right: -5rem;
   }
 
   .cards-box > *:not(.bar, .bar2):hover {
     transform: rotateZ(5deg) translateX(-5rem);
     transition: 500ms;
+    background: whitesmoke;
   }
 
-  .cards-box > .card:nth-child(2) {
-    background-color: red;
+  .cards-box > .myCard:nth-child(1) {
     z-index: 1;
+    margin-right: -5rem;
   }
 
-  .cards-box > .card:nth-child(3) {
-    background-color: blue;
+  .cards-box > .myCard:nth-child(2) {
     z-index: 2;
+    margin-right: -5rem;
   }
 
-  .cards-box > .card:nth-child(4) {
-    background-color: green;
+  .cards-box > .myCard:nth-child(3) {
     z-index: 3;
+    margin-right: -5rem;
   }
 
-  .cards-box > .card:nth-child(5) {
-    background-color: yellow;
+  .cards-box > .myCard:nth-child(4) {
     z-index: 4;
+    margin-right: -5rem;
   }
 
-  .cards-box > .card:nth-child(6) {
-    background-color: purple;
+  .cards-box > .myCard:nth-child(5) {
     z-index: 5;
+    margin-right: -5rem;
   }
 
-  .cards-box > .card:nth-child(7) {
-    background-color: pink;
+  .cards-box > .myCard:nth-child(6) {
     z-index: 6;
   }
 
@@ -76,7 +76,7 @@ const StyledServices = styled.section`
     margin-right: -3rem;
   }
 
-  .card {
+  .myCard {
     padding-inline: 1rem;
     padding-block: 3rem;
     display: flex;

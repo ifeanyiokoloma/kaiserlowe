@@ -10,10 +10,10 @@ export const GlassBox = styled(Box)``;
 export const TopBar = styled(Box)`
   display: flex;
   justify-content: space-between;
-  padding-inline: 1rem;
+  // padding-inline: .3rem;
   align-items: center;
   height: 60px;
-  border-bottom: 1px solid gray;
+  // border-bottom: 1px solid gray;
 `;
 
 export const StyledNavList = styled(Box)`

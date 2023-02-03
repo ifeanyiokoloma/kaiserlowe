@@ -3,7 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import ControlDrawer from "./mobile/ControlDrawer";
 import { Container } from "@mui/material";
-import LangBtn from "../LangBtn";
+import LangBtn from "./LangBtn";
 import StyledNavBar from "../../styles/StyledNavBar";
 import Logo from "./Logo";
 import MobileNav from "./NavList";

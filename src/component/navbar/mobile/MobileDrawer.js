@@ -10,15 +10,17 @@ const MobileDrawer = () => {
   const { handleDrawerToggle } = useContext(NavbarContext);
   return (
     <GlassBox>
-      <TopBar>
-        <Logo />
+      <TopBar className="pt-3">
         <IconButton
           onClick={handleDrawerToggle}
           aria-label="close"
-          color="error"
+          color="black"
+          size="large"
         >
-          <Close />
+          <Close style={{fontSize: "1.5rem"}} />
         </IconButton>
+        <Logo />
+        <span style={{ width: "4rem" }}></span>
       </TopBar>
       <NavList />
     </GlassBox>

@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 export const StyledTraining = styled.section`
   h1 {
     font-family: raleway;
-    padding-block: 1.5em;
-    font-weight: bold;
+    margin-block: 1.5em;
+    font-weight: bold;;
   }
 
   .cards {
@@ -13,14 +13,13 @@ export const StyledTraining = styled.section`
     row-gap: 1rem;
   }
 
-  .card {
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
   .card-text {
     background: var(--primary);
-    height: 35%;
+    height: 40%;
+  }
+
+  .card {
+    border-width: 0;
   }
 
   .card h2 {
@@ -42,7 +41,7 @@ export const StyledTraining = styled.section`
 
     .card {
       flex-basis: 33.3%;
-      height: 80vh;
+      height: 70vh;
     }
 
     .img-box {
