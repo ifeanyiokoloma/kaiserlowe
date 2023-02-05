@@ -2,86 +2,132 @@ import styled from "@emotion/styled";
 
 const StyledServices = styled.section`
   display: flex;
-  justify-content: flex-end;
-  max-inline-size: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 85vh;
+  padding: 3rem;
+  position: relative;
 
-  & > .cards-box {
-    display: inherit;
-    max-width: 100%;
-    min-block-size: calc(100vh - 60px);
-    align-items: center;
-    // margin-inline: 1rem;
-    // z-index: 10;
-    overflow-x: auto;
-  }
-
-  /* Every item targetted collectly */
-  .cards-box > * {
-    flex-basis: 30%;
-    block-size: 80%;
+  .myCard {
+    flex-basis: 20%;
     flex-grow: 1;
-    box-shadow: -20px 0 40px rgba(128, 128, 128, 0.5);
+    flex-shrink: 0;
     border-radius: 20px;
+    margin-right: -10rem;
+    // background: #5a5a5a;
+    background: white;
+    color: ;
+    text-align: justify;
+    transition: transform 500ms;
+    gap: 1rem;
+    overflow: hidden;
+
+    & > * {
+      height: 50%;
+    }
+
+    article {
+      padding-inline: 2rem;
+      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-family: poppins;
+      font-size: 0.8rem;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 0.5rem;
+      font-family: poppins;
+    }
   }
 
-  .cards-box > *:not(.bar, .bar2):hover {
-    transform: rotateZ(5deg) translateX(-5rem);
-    transition: 500ms;
-    background: whitesmoke;
+  & > .myCard:not(first-child, last-child):hover {
+    transform: translateX(-85px) rotateZ(5deg);
   }
 
-  .cards-box > .myCard:nth-child(1) {
+  & > .myCard:first-child:hover {
+    transform: rotateZ(5deg);
+  }
+
+  & > .myCard:last-child:hover {
+    transform: translateX(-200px) rotateZ(10deg);
+  }
+
+  & > .myCard:first-child:hover ~ .myCard {
+    transform: translateX(150px);
+  }
+
+  & > .myCard:not(first-child, last-child):hover ~ .myCard {
+    transform: translateX(70px);
+  }
+
+  & > .myCard:nth-child(1) {
+    box-shadow: rgba(0, 0, 0, 0.2) -20px 0 5px 2px;
     z-index: 1;
-    margin-right: -5rem;
   }
-
-  .cards-box > .myCard:nth-child(2) {
+  & > .myCard:nth-child(2) {
     z-index: 2;
-    margin-right: -5rem;
   }
-
-  .cards-box > .myCard:nth-child(3) {
+  & > .myCard:nth-child(3) {
     z-index: 3;
-    margin-right: -5rem;
   }
-
-  .cards-box > .myCard:nth-child(4) {
+  & > .myCard:nth-child(4) {
     z-index: 4;
-    margin-right: -5rem;
   }
-
-  .cards-box > .myCard:nth-child(5) {
+  & > .myCard:nth-child(5) {
     z-index: 5;
-    margin-right: -5rem;
   }
-
-  .cards-box > .myCard:nth-child(6) {
+  & > .myCard:nth-child(6) {
     z-index: 6;
   }
 
-  .cards-box > .bar {
-    width: 20%;
-    height: 90%;
-    background: black;
-    z-index: 7;
-    border-radius: 10px;
+  & > .bar {
+    border-radius: 5px;
+    width: 10px;
+    height: 100vh;
+    background: var(--primary);
+    z-index: 10;
+    right: 0;
+    top: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.8) -10px 0 5px 2px;
+    margin: 1rem 0;
   }
 
-  .cards-box > .bar2 {
-    border-radius: 10px;
-    width: 20%;
-    height: 90%;
-    background: black;
-    z-index: 0;
-    margin-right: -3rem;
+  & > .myCard:not(:first-of-type) {
+    box-shadow: rgba(0, 0, 0, 0.7) -20px 0 5px 2px;
   }
 
-  .myCard {
-    padding-inline: 1rem;
-    padding-block: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  @media (min-width: 768px) {
+    .myCard {
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .myCard {
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
   }
 `;
 

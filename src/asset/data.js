@@ -70,3 +70,36 @@ export const training = [
     img: "/images/training/floor-tiler.jpg",
   },
 ];
+
+export const services = [
+  {
+    h2: "Project Development",
+    p: "From land to Building – with Kaiser Löwe you enter soon into your new house! We develop a round concept, plan and organize the implementation of the most necessary use changes.",
+    img: "/images/services/drawing.jpg",
+  },
+  {
+    h2: "Planning and Building",
+    p: "Are you seeking a partner for property development and building? look no further than Kaiser Löwe LTD, We have all the knowledge you need.",
+    img: "/images/services/building.jpg",
+  },
+  {
+    h2: "Energy",
+    p: "Kaiser Lowe is known for better Energy building, Powerstation, Solarenergy, Windenergy, etc.",
+    img: "/images/services/energy.jpg",
+  },
+  {
+    h2: "Real Estate",
+    p: "With Kaiser Löwe you are at the safe side…. Trust is the most important thing to build up a successful cooperation.",
+    img: "/images/services/estate.jpg",
+  },
+  {
+    h2: "Facilities Management",
+    p: "We manage your Buildings, Building Technology, Building Cleaning, Security Services, Catering, Garden and landscape services.",
+    img: "/images/services/management.jpg",
+  },
+  {
+    h2: "Road Construction",
+    p: "We construct Roads, Road Infrastructures, Traffic safety, Tunnels, Bridges etc. contact us today for a better service.",
+    img: "/images/services/road.jpg",
+  },
+];
