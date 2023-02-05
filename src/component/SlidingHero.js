@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 // Default theme
 import "@splidejs/react-splide/css";
-import { heroText } from "../asset/data";
+import { heroText } from "../asset/content";
 import StyledSplide, { Overlay, StyledContainer } from "../styles/StyledSplide";
 
 const SlidingHero = () => {

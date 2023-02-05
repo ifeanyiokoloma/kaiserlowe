@@ -49,43 +49,43 @@ const StyledServices = styled.section`
     }
   }
 
-  & > .myCard:not(first-child, last-child):hover {
+  & > .myCard:not(first-type-of):hover {
     transform: translateX(-85px) rotateZ(5deg);
   }
 
-  & > .myCard:first-child:hover {
+  & > .myCard:first-type-of:hover {
     transform: rotateZ(5deg);
   }
 
-  & > .myCard:last-child:hover {
-    transform: translateX(-200px) rotateZ(10deg);
-  }
+  // & > .myCard:last-type-of:hover {
+  //   transform: translateX(-200px) rotateZ(10deg);
+  // }
 
-  & > .myCard:first-child:hover ~ .myCard {
+  & > .myCard:first-type-of:hover ~ .myCard {
     transform: translateX(150px);
   }
 
-  & > .myCard:not(first-child, last-child):hover ~ .myCard {
+  & > .myCard:not(first-type-of):hover ~ .myCard {
     transform: translateX(70px);
   }
 
-  & > .myCard:nth-child(1) {
+  & > .myCard:nth-type-of(1) {
     box-shadow: rgba(0, 0, 0, 0.2) -20px 0 5px 2px;
     z-index: 1;
   }
-  & > .myCard:nth-child(2) {
+  & > .myCard:nth-type-of(2) {
     z-index: 2;
   }
-  & > .myCard:nth-child(3) {
+  & > .myCard:nth-type-of(3) {
     z-index: 3;
   }
-  & > .myCard:nth-child(4) {
+  & > .myCard:nth-type-of(4) {
     z-index: 4;
   }
-  & > .myCard:nth-child(5) {
+  & > .myCard:nth-type-of(5) {
     z-index: 5;
   }
-  & > .myCard:nth-child(6) {
+  & > .myCard:nth-type-of(6) {
     z-index: 6;
   }
 

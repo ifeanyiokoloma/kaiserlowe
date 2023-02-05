@@ -1,5 +1,5 @@
 import React from "react";
-import { training } from "../asset/data";
+import { training } from "../asset/content";
 import { Container } from "@mui/material";
 import LearnMore from "./LearnMore";
 import { StyledTraining } from "../styles/StyledTraining";

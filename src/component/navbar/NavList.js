@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
 import React from "react";
-import { navItems } from "../../asset/data";
+import { navItems } from "../../asset/content";
 import { useTranslation } from "react-i18next";
 
 const NavList = () => {

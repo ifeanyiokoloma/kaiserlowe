@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { about } from "../asset/data";
+import { about } from "../asset/content";
 import LearnMore from "./LearnMore";
 import { StyledAbout } from "../styles/StyledAbout";
 

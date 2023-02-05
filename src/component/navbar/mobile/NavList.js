@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledNavList } from '../../../styles/StyledNavBar';
-import { navItems } from '../../../asset/data';
+import { navItems } from '../../../asset/content';
 import { List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 
 const NavList = () => {

@@ -1,5 +1,16 @@
-import { Language } from "@mui/icons-material";
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, IconButton, NativeSelect } from "@mui/material";
+import { ArrowDropDown, Language } from "@mui/icons-material";
+import {
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  FormControl,
+  IconButton,
+  NativeSelect,
+  Typography,
+} from "@mui/material";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -29,8 +40,10 @@ const LangBtn = () => {
 
   return (
     <Box>
-      <IconButton onClick={handleClickOpen}>
+      <IconButton onClick={handleClickOpen} sx={{ display: "flex" }}>
         <Language />
+        <Typography variant="caption">{language}</Typography>
+        <ArrowDropDown color="primary" />
       </IconButton>
       <Dialog disableEscapeKeyDown open={open} onClose={handleClose}>
         <DialogTitle>Change Site Language</DialogTitle>
