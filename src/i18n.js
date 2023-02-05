@@ -5,8 +5,8 @@ import Backend from "i18next-locize-backend";
 import env from "react-dotenv";
 
 const locizeOptions = {
-  projectId: env.PROJECT_ID,
-  apiKey: env.API_KEYS, // The API key should only be used in development, not in production. You should not expose your apps API key to production!!!
+  projectId: env.LOCIZE_PROJECT_ID,
+  apiKey: env.LOCIZE_API_KEYS,
   referenceLng: env.REFERENCE_LANGUAGE,
 };
 
