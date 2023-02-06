@@ -1,4 +1,5 @@
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
+import styled from "styled-components";
 
 const StyledServices = styled.section`
   display: flex;
@@ -14,7 +15,6 @@ const StyledServices = styled.section`
     flex-shrink: 0;
     border-radius: 20px;
     margin-right: -10rem;
-    // background: #5a5a5a;
     background: white;
     color: ;
     text-align: justify;
@@ -49,44 +49,49 @@ const StyledServices = styled.section`
     }
   }
 
-  & > .myCard:not(first-type-of):hover {
-    transform: translateX(-85px) rotateZ(5deg);
+  & > .myCard:not(:first-child) {
+    box-shadow: rgba(0, 0, 0, 0.7) -20px 0 5px 2px;
   }
 
-  & > .myCard:first-type-of:hover {
+  & > .myCard:not(:first-child):hover {
+    transform: translateX(-90px) rotateZ(5deg);
+  }
+
+  & > .myCard:first-child:hover {
     transform: rotateZ(5deg);
   }
 
-  // & > .myCard:last-type-of:hover {
-  //   transform: translateX(-200px) rotateZ(10deg);
-  // }
-
-  & > .myCard:first-type-of:hover ~ .myCard {
-    transform: translateX(150px);
+  & > .myCard:first-child:hover ~ .myCard {
+    transform: translateX(160px);
   }
 
-  & > .myCard:not(first-type-of):hover ~ .myCard {
+  & > .myCard:not(:first-child):hover ~ .myCard {
     transform: translateX(70px);
   }
 
-  & > .myCard:nth-type-of(1) {
+  & > .myCard:nth-child(1) {
     box-shadow: rgba(0, 0, 0, 0.2) -20px 0 5px 2px;
     z-index: 1;
   }
-  & > .myCard:nth-type-of(2) {
+
+  & > .myCard:nth-child(2) {
     z-index: 2;
   }
-  & > .myCard:nth-type-of(3) {
+  & > .myCard:nth-child(3) {
     z-index: 3;
   }
-  & > .myCard:nth-type-of(4) {
+  & > .myCard:nth-child(4) {
     z-index: 4;
   }
-  & > .myCard:nth-type-of(5) {
+  & > .myCard:nth-child(5) {
     z-index: 5;
   }
-  & > .myCard:nth-type-of(6) {
+  & > .myCard:nth-child(6) {
     z-index: 6;
+  }
+
+  & > .myCard:nth-child(6):hover {
+    transform: rotateZ(5deg) translateX(-130px);
   }
 
   & > .bar {
@@ -100,10 +105,6 @@ const StyledServices = styled.section`
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.8) -10px 0 5px 2px;
     margin: 1rem 0;
-  }
-
-  & > .myCard:not(:first-of-type) {
-    box-shadow: rgba(0, 0, 0, 0.7) -20px 0 5px 2px;
   }
 
   @media (min-width: 768px) {

@@ -42,7 +42,7 @@ const LangBtn = () => {
     <Box>
       <IconButton onClick={handleClickOpen} sx={{ display: "flex" }}>
         <Language />
-        <Typography variant="caption">{language}</Typography>
+        <Typography className="text-uppercase" variant="caption">{language}</Typography>
         <ArrowDropDown color="primary" />
       </IconButton>
       <Dialog disableEscapeKeyDown open={open} onClose={handleClose}>

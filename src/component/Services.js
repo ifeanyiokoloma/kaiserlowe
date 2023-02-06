@@ -20,7 +20,7 @@ const Services = () => {
               </Typography>
             </article>
             <Box>
-              <img src={service.img} alt="" />
+              <img src={service.img} alt={service.h2} />
             </Box>
           </div>
         ))}
