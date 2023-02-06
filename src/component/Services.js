@@ -8,11 +8,12 @@ const Services = () => {
   const {t} = useTranslation()
   return (
     <Container>
+      <h2 className="text-center display-5 text-uppercase" style={{ fontFamily: "poppins", fontWeight: "bold" }}>{t("Services")}</h2>
       <StyledServices className="my-5">
         {services.map((service) => (
-          <div key={service.h2} className="myCard d-flex flex-column">
+          <div key={service.h3} className="myCard d-flex flex-column">
             <article>
-              <h2>{t(service.h2)}</h2>
+              <h3>{t(service.h3)}</h3>
               <Typography
                 component="p"
                 variant="body2"
@@ -24,7 +25,9 @@ const Services = () => {
             <Box>
               <picture>
                 <source
-                  src={`${service.img}?nf_resize=fit&w=${75 - window.innerWidth}`}
+                  src={`${service.img}?nf_resize=fit&w=${
+                    75 - window.innerWidth
+                  }`}
                   media="(min-width: 768px)"
                 />
                 <img

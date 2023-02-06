@@ -34,7 +34,7 @@ const StyledServices = styled.section`
       gap: 1rem;
     }
 
-    h2 {
+    h3 {
       text-align: center;
       text-transform: uppercase;
       font-weight: bolder;
@@ -49,8 +49,8 @@ const StyledServices = styled.section`
     }
   }
 
-  & > .myCard:not(:first-child) {
-    box-shadow: rgba(0, 0, 0, 0.7) -20px 0 5px 2px;
+  & > .myCard {
+    box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
   }
 
   & > .myCard:not(:first-child):hover {
@@ -70,7 +70,7 @@ const StyledServices = styled.section`
   }
 
   & > .myCard:nth-child(1) {
-    box-shadow: rgba(0, 0, 0, 0.2) -20px 0 5px 2px;
+    // box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
     z-index: 1;
   }
 
@@ -103,13 +103,13 @@ const StyledServices = styled.section`
     right: 0;
     top: 0;
     position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.8) -10px 0 5px 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) -7px 0 20px 2px;
     margin: 1rem 0;
   }
 
   @media (min-width: 768px) {
     .myCard {
-      h2 {
+      h3 {
         font-size: 1rem;
       }
 
@@ -121,12 +121,12 @@ const StyledServices = styled.section`
 
   @media (min-width: 1024px) {
     .myCard {
-      h2 {
+      h3 {
         font-size: 1.3rem;
       }
 
       p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
     }
   }
