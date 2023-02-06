@@ -17,13 +17,13 @@ const Training = () => {
               <div className="img-box">
                 <picture>
                   <source
-                    src={`${item.img}?nf_resize=smartcrop&w=${
+                    src={`${item.img}?nf_resize=fit&w=${
                       75 - window.innerWidth
                     }`}
                     media="(min-width: 768px)"
                   />
                   <img
-                    src={`${item.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${
+                    src={`${item.img}?nf_resize=fit&w=${window.innerWidth}&h=${
                       window.innerHeight - 40
                     }`}
                     alt=""
