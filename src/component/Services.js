@@ -22,7 +22,16 @@ const Services = () => {
               </Typography>
             </article>
             <Box>
-              <img src={service.img} alt={service.h2} />
+              <picture>
+                <source
+                  src={`${service.img}?nf_resize=fit&w=${75 - window.innerWidth}`}
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src={`${service.img}?nf_resize=fit&w=${window.innerWidth}`}
+                  alt={service.h2}
+                />
+              </picture>
             </Box>
           </div>
         ))}

@@ -21,7 +21,20 @@ const About = () => {
               </Typography>
             </article>
             <div className="img-box">
-              <img src={about[0].img} alt="pic" />
+              <picture>
+                <source
+                  srcSet={`${about[0].img}?nf_resize=smartcrop&w=${
+                    window.innerWidth - 50
+                  }&h=${window.innerHeight - 40}`}
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src={`${about[0].img}?nf_resize=smartcrop&w=${
+                    window.innerWidth
+                  }&h=${window.innerHeight - 40}`}
+                  alt="pic"
+                />
+              </picture>
             </div>
           </div>
           <LearnMore color="var(--primary)" />

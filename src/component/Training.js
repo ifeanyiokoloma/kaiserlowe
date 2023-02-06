@@ -6,7 +6,7 @@ import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
 
 const Training = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <StyledTraining className="pb-5">
       <Container>
@@ -15,7 +15,20 @@ const Training = () => {
           {training.map((item) => (
             <div key={item.h2} className="card">
               <div className="img-box">
-                <img src={item.img} alt="" />
+                <picture>
+                  <source
+                    src={`${item.img}?nf_resize=fit&w=${
+                      75 - window.innerWidth
+                    }`}
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src={`${item.img}?nf_resize=fit&w=${window.innerWidth}&h=${
+                      window.innerHeight - 40
+                    }`}
+                    alt=""
+                  />
+                </picture>
               </div>
               <section className="pt-4 text-light card-text">
                 <h2 className="ps-3 text-uppercase">{t(item.h2)}</h2>

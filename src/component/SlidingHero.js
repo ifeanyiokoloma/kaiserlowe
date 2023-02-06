@@ -38,7 +38,10 @@ const SlidingHero = () => {
               <p className="lead tablet-width raleway">{t(text.p)}</p>
             </StyledContainer>
           </Overlay>
-          <img src={text.img} alt="background" />
+          <img
+            src={`${text.img}?nf_resize=fit&w=${window.innerWidth}&h=${window.innerHeight}`}
+            alt=""
+          />
         </SplideSlide>
       ))}
     </StyledSplide>
