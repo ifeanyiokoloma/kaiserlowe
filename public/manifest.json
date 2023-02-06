@@ -1,6 +1,6 @@
 {
-  "name": "kaiserlowe",
-  "short_name": "klc",
+  "name": "Kaiserlowe",
+  "short_name": "KLC",
   "icons": [
     {
       "src": "/images/favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#ff9800",
   "background_color": "#ff9800",
   "display": "standalone",
   "start_url": "."
