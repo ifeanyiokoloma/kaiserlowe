@@ -41,7 +41,6 @@ export const StyledAbout = styled.div`
   img {
     height: 100%;
     width: 100%;
-    // object-fit: cover;
   }
 
   @media (min-width: 768px) {

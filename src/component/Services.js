@@ -24,7 +24,7 @@ const Services = () => {
             <Box>
               <picture>
                 <source
-                  src={`${service.img}?nf_resize=fit&w=${75 - window.innerWidth}`}
+                  src={`${service.img}?nf_resize=smartcrop&w=${75 - window.innerWidth}`}
                   media="(min-width: 768px)"
                 />
                 <img
