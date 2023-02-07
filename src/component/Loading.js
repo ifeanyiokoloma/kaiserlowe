@@ -7,7 +7,7 @@ const Loading = () => {
   return (
     <StyledLoading>
       <motion.div
-        animate={{ scale: [1, 10] }}
+        animate={{ scale: [1, 2] }}
         transition={{
           repeat: Infinity,
           repeatType: "reverse",
