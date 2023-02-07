@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { about } from "../asset/content";
 import LearnMore from "./LearnMore";
 import { StyledAbout } from "../styles/StyledAbout";
+import Img from "react-cool-img";
 
 const About = () => {
   // const [index, setIndex] = useState(0);
@@ -20,7 +21,7 @@ const About = () => {
               </Typography>
             </article>
             <div className="img-box">
-              <img
+              <Img lazy={false} cache={true}
                 src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
                 alt="pic"
               />

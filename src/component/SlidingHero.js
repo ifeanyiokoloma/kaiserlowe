@@ -1,8 +1,6 @@
 import React from "react";
 import { SplideSlide } from "@splidejs/react-splide";
 import { useTranslation } from "react-i18next";
-
-// Default theme
 import "@splidejs/react-splide/css";
 import { heroText } from "../asset/content";
 import StyledSplide, { Overlay, StyledContainer } from "../styles/StyledSplide";
@@ -14,7 +12,7 @@ const SlidingHero = () => {
       options={{
         autoplay: true,
         interval: 6000,
-        lazyLoad: true,
+        lazyLoad: false,
         keyboard: true,
         height: "100vh",
         width: "100%",

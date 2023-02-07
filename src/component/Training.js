@@ -4,6 +4,7 @@ import { Container } from "@mui/material";
 import LearnMore from "./LearnMore";
 import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
+import Img from "react-cool-img";
 
 const Training = () => {
   const { t } = useTranslation();
@@ -20,16 +21,12 @@ const Training = () => {
           {training.map((item) => (
             <div key={item.h2} className="card">
               <div className="img-box">
-                <picture>
-                  <source
-                    src={`${item.img}?nf_resize=fit&w=${window.innerWidth}`}
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    src={`${item.img}?nf_resize=fit&w=${window.innerWidth}`}
-                    alt=""
-                  />
-                </picture>
+                <Img
+                  lazy={false}
+                  cache={true}
+                  src={`${item.img}?nf_resize=fit&w=${window.innerWidth}`}
+                  alt=""
+                />
               </div>
               <section className="pt-4 text-light card-text">
                 <h3 className="ps-3 text-uppercase">{t(item.h2)}</h3>

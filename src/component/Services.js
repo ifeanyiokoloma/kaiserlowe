@@ -3,6 +3,7 @@ import StyledServices from "../styles/StyledServices";
 import { Box, Container, Typography } from "@mui/material";
 import { services } from "../asset/content";
 import { useTranslation } from "react-i18next";
+import Img from "react-cool-img";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -28,7 +29,9 @@ const Services = () => {
               </Typography>
             </article>
             <Box>
-              <img
+              <Img
+                lazy={false}
+                cache={true}
                 src={`${service.img}?nf_resize=fit&w=${window.innerWidth}`}
                 alt={service.h2}
               />
