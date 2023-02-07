@@ -8,7 +8,6 @@ import { StyledAbout } from "../styles/StyledAbout";
 const About = () => {
   // const [index, setIndex] = useState(0);
   const { t } = useTranslation();
-
   return (
     <StyledAbout className="py-5">
       <Container>
@@ -21,16 +20,10 @@ const About = () => {
               </Typography>
             </article>
             <div className="img-box">
-              <picture>
-                <source
-                  srcSet={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
-                  alt="pic"
-                />
-              </picture>
+              <img
+                src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
+                alt="pic"
+              />
             </div>
           </div>
           <LearnMore color="var(--primary)" />
