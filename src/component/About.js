@@ -21,7 +21,10 @@ const About = () => {
               </Typography>
             </article>
             <div className="img-box">
-              <Img lazy={false} cache={true}
+              <Img
+                lazy={false}
+                cache={true}
+                debounce={0}
                 src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
                 alt="pic"
               />

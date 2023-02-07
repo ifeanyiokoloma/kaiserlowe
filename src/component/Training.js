@@ -24,6 +24,7 @@ const Training = () => {
                 <Img
                   lazy={false}
                   cache={true}
+                  debounce={0}
                   src={`${item.img}?nf_resize=fit&w=${window.innerWidth}`}
                   alt=""
                 />

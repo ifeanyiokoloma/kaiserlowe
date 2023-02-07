@@ -32,6 +32,7 @@ const Services = () => {
               <Img
                 lazy={false}
                 cache={true}
+                debounce={0}
                 src={`${service.img}?nf_resize=fit&w=${window.innerWidth}`}
                 alt={service.h2}
               />
