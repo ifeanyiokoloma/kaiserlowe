@@ -37,7 +37,7 @@ const SlidingHero = () => {
             </StyledContainer>
           </Overlay>
           <img
-            src={`${text.img}?nf_resize=fit&w=${window.innerWidth < 768 ? window.innerWidth * 2 : window.innerWidth }&h=${window.innerHeight}`}
+            src={`${text.img}?nf_resize=fit&w=${window.innerWidth < 768 ? window.innerWidth * 4 : window.innerWidth }&h=${window.innerHeight}`}
             alt=""
           />
         </SplideSlide>
