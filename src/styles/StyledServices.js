@@ -1,37 +1,38 @@
-// import styled from "@emotion/styled";
 import styled from "styled-components";
 
 const StyledServices = styled.section`
   display: flex;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: hidden;
-  height: 85vh;
-  padding: 3rem;
-  position: relative;
+  height: 60vh;
+  padding-block: 1rem;
+  padding-left: 0.5rem;
+  width: 100%;
 
   .myCard {
-    flex-basis: 20%;
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50vw;
     flex-shrink: 0;
     border-radius: 20px;
-    margin-right: -10rem;
+    margin-right: -3rem;
     background: white;
-    color: ;
     text-align: justify;
     transition: transform 500ms;
-    gap: 1rem;
+    gap: 0.5rem;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
 
     & > * {
       height: 50%;
     }
 
     article {
-      padding-inline: 2rem;
-      padding-top: 3rem;
+      padding-inline: 1rem;
+      padding-top: 1rem;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 0.1rem;
     }
 
     h3 {
@@ -49,29 +50,17 @@ const StyledServices = styled.section`
     }
   }
 
-  & > .myCard {
-    box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
-  }
-
-  & > .myCard:not(:first-child):hover {
-    transform: translateX(-90px) rotateZ(5deg);
-  }
-
-  & > .myCard:first-child:hover {
-    transform: rotateZ(5deg);
-  }
-
   & > .myCard:first-child:hover ~ .myCard {
-    transform: translateX(160px);
+    transform: translateX(10px);
   }
 
   & > .myCard:not(:first-child):hover ~ .myCard {
-    transform: translateX(70px);
+    transform: translateX(3rem);
   }
 
   & > .myCard:nth-child(1) {
-    // box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
     z-index: 1;
+    margin-right: -0.5rem;
   }
 
   & > .myCard:nth-child(2) {
@@ -91,24 +80,58 @@ const StyledServices = styled.section`
   }
 
   & > .myCard:nth-child(6):hover {
-    transform: rotateZ(5deg) translateX(-130px);
+    transform: translateX(-3rem);
   }
 
   & > .bar {
-    border-radius: 5px;
-    width: 10px;
-    height: 100vh;
-    background: var(--primary);
-    z-index: 10;
-    right: 0;
-    top: 0;
-    position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.2) -7px 0 20px 2px;
-    margin: 1rem 0;
+    display: none;
   }
 
   @media (min-width: 768px) {
+    overflow-x: hidden;
+    height: 85vh;
+    padding: 3rem;
+    position: relative;
+
+    & > .myCard:not(:last-child):hover ~ .myCard {
+      transform: translateX(9rem);
+    }
+
+    & > .myCard:nth-child(1) {
+      margin-right: -10rem;
+    }
+
+    & > .myCard:nth-child(6):hover {
+      transform: translateX(-7rem);
+    }
+
+    & > .bar {
+      border-radius: 5px;
+      width: 10px;
+      height: 100vh;
+      background: var(--primary);
+      z-index: 10;
+      right: 0;
+      top: 0;
+      position: absolute;
+      box-shadow: rgba(0, 0, 0, 0.2) -7px 0 20px 2px;
+      margin: 1rem 0;
+      display: block;
+    }
+
     .myCard {
+      flex-basis: 20%;
+      flex-grow: 1;
+      margin-right: -10rem;
+      gap: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
+
+      article {
+        padding-inline: 2rem;
+        padding-top: 3rem;
+        gap: 1rem;
+      }
+
       h3 {
         font-size: 1rem;
       }

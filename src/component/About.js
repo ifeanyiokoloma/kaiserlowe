@@ -23,15 +23,11 @@ const About = () => {
             <div className="img-box">
               <picture>
                 <source
-                  srcSet={`${about[0].img}?nf_resize=fit&w=${
-                    window.innerWidth - 50
-                  }&h=${window.innerHeight - 40}`}
+                  srcSet={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
                   media="(min-width: 768px)"
                 />
                 <img
-                  src={`${about[0].img}?nf_resize=fit&w=${
-                    window.innerWidth
-                  }&h=${window.innerHeight - 40}`}
+                  src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
                   alt="pic"
                 />
               </picture>

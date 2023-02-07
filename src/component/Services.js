@@ -5,13 +5,18 @@ import { services } from "../asset/content";
 import { useTranslation } from "react-i18next";
 
 const Services = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
-    <Container>
-      <h2 className="text-center display-5 text-uppercase" style={{ fontFamily: "poppins", fontWeight: "bold" }}>{t("Services")}</h2>
-      <StyledServices className="my-5">
+    <Container className="my-5">
+      <h2
+        className="text-center display-5 text-uppercase"
+        style={{ fontFamily: "poppins", fontWeight: "bold" }}
+      >
+        {t("Services")}
+      </h2>
+      <StyledServices>
         {services.map((service) => (
-          <div key={service.h3} className="myCard d-flex flex-column">
+          <div key={service.h3} className="myCard">
             <article>
               <h3>{t(service.h3)}</h3>
               <Typography
@@ -25,9 +30,7 @@ const Services = () => {
             <Box>
               <picture>
                 <source
-                  src={`${service.img}?nf_resize=fit&w=${
-                    75 - window.innerWidth
-                  }`}
+                  src={`${service.img}?nf_resize=fit&w=${window.innerWidth}`}
                   media="(min-width: 768px)"
                 />
                 <img

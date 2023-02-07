@@ -18,14 +18,12 @@ const Training = () => {
                 <picture>
                   <source
                     src={`${item.img}?nf_resize=fit&w=${
-                      75 - window.innerWidth
+                      window.innerWidth
                     }`}
                     media="(min-width: 768px)"
                   />
                   <img
-                    src={`${item.img}?nf_resize=fit&w=${window.innerWidth}&h=${
-                      window.innerHeight - 40
-                    }`}
+                    src={`${item.img}?nf_resize=fit&w=${window.innerWidth}`}
                     alt=""
                   />
                 </picture>
