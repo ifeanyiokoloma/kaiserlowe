@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const Services = () => {
   const { t } = useTranslation();
   return (
-    <Container className="my-5">
+    <Container className="pt-5">
       <h2
         className="text-center display-5 text-uppercase"
         style={{ fontFamily: "poppins", fontWeight: "bold" }}

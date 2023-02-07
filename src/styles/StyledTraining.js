@@ -1,10 +1,8 @@
 import styled from "@emotion/styled";
 
 export const StyledTraining = styled.section`
-  h1 {
-    font-family: raleway;
-    margin-block: 1.5em;
-    font-weight: bold;;
+  h2 {
+    margin-block: 1em;
   }
 
   .cards {
@@ -22,7 +20,7 @@ export const StyledTraining = styled.section`
     border-width: 0;
   }
 
-  .card h2 {
+  .card h3 {
     font-family: poppins;
     font-size: 1.5rem;
     font-weight: 700;

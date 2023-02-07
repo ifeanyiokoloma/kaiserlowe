@@ -8,6 +8,7 @@ import StyledNavBar from "../../styles/StyledNavBar";
 import Logo from "./Logo";
 import MobileNav from "./NavList";
 import HamburgerIcon from "./mobile/HamburgerIcon"
+import BrandName from "../BrandName";
 
 function Navbar() {
   return (
@@ -17,7 +18,7 @@ function Navbar() {
         <Container maxWidth="xl">
           <Toolbar className="d-flex justify-content-between">
             <HamburgerIcon />
-            <Logo />
+            <Logo brandName={<BrandName />} />
             <MobileNav />
             <LangBtn />
           </Toolbar>
