@@ -25,7 +25,11 @@ const About = () => {
                 lazy={false}
                 cache={true}
                 debounce={0}
-                src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}`}
+                src={`${about[0].img}?nf_resize=fit&w=${
+                  window.innerWidth < 768
+                    ? window.innerWidth * 4
+                    : window.innerWidth
+                }`}
                 alt="pic"
               />
             </div>

@@ -33,7 +33,11 @@ const Services = () => {
                 lazy={false}
                 cache={true}
                 debounce={0}
-                src={`${service.img}?nf_resize=fit&w=${window.innerWidth}`}
+                src={`${service.img}?nf_resize=fit&w=${
+                  window.innerWidth < 768
+                    ? window.innerWidth * 4
+                    : window.innerWidth
+                }`}
                 alt={service.h2}
               />
             </Box>

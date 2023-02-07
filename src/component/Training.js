@@ -25,7 +25,11 @@ const Training = () => {
                   lazy={false}
                   cache={true}
                   debounce={0}
-                  src={`${item.img}?nf_resize=fit&w=${window.innerWidth}`}
+                  src={`${item.img}?nf_resize=fit&w=${
+                    window.innerWidth < 768
+                      ? window.innerWidth * 4
+                      : window.innerWidth
+                  }`}
                   alt=""
                 />
               </div>
