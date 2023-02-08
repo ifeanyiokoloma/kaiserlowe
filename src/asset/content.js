@@ -103,3 +103,16 @@ export const services = [
     img: "/images/services/road.jpg",
   },
 ];
+
+export const portfolio = [
+  {
+    work: "construction project",
+    img: "/images/portfolio/construction.jpg",
+  },
+  {
+    work: "house renovation project",
+    img: "/images/portfolio/renovation.jpg",
+  },
+  { work: "architecture project", img: "/images/portfolio/architecture.jpg" },
+  { work: "interior design project", img: "/images/portfolio/interior-design.jpg" },
+];

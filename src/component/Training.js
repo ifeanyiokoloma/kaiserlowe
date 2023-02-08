@@ -12,7 +12,7 @@ const Training = () => {
     <StyledTraining className="pt-5">
       <Container>
         <h2
-          className="text-center display-5 text-uppercase"
+          className="text-center display-6 text-uppercase"
           style={{ fontFamily: "poppins", fontWeight: "bold" }}
         >
           {t("Training")}

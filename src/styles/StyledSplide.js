@@ -5,15 +5,28 @@ import { Splide } from "@splidejs/react-splide";
 const StyledSplide = styled(Splide)`
   color: lightgray;
 
-  h1 {
-    font-family: roboto-slab;
-    font-weight: bold;
+  p {
+    font-weight: 100;
+    font-size: 0.5rem;
   }
 
-  p {
-    font-size: 1rem;
-    color: d3d3d3;
-    padding-inline: 3rem;
+  @media (min-width: 768px) {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-family: roboto-slab;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+      color: d3d3d3;
+      padding-inline: 3rem;
+    }
   }
 `;
 

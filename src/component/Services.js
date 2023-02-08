@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <Container className="pt-5">
       <h2
-        className="text-center display-5 text-uppercase"
+        className="text-center display-6 text-uppercase"
         style={{ fontFamily: "poppins", fontWeight: "bold" }}
       >
         {t("Services")}
@@ -18,16 +18,6 @@ const Services = () => {
       <StyledServices>
         {services.map((service) => (
           <div key={service.h3} className="myCard">
-            <article>
-              <h3>{t(service.h3)}</h3>
-              <Typography
-                component="p"
-                variant="body2"
-                className="text-justify"
-              >
-                {t(service.p)}
-              </Typography>
-            </article>
             <Box>
               <Img
                 lazy={false}
@@ -41,6 +31,16 @@ const Services = () => {
                 alt={service.h2}
               />
             </Box>
+            <article>
+              <h3>{t(service.h3)}</h3>
+              <Typography
+                component="p"
+                variant="body2"
+                className="text-justify"
+              >
+                {t(service.p)}
+              </Typography>
+            </article>
           </div>
         ))}
         <div className="bar"></div>

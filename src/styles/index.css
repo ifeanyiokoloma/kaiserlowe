@@ -3,6 +3,10 @@
   --secondary: #1976d2;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   height: 100%;
   width: 100%;

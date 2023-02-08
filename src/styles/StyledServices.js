@@ -7,6 +7,7 @@ const StyledServices = styled.section`
   height: 60vh;
   padding-block: 1rem;
   padding-left: 0.5rem;
+  // padding-left: 1rem;
   width: 100%;
 
   .myCard {
@@ -61,20 +62,25 @@ const StyledServices = styled.section`
   & > .myCard:nth-child(1) {
     z-index: 1;
     margin-right: -0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) -5px 5px 10px 0;
   }
 
   & > .myCard:nth-child(2) {
     z-index: 2;
   }
+
   & > .myCard:nth-child(3) {
     z-index: 3;
   }
+
   & > .myCard:nth-child(4) {
     z-index: 4;
   }
+
   & > .myCard:nth-child(5) {
     z-index: 5;
   }
+
   & > .myCard:nth-child(6) {
     z-index: 6;
   }
@@ -128,7 +134,7 @@ const StyledServices = styled.section`
 
       article {
         padding-inline: 2rem;
-        padding-top: 3rem;
+        padding-top: 1rem;
         gap: 1rem;
       }
 

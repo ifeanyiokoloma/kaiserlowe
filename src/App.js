@@ -39,6 +39,7 @@ import { createContext } from "react";
 import About from "./component/About";
 import Training from "./component/Training";
 import Services from "./component/Services";
+import Portfolio from "./component/Portfolio";
 
 export const LangContext = createContext();
 
@@ -52,6 +53,7 @@ function App() {
           <About />
           <Training />
           <Services />
+          <Portfolio />
         </NavbarProvider>
       </ThemeProvider>
     </LangContext.Provider>
