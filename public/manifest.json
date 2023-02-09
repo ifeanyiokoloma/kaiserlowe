@@ -1,6 +1,8 @@
 {
   "name": "Kaiserlowe",
   "short_name": "KLC",
+  "description": "Kaiserlowe is a construction company" ,
+  "id": "/",
   "icons": [
     {
       "src": "/images/favicon/android-chrome-192x192.png",
@@ -16,5 +18,5 @@
   "theme_color": "#ff9800",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "."
+  "start_url": "/"
 }
