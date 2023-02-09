@@ -1,6 +1,6 @@
 import React from "react";
 import { training } from "../asset/content";
-import { Container } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import LearnMore from "./LearnMore";
 import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
@@ -11,12 +11,9 @@ const Training = () => {
   return (
     <StyledTraining className="pt-5">
       <Container>
-        <h2
-          className="text-center display-6 text-uppercase"
-          style={{ fontFamily: "poppins", fontWeight: "bold" }}
-        >
+        <Typography variant="h4" component="h2">
           {t("Training")}
-        </h2>
+        </Typography>
         <div className="cards">
           {training.map((item) => (
             <div key={item.h2} className="card">
@@ -30,17 +27,25 @@ const Training = () => {
                       ? window.innerWidth * 4
                       : window.innerWidth
                   }`}
-                  alt=""
+                  alt={item.h2}
                 />
               </div>
-              <section className="pt-4 text-light card-text">
-                <h3 className="ps-3 text-uppercase">{t(item.h2)}</h3>
+              <Box
+                component="section"
+                bgcolor="primary.dark"
+                className="pt-4 text-light card-text"
+              >
+                <Typography variant="h5" component="h3" className="ps-3 mb-2">
+                  {t(item.h2)}
+                </Typography>
                 <ul>
                   {item.list.map((item) => (
-                    <li key={item}>{t(item)}</li>
+                    <Typography className="mt-1" component="li" variant="body2" key={item}>
+                      {t(item)}
+                    </Typography>
                   ))}
                 </ul>
-              </section>
+              </Box>
             </div>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
+import { Box } from "@mui/material";
 
-export const StyledAbout = styled.div`
-  background: var(--primary);
+export const StyledAbout = styled(Box)`
   position: relative;
   padding-block: 3rem;
 
@@ -25,13 +25,8 @@ export const StyledAbout = styled.div`
     color: white !important;
   }
 
-  p {
-    font-weight: 300;
-    font-size: 0.8rem;
-  }
-
   h2 {
-    font-weight: bolder;
+    color: whitesmoke;
   }
 
   .img-box {
@@ -43,7 +38,7 @@ export const StyledAbout = styled.div`
     width: 100%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .content {
       flex-direction: row;
       background: rgba(0, 0, 0, 0.2);

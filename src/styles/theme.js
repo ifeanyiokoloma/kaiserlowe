@@ -4,14 +4,26 @@ import { orange, blue } from "@mui/material/colors";
 export let Theme = createTheme({
   palette: {
     primary: {
+      dark: orange[700],
       main: orange[500],
     },
+
     secondary: {
+      light: blue[300],
       main: blue[700],
     },
     neutral: {
       light: "white",
       dark: "black",
+    },
+  },
+
+  typography: {
+    h2: {
+      fontFamily: "roboto-slab",
+    },
+    body2: {
+      fontWeight: 200,
     },
   },
 
@@ -30,6 +42,15 @@ export let Theme = createTheme({
       },
     },
     MuiTypography: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          fontFamily: "Poppins",
+        },
+      },
+    },
+    MuiList: {
       styleOverrides: {
         // Name of the slot
         root: {

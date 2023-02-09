@@ -4,28 +4,26 @@ const StyledServices = styled.section`
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 60vh;
+  height: 70vh;
   padding-block: 1rem;
   padding-left: 0.5rem;
-  // padding-left: 1rem;
   width: 100%;
 
   .myCard {
     display: flex;
     flex-direction: column;
-    flex-basis: 50vw;
+    flex-basis: 60vw;
     flex-shrink: 0;
     border-radius: 20px;
     margin-right: -3rem;
     background: white;
-    text-align: justify;
     transition: transform 500ms;
     gap: 0.5rem;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
 
-    & > * {
-      height: 50%;
+    & > .img-box {
+      height: 40%;
     }
 
     article {
@@ -34,20 +32,14 @@ const StyledServices = styled.section`
       display: flex;
       flex-direction: column;
       gap: 0.1rem;
-    }
 
-    h3 {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bolder;
-      font-family: poppins;
-      font-size: 0.8rem;
-    }
+      h3 {
+        font-size: 0.9rem !important;
+      }
 
-    p {
-      font-weight: 300;
-      font-size: 0.5rem;
-      font-family: poppins;
+      p {
+        font-size: 0.75rem !important;
+      }
     }
   }
 
@@ -95,7 +87,7 @@ const StyledServices = styled.section`
 
   @media (min-width: 768px) {
     overflow-x: hidden;
-    height: 85vh;
+    height: 60vh;
     padding: 3rem;
     position: relative;
 
@@ -132,32 +124,20 @@ const StyledServices = styled.section`
       gap: 1rem;
       box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
 
+      & > .img-box {
+        height: 50%;
+      }
+
       article {
         padding-inline: 2rem;
         padding-top: 1rem;
         gap: 1rem;
       }
-
-      h3 {
-        font-size: 1rem;
-      }
-
-      p {
-        font-size: 0.7rem;
-      }
     }
   }
 
-  @media (min-width: 1024px) {
-    .myCard {
-      h3 {
-        font-size: 1.3rem;
-      }
-
-      p {
-        font-size: 0.7rem;
-      }
-    }
+  @media (min-width: 768px) {
+    height: 70vh;
   }
 `;
 

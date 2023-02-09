@@ -9,16 +9,13 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <Container className="pt-5">
-      <h2
-        className="text-center display-6 text-uppercase"
-        style={{ fontFamily: "poppins", fontWeight: "bold" }}
-      >
+      <Typography sx={{ fontWeight: "bold" }} variant="h4" component="h2">
         {t("Services")}
-      </h2>
+      </Typography>
       <StyledServices>
         {services.map((service) => (
           <div key={service.h3} className="myCard">
-            <Box>
+            <Box className="img-box">
               <Img
                 lazy={false}
                 cache={true}
@@ -32,7 +29,9 @@ const Services = () => {
               />
             </Box>
             <article>
-              <h3>{t(service.h3)}</h3>
+              <Typography variant="h5" component="h3">
+                {t(service.h3)}
+              </Typography>
               <Typography
                 component="p"
                 variant="body2"

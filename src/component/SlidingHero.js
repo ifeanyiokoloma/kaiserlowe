@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css";
 import { heroText } from "../asset/content";
 import StyledSplide, { Overlay, StyledContainer } from "../styles/StyledSplide";
+import { Typography } from "@mui/material";
 
 const SlidingHero = () => {
   const { t } = useTranslation();
@@ -32,13 +33,29 @@ const SlidingHero = () => {
         <SplideSlide key={text.h1}>
           <Overlay>
             <StyledContainer>
-              <h1 className="display-4 text-uppercase">{t(text.h1)}</h1>
-              <p className="lead tablet-width raleway">{t(text.p)}</p>
+              <Typography
+                variant="h2"
+                component="h1"
+                className="text-uppercase"
+              >
+                {t(text.h1)}
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{ color: "#d3d3d3" }}
+                className="tablet-width raleway"
+              >
+                {t(text.p)}
+              </Typography>
             </StyledContainer>
           </Overlay>
           <img
-            src={`${text.img}?nf_resize=fit&w=${window.innerWidth < 768 ? window.innerWidth * 4 : window.innerWidth }&h=${window.innerHeight}`}
-            alt=""
+            src={`${text.img}?nf_resize=fit&w=${
+              window.innerWidth < 768
+                ? window.innerWidth * 4
+                : window.innerWidth
+            }&h=${window.innerHeight}`}
+            alt={text.h1}
           />
         </SplideSlide>
       ))}

@@ -3,28 +3,12 @@ import { Container } from "@mui/material";
 import { Splide } from "@splidejs/react-splide";
 
 const StyledSplide = styled(Splide)`
-  color: lightgray;
-
-  p {
-    font-weight: 100;
-    font-size: 0.5rem;
-  }
-
-  @media (min-width: 768px) {
-    p {
-      font-size: 0.7rem;
-    }
-  }
+h1 {
+  font-weight: bold;
+}
 
   @media (min-width: 1024px) {
-    h1 {
-      font-family: roboto-slab;
-      font-weight: bold;
-    }
-
     p {
-      font-size: 1rem;
-      color: d3d3d3;
       padding-inline: 3rem;
     }
   }

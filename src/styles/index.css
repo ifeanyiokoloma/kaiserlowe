@@ -30,3 +30,13 @@ img {
 .raleway {
   font-family: raleway !important;
 }
+
+h1, h2 {
+  font-family: "roboto-slab" !important;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p, li {
+  font-weight: 200;
+}

@@ -10,13 +10,22 @@ const About = () => {
   // const [index, setIndex] = useState(0);
   const { t } = useTranslation();
   return (
-    <StyledAbout className="py-5">
+    <StyledAbout className="py-5" bgcolor="primary.dark">
       <Container>
+        <Typography variant="h4" component="h2" mb={3}>
+          {t(about[0].h2)}
+        </Typography>
         <div className="articleContainer">
           <div className="content shadow">
             <article>
-              <h2 className="display-4">{t(about[0].h2)}</h2>
-              <Typography variant="body2" component="p">
+              <Typography variant="h2" component="h3" color="white">
+                {t("Meet us")}
+              </Typography>
+              <Typography
+                sx={{ fontWeight: 200 }}
+                variant="body2"
+                component="p"
+              >
                 {t(about[0].content)}
               </Typography>
             </article>
@@ -30,7 +39,7 @@ const About = () => {
                     ? window.innerWidth * 4
                     : window.innerWidth
                 }`}
-                alt="pic"
+                alt={about[0].h2}
               />
             </div>
           </div>

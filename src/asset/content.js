@@ -74,12 +74,12 @@ export const training = [
 export const services = [
   {
     h3: "Project Development",
-    p: "From land to Building – with Kaiser Löwe you enter soon into your new house! We develop a round concept, plan and organize the implementation of the most necessary use changes.",
+    p: "From land to Building – with Kaiser Löwe you enter soon into your new house! We develop a round concept, plan and organize the implementation.",
     img: "/images/services/drawing.jpg",
   },
   {
     h3: "Planning and Building",
-    p: "Are you seeking a partner for property development and building? look no further than Kaiser Löwe LTD, We have all the knowledge you need.",
+    p: "Are you seeking a partner for property development and building? Look no further than Kaiser Löwe LTD.",
     img: "/images/services/building.jpg",
   },
   {

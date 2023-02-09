@@ -1,4 +1,3 @@
-import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fontsource/raleway";
 import "@fontsource/raleway/100.css";
@@ -30,6 +29,7 @@ import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
 import "@fontsource/poppins/800.css";
 import "@fontsource/poppins/900.css";
+import "./styles/index.css";
 import SlidingHero from "./component/SlidingHero";
 import { ThemeProvider } from "@mui/material";
 import Theme from "./styles/theme";

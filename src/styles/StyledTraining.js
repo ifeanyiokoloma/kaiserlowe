@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledTraining = styled.section`
   h2 {
-    margin-block: 1em;
+    margin-block: 2em;
+    font-weight: bold;
   }
 
   .cards {
@@ -12,17 +13,11 @@ export const StyledTraining = styled.section`
   }
 
   .card-text {
-    background: var(--primary);
-    height: 40%;
+    height: 50%;
 
     h3 {
-      // font-family: poppins;
-      // font-size: 1.5rem;
-      // font-weight: 700;
+      font-family: raleway;
       text-transform: uppercase;
-      font-weight: bolder;
-      font-family: poppins;
-      font-size: 0.8rem;
     }
   }
 
@@ -30,45 +25,30 @@ export const StyledTraining = styled.section`
     border-width: 0;
   }
 
-  li {
-    // font-size: 0.75rem;
-    // font-family: poppins;
-    // font-weight: 400;
-    font-weight: 300;
-    font-size: 0.5rem;
-    font-family: poppins;
-  }
-
   @media (min-width: 768px) {
     .cards {
       flex-direction: row;
+      flex-flow: wrap;
     }
 
     .card {
-      flex-basis: 33.3%;
-      height: 70vh;
-
-      h3 {
-        font-size: 1rem;
-      }
-
-      li {
-        font-size: 0.7rem;
-      }
+      flex-basis: 50%;
     }
 
     .img-box {
-      height: 60%;
+      height: 50%;
     }
   }
 
   @media (min-width: 1024px) {
-    h3 {
-      font-size: 1.3rem;
+    .cards {
+      flex-direction: row;
+      flex-flow: nowrap;
     }
 
-    p {
-      font-size: 0.7rem;
+    .card {
+      flex-basis: 33.3%;
+      height: 80vh;
     }
   }
 `;
