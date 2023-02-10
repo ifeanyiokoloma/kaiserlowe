@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fontsource/raleway";
-import "@fontsource/raleway/100.css";
 import "@fontsource/raleway/200.css";
 import "@fontsource/raleway/300.css";
 import "@fontsource/raleway/400.css";
