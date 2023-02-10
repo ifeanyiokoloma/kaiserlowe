@@ -25,7 +25,7 @@ const Services = () => {
                     ? window.innerWidth * 4
                     : window.innerWidth
                 }`}
-                alt={service.h2}
+                alt={service.h3}
               />
             </Box>
             <article>
