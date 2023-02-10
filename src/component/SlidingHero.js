@@ -18,7 +18,7 @@ const SlidingHero = () => {
         height: "100vh",
         width: "100%",
         type: "loop",
-        speed: 1000,
+        speed: 500,
         reducedMotion: true,
         cover: true,
         arrows: false,
