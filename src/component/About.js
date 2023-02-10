@@ -34,13 +34,20 @@ const About = () => {
                 lazy={false}
                 cache={true}
                 debounce={0}
+                src={`${about[0].img}?nf_resize=fit&w=${window.innerWidth}&h=${window.innerHeight}`}
+                alt={about[0].h2}
+              />
+              {/* <Img
+                lazy={false}
+                cache={true}
+                debounce={0}
                 src={`${about[0].img}?nf_resize=fit&w=${
                   window.innerWidth < 768
                     ? window.innerWidth * 4
                     : window.innerWidth
                 }`}
                 alt={about[0].h2}
-              />
+              /> */}
             </div>
           </div>
           <LearnMore color="var(--primary)" />

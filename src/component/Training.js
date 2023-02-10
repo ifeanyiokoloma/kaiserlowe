@@ -22,11 +22,7 @@ const Training = () => {
                   lazy={false}
                   cache={true}
                   debounce={0}
-                  src={`${item.img}?nf_resize=fit&w=${
-                    window.innerWidth < 768
-                      ? window.innerWidth * 4
-                      : window.innerWidth
-                  }`}
+                  src={`${item.img}?nf_resize=fit&w=${window.innerWidth}&h=${window.innerHeight}`}
                   alt={item.h2}
                 />
               </div>
@@ -40,7 +36,12 @@ const Training = () => {
                 </Typography>
                 <ul>
                   {item.list.map((item) => (
-                    <Typography className="mt-1" component="li" variant="body2" key={item}>
+                    <Typography
+                      className="mt-1"
+                      component="li"
+                      variant="body2"
+                      key={item}
+                    >
                       {t(item)}
                     </Typography>
                   ))}

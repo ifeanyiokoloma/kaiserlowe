@@ -42,6 +42,7 @@ const SlidingHero = () => {
               </Typography>
               <Typography
                 variant="subtitle1"
+                component="p"
                 sx={{ color: "#d3d3d3" }}
                 className="tablet-width raleway"
               >
@@ -50,11 +51,7 @@ const SlidingHero = () => {
             </StyledContainer>
           </Overlay>
           <img
-            src={`${text.img}?nf_resize=fit&w=${
-              window.innerWidth < 768
-                ? window.innerWidth * 4
-                : window.innerWidth
-            }&h=${window.innerHeight}`}
+            src={`${text.img}?nf_resize=fit&w=${window.innerWidth}&h=${window.innerHeight}`}
             alt={text.h1}
           />
         </SplideSlide>
