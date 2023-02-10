@@ -9,17 +9,12 @@ const Portfolio = () => {
   const { t } = useTranslation();
   return (
     <Container className="py-5">
-      <Typography variant="h4" component="h2" fontWeight="bold">
-        {t("Portfolio")}
-      </Typography>
+      <Typography variant="h4" component="h2" fontWeight="">{t("Portfolio")}</Typography>
       <StyledPortfolio>
         {portfolio.map((project) => (
           <div key={project.work} className="box">
             <div className="img-box">
-              <Img
-                src={`${project.img}?nf_resize=fit&w=${window.innerWidth}&h=${window.innerHeight}`}
-                alt={project.work}
-              />
+              <Img src={project.img} alt={project.work} />
             </div>
             <div className="text">
               <h3>{t(project.work)}</h3>

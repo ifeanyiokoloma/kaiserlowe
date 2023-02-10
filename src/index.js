@@ -6,13 +6,10 @@ import Loading from "./component/Loading";
 import "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <StrictMode>
-    <Suspense
-      fallback={
-        <Loading />
-      }
-    >
+    <Suspense fallback={<Loading />}>
       <App />
     </Suspense>
   </StrictMode>
