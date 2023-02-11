@@ -11,7 +11,7 @@ const Training = () => {
   return (
     <StyledTraining className="pt-5">
       <Container>
-        <Typography variant="h4" component="h2">
+        <Typography variant="h4" component="h2" mb={5}>
           {t("Training")}
         </Typography>
         <div className="cards">
@@ -28,7 +28,7 @@ const Training = () => {
               </div>
               <Box
                 component="section"
-                bgcolor="primary.dark"
+                bgcolor="primary.main"
                 className="pt-4 text-light card-text"
               >
                 <Typography variant="h5" component="h3" className="ps-3 mb-2">

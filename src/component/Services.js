@@ -9,7 +9,12 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <Container className="pt-5">
-      <Typography sx={{ fontWeight: "bold" }} variant="h4" component="h2">
+      <Typography
+        mb={5}
+        sx={{ fontWeight: "bold" }}
+        variant="h4"
+        component="h2"
+      >
         {t("Services")}
       </Typography>
       <StyledServices>

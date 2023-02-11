@@ -35,6 +35,7 @@ const StyledServices = styled.section`
 
       h3 {
         font-size: 0.9rem !important;
+        font-weight: bold;
       }
 
       p {
@@ -88,7 +89,6 @@ const StyledServices = styled.section`
   @media (min-width: 768px) {
     overflow-x: hidden;
     height: 60vh;
-    padding: 3rem;
     position: relative;
 
     & > .myCard:not(:last-child):hover ~ .myCard {

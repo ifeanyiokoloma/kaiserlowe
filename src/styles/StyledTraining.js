@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
 export const StyledTraining = styled.section`
-  h2 {
-    margin-block: 2em;
-    font-weight: bold;
-  }
-
   .cards {
     display: flex;
     flex-direction: column;
@@ -16,7 +11,6 @@ export const StyledTraining = styled.section`
     height: 50%;
 
     h3 {
-      font-family: raleway;
       text-transform: uppercase;
     }
   }

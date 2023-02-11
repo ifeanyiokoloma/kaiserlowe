@@ -46,7 +46,6 @@ const StyledPortfolio = styled.div`
       text-transform: uppercase;
       text-align: center;
       font-family: poppins;
-      font-weight: bold;
     }
   }
 

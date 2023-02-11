@@ -9,7 +9,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
   return (
     <Container className="py-5">
-      <Typography variant="h4" component="h2" fontWeight="">{t("Portfolio")}</Typography>
+      <Typography variant="h4" component="h2">{t("Portfolio")}</Typography>
       <StyledPortfolio>
         {portfolio.map((project) => (
           <div key={project.work} className="box">
