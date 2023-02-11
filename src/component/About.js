@@ -18,7 +18,7 @@ const About = () => {
           </Typography>
           <div className="content shadow">
             <article>
-              <h3 sx={{fontWeight: "lighter"}} className="display-4">{t("Meet us")}</h3>
+              <h3 className="display-4">{t("Meet us")}</h3>
               <Typography
                 sx={{ fontWeight: 200 }}
                 variant="body2"

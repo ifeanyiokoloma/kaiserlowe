@@ -9,7 +9,7 @@ import Img from "react-cool-img";
 const Training = () => {
   const { t } = useTranslation();
   return (
-    <StyledTraining className="pt-5">
+    <StyledTraining className="py-5">
       <Container>
         <Typography variant="h4" component="h2" mb={5}>
           {t("Training")}
