@@ -9,7 +9,7 @@ import LearnMore from "./LearnMore";
 const Services = () => {
   const { t } = useTranslation();
   return (
-    <Box className="py-5">
+    <Box bgcolor="primary.main" className="py-5">
       <Container >
         <Typography
           mb={5}
