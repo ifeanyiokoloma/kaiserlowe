@@ -40,6 +40,7 @@ import Training from "./component/Training";
 import Services from "./component/Services";
 import Portfolio from "./component/Portfolio";
 import Team from "./component/Team";
+import MobilePortfolio from "./component/MobilePortfolio";
 
 export const LangContext = createContext();
 
@@ -54,6 +55,7 @@ function App() {
           <Training />
           <Services />
           <Portfolio />
+          <MobilePortfolio />
           <Team />
         </NavbarProvider>
       </ThemeProvider>

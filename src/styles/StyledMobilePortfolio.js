@@ -1,16 +1,13 @@
+import { SplideSlide } from "@splidejs/react-splide";
 import styled from "styled-components";
 
-const StyledPortfolio = styled.div`
-    display: grid;
-  grid-auto-rows: 50vh;
-  width: 100%;
-  overflow-x: auto;
-  gap: 1rem;
-  padding-block: 3rem;
+const StyledMobilePortfolio = styled(SplideSlide)`
+  padding-block: 1rem;
 
   .box {
     position: relative;
     overflow: hidden;
+    height: 100%;
 
     &:hover > .text {
       opacity: 1;
@@ -47,10 +44,6 @@ const StyledPortfolio = styled.div`
       font-family: poppins;
     }
   }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
 `;
 
-export default StyledPortfolio;
+export default StyledMobilePortfolio;

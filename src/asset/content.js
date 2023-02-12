@@ -116,3 +116,11 @@ export const portfolio = [
   { work: "architecture project", img: "/images/portfolio/architecture.jpg" },
   { work: "interior design project", img: "/images/portfolio/interior-design.jpg" },
 ];
+
+
+export const contact = [
+  {
+    h3: "Address",
+  p: ""
+  }
+]
