@@ -34,7 +34,7 @@ const SlidingHero = () => {
           <Overlay>
             <StyledContainer>
               <Typography
-                variant="h2"
+                variant="h3"
                 component="h1"
                 className="text-uppercase"
               >
