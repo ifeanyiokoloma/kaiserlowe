@@ -15,24 +15,26 @@ const Portfolio = () => {
           "url(/images/portfolio/bg.jpg) center/cover no-repeat fixed",
       }}
     >
-      <Container className="py-5">
-        <Typography color="white" variant="h4" component="h2">
-          {t("Portfolio")}
-        </Typography>
-        <StyledPortfolio>
-          {portfolio.map((project) => (
-            <div key={project.work} className="box">
-              <div className="img-box">
-                <Img src={project.img} alt={project.work} />
+      <Box sx={{ background: "rgba(255, 152, 0, .5)" }}>
+        <Container className="py-5">
+          <Typography color="white" variant="h4" component="h2">
+            {t("Portfolio")}
+          </Typography>
+          <StyledPortfolio>
+            {portfolio.map((project) => (
+              <div key={project.work} className="box">
+                <div className="img-box">
+                  <Img src={project.img} alt={project.work} />
+                </div>
+                <div className="text">
+                  <h3>{t(project.work)}</h3>
+                </div>
               </div>
-              <div className="text">
-                <h3>{t(project.work)}</h3>
-              </div>
-            </div>
-          ))}
-        </StyledPortfolio>
-        <LearnMore color="white" bgc="var(--primary)" />
-      </Container>
+            ))}
+          </StyledPortfolio>
+          <LearnMore color="white" bgc="var(--primary)" />
+        </Container>
+      </Box>
     </Box>
   );
 };
