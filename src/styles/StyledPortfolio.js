@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledPortfolio = styled.div`
-  display: grid;
+    display: grid;
   grid-template-columns: repeat(4, calc(100% - 2rem));
   grid-auto-rows: 50vh;
   width: 100%;

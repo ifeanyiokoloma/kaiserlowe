@@ -16,7 +16,7 @@ const About = () => {
           <Typography variant="h4" component="h2" mb={5}>
             {t(about[0].h2)}
           </Typography>
-          <div className="content shadow">
+          <div className="content">
             <article>
               <h3 className="display-4">{t("Meet us")}</h3>
               <Typography

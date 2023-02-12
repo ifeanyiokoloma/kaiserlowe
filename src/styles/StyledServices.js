@@ -20,7 +20,7 @@ const StyledServices = styled.section`
     transition: transform 500ms;
     gap: 0.5rem;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) -20px 0 20px 0;
 
     & > .img-box {
       height: 40%;
@@ -55,7 +55,7 @@ const StyledServices = styled.section`
   & > .myCard:nth-child(1) {
     z-index: 1;
     margin-right: -0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.3) -5px 5px 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) -5px 0 10px 0;
   }
 
   & > .myCard:nth-child(2) {
@@ -107,7 +107,7 @@ const StyledServices = styled.section`
       border-radius: 5px;
       width: 10px;
       height: 100vh;
-      background: var(--primary);
+      background: var(--secondary);
       z-index: 10;
       right: 0;
       top: 0;
@@ -122,7 +122,7 @@ const StyledServices = styled.section`
       flex-grow: 1;
       margin-right: -10rem;
       gap: 1rem;
-      box-shadow: rgba(0, 0, 0, 0.3) -20px 5px 20px 0;
+      box-shadow: rgba(0, 0, 0, 0.3) -20px 0 20px 0;
 
       & > .img-box {
         height: 50%;
