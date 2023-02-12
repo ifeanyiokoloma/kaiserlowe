@@ -3,7 +3,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <Box bgcolor="primary.main" p={5}>
+    <Box p={5}>
       <Container>
         <Stack justifyContent="center" alignItems="center" direction={{ xs: "column", sm: "row" }} spacing={3}>
           <Box
@@ -15,7 +15,6 @@ const Team = () => {
             <img src="/images/team/ceo.jpg" alt="ceo" />
           </Box>
           <Stack
-            color="white"
             className="rounded py-3 shadow"
             spacing={{ xs: 1, sm: 2, md: 4 }}
           >
@@ -24,14 +23,6 @@ const Team = () => {
                 Christopher Okonkwo{" "}
               </Typography>
               <Typography variant="subtitle1">MD/CEO</Typography>
-            </Container>
-
-            <Container maxWidth="xs">
-              <Typography variant="caption">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repudiandae recusandae nesciunt veritatis iste velit natus
-                deserunt totam rerum placeat autem.
-              </Typography>
             </Container>
           </Stack>
         </Stack>
