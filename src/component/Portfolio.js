@@ -9,7 +9,8 @@ import LearnMore from "./LearnMore";
 const Portfolio = () => {
   const { t } = useTranslation();
   return (
-    <Box display={{xs: "none", lg: "block"}}
+    <Box
+      display={{ xs: "none", lg: "block" }}
       sx={{
         background:
           "url(/images/portfolio/bg.jpg) center/cover no-repeat fixed",

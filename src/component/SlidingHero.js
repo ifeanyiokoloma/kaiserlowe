@@ -34,7 +34,7 @@ const SlidingHero = () => {
           <Overlay>
             <StyledContainer>
               <Typography
-                variant="h3"
+                variant="h2"
                 component="h1"
                 className="text-uppercase"
               >
@@ -50,10 +50,7 @@ const SlidingHero = () => {
               </Typography>
             </StyledContainer>
           </Overlay>
-          <img
-            src={text.img}
-            alt={text.h1}
-          />
+          <img src={text.img} alt={text.h1} />
         </SplideSlide>
       ))}
     </StyledSplide>
