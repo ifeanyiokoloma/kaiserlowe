@@ -5,8 +5,9 @@ import Img from "react-cool-img";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
 import { Box } from "@mui/system";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import StyledMobilePortfolio from "../styles/StyledMobilePortfolio";
+import LearnMore from "./LearnMore";
 
 const MobilePortfolio = () => {
   const { t } = useTranslation();
@@ -19,7 +20,8 @@ const MobilePortfolio = () => {
       }}
     >
       <Box sx={{ background: "rgba(255, 152, 0, .5)" }}>
-        <Container>
+        <Container className="py-5">
+          <Typography variant="h4" component="h2" color="white" className="pb-3">Portfolio</Typography>
           <Splide
             options={{
               autoplay: true,
@@ -34,7 +36,7 @@ const MobilePortfolio = () => {
               interval: 6000,
               lazyLoad: false,
               keyboard: true,
-              height: "70vh",
+              height: "50vh",
             }}
             aria-label="Portfolio images"
           >
@@ -51,6 +53,7 @@ const MobilePortfolio = () => {
               </StyledMobilePortfolio>
             ))}
           </Splide>
+            <LearnMore color="white" bgc="var(--primary)" />
         </Container>
       </Box>
     </Box>

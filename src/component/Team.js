@@ -26,7 +26,7 @@ const Team = () => {
           >
             <Container>
               <Typography fontWeight="bold" variant="h6" textAlign="center">
-                Christopher Okonkwo{" "}
+                Christopher Okonkwo
               </Typography>
               <Typography variant="subtitle1" textAlign="center">
                 MD/CEO

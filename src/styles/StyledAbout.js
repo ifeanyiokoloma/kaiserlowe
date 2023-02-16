@@ -29,10 +29,6 @@ export const StyledAbout = styled(Box)`
     color: whitesmoke;
   }
 
-  h3 {
-    font-weight: 100 !important;
-  }
-
   .img-box {
     max-height: 60vh;
   }

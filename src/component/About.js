@@ -18,7 +18,7 @@ const About = () => {
           </Typography>
           <div className="content">
             <article>
-              <h3 className="display-4">{t("Meet us")}</h3>
+              <Typography variant="h5" component="h3">{t("Meet us")}</Typography>
               <Typography
                 sx={{ fontWeight: 200 }}
                 variant="body2"

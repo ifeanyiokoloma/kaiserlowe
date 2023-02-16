@@ -1,7 +1,7 @@
 import React from "react";
 import { contact } from "../asset/content";
 import { Box } from "@mui/system";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import StyledContact from "../styles/StyledContact";
 
 const Contact = () => {
@@ -13,8 +13,9 @@ const Contact = () => {
       }}
     >
       <Box sx={{ background: "rgba(255, 152, 0, .8)" }}>
-        <Container>
-          <StyledContact display="flex" paddingY="3rem">
+        <Container className="py-5">
+          <Typography variant="h4" component="h2">Contact</Typography>
+          <StyledContact display="flex" flexDirection={{xs: "column", sm: "row"}} paddingY="3rem">
             {contact.map((item) => (
               <Box
                 key={item.h3}
@@ -27,8 +28,8 @@ const Contact = () => {
                 alignItems="center"
               >
                 {item.icon}
-                <h3>{item.h3}</h3>
-                <p>{item.content}</p>
+                <Typography variant="h4" component="h3">{item.h3}</Typography>
+                <Typography variant="body1" component="p">{item.content}</Typography>
               </Box>
             ))}
           </StyledContact>
