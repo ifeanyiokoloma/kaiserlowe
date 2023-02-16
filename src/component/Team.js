@@ -5,7 +5,12 @@ const Team = () => {
   return (
     <Box bgcolor="primary.main" p={5}>
       <Container>
-        <Stack justifyContent="center" alignItems="center" direction={{ xs: "column", sm: "row" }} spacing={3}>
+        <Stack
+          justifyContent="center"
+          alignItems="center"
+          direction={{ xs: "column", sm: "column" }}
+          spacing={3}
+        >
           <Box
             width={200}
             borderRadius="50%"
@@ -20,17 +25,11 @@ const Team = () => {
             spacing={{ xs: 1, sm: 2, md: 4 }}
           >
             <Container>
-              <Typography fontWeight="bold" variant="h6">
+              <Typography fontWeight="bold" variant="h6" textAlign="center">
                 Christopher Okonkwo{" "}
               </Typography>
-              <Typography variant="subtitle1">MD/CEO</Typography>
-            </Container>
-
-            <Container maxWidth="xs">
-              <Typography variant="caption">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repudiandae recusandae nesciunt veritatis iste velit natus
-                deserunt totam rerum placeat autem.
+              <Typography variant="subtitle1" textAlign="center">
+                MD/CEO
               </Typography>
             </Container>
           </Stack>

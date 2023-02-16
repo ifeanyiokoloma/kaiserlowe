@@ -1,3 +1,6 @@
+import { Email, LocationOn, Phone } from "@mui/icons-material";
+import React from "react";
+
 export const navItems = [
   "Home",
   "About",
@@ -114,13 +117,27 @@ export const portfolio = [
     img: "/images/portfolio/renovation.jpg",
   },
   { work: "architecture project", img: "/images/portfolio/architecture.jpg" },
-  { work: "interior design project", img: "/images/portfolio/interior-design.jpg" },
+  {
+    work: "interior design project",
+    img: "/images/portfolio/interior-design.jpg",
+  },
 ];
-
 
 export const contact = [
   {
     h3: "Address",
-  p: ""
-  }
-]
+    content:
+      "No 1 Pius Anolue Street Nkwere Ogidi Anambra State Nigeria, RC: 110 5062",
+    icon: <LocationOn fontSize="large" />,
+  },
+  {
+    h3: "Telephone",
+    content: "+2348104080042",
+    icon: <Phone fontSize="large" />,
+  },
+  {
+    h3: "Email",
+    content: "admin@kaiserlowe.com",
+    icon: <Email fontSize="large" />,
+  },
+];
