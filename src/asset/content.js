@@ -127,17 +127,17 @@ export const contact = [
   {
     h3: "Address",
     content:
-      "No 1 Pius Anolue Street Nkwere Ogidi Anambra State Nigeria, RC: 110 5062",
+      ["No 1 Pius Anolue Street Nkwere Ogidi Anambra State Nigeria", "RC: 110 5062"],
     icon: <LocationOn fontSize="large" />,
   },
   {
     h3: "Telephone",
-    content: "+2348104080042",
+    content:[ "+2348104080042", "+49 1521-4144270"],
     icon: <Phone fontSize="large" />,
   },
   {
     h3: "Email",
-    content: "admin@kaiserlowe.com",
+    content: ["admin@kaiserlowe.com", "info@kaiserlowe.com"],
     icon: <Email fontSize="large" />,
   },
 ];

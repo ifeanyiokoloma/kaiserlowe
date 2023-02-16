@@ -14,8 +14,15 @@ const Contact = () => {
     >
       <Box sx={{ background: "rgba(255, 152, 0, .8)" }}>
         <Container className="py-5">
-          <Typography variant="h4" component="h2">Contact</Typography>
-          <StyledContact display="flex" flexDirection={{xs: "column", sm: "row"}} paddingY="3rem">
+          <Typography variant="h4" component="h2">
+            Contact
+          </Typography>
+          <StyledContact
+            display="flex"
+            flexDirection={{ xs: "column", sm: "row" }}
+            paddingY="3rem"
+            rowGap="3rem"
+          >
             {contact.map((item) => (
               <Box
                 key={item.h3}
@@ -28,8 +35,14 @@ const Contact = () => {
                 alignItems="center"
               >
                 {item.icon}
-                <Typography variant="h4" component="h3">{item.h3}</Typography>
-                <Typography variant="body1" component="p">{item.content}</Typography>
+                <Typography variant="h4" component="h3">
+                  {item.h3}
+                </Typography>
+                {item.content.map((one) => (
+                  <Typography variant="body1" component="p">
+                    {one}
+                  </Typography>
+                ))}
               </Box>
             ))}
           </StyledContact>
