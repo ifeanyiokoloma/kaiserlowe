@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { LinkBtn } from "../styles/StyledLink";
 
-const LearnMore = ({color, bgc}) => {
+const LearnMore = ({color, bgc, link}) => {
   const {t} = useTranslation()
   return (
     <div className="text-center mt-5">
@@ -9,7 +10,7 @@ const LearnMore = ({color, bgc}) => {
         style={{ color: color, background: bgc }}
         className="btn btn-light poppins"
       >
-        {t("Learn more")}
+        <LinkBtn to={link}>{t("Learn more")}</LinkBtn>
       </button>
     </div>
   );

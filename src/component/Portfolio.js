@@ -33,7 +33,7 @@ const Portfolio = () => {
               </div>
             ))}
           </StyledPortfolio>
-          <LearnMore color="white" bgc="var(--primary)" />
+          <LearnMore link="/portfolio" color="white" bgc="var(--primary)" />
         </Container>
       </Box>
     </Box>

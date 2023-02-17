@@ -61,7 +61,7 @@ const Training = () => {
                 </div>
               ))}
             </div>
-            <LearnMore color="white" bgc="var(--primary)" />
+            <LearnMore link="/training" color="white" bgc="var(--primary)" />
           </Container>
         </StyledTraining>
       </Box>

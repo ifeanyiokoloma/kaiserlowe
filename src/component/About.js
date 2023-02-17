@@ -48,7 +48,7 @@ const About = () => {
               />
             </div>
           </div>
-          <LearnMore color="var(--primary)" />
+          <LearnMore link="/about" color="var(--primary)" />
         </div>
       </Container>
     </StyledAbout>
