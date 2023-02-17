@@ -30,20 +30,12 @@ import "@fontsource/poppins/700.css";
 import "@fontsource/poppins/800.css";
 import "@fontsource/poppins/900.css";
 import "./styles/index.css";
-import SlidingHero from "./component/SlidingHero";
 import { ThemeProvider } from "@mui/material";
 import Theme from "./styles/theme";
 import NavbarProvider from "./context/NavbarContext";
-import Navbar from "./component/navbar/Navbar";
 import { createContext } from "react";
-import About from "./component/About";
-import Training from "./component/Training";
-import Services from "./component/Services";
-import Portfolio from "./component/Portfolio";
-import Team from "./component/Team";
-import MobilePortfolio from "./component/MobilePortfolio";
-import Contact from "./component/Contact";
-import { Footer } from "./component/Footer";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./services/router";
 
 export const LangContext = createContext();
 
@@ -52,16 +44,7 @@ function App() {
     <LangContext.Provider value={{}}>
       <ThemeProvider theme={Theme}>
         <NavbarProvider>
-          <Navbar />
-          <SlidingHero />
-          <About />
-          <Training />
-          <Services />
-          <Portfolio />
-          <MobilePortfolio />
-          <Team />
-          <Contact />
-          <Footer />
+          <RouterProvider router={router} />
         </NavbarProvider>
       </ThemeProvider>
     </LangContext.Provider>

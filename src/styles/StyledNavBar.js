@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
 import { Box, Drawer } from "@mui/material";
+import styled from "styled-components";
 
 const StyledNavBar = styled(Box)`
   display: flex;

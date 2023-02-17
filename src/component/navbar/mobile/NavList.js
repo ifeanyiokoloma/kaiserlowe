@@ -1,7 +1,8 @@
-import React from 'react'
-import { StyledNavList } from '../../../styles/StyledNavBar';
-import { navItems } from '../../../asset/content';
-import { List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import React from "react";
+import { StyledNavList } from "../../../styles/StyledNavBar";
+import { navItems } from "../../../asset/content";
+import { List, ListItem, ListItemButton, ListItemText } from "@mui/material";
+import StyledLink from "../../../styles/StyledLink";
 
 const NavList = () => {
   return (
@@ -12,14 +13,15 @@ const NavList = () => {
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText
                 primary={
-                  <span
+                  <StyledLink
+                    to={item === "home" ? "/" : `/${item}`}
                     style={{
                       fontFamily: "poppins",
                       textTransform: "uppercase",
                     }}
                   >
                     {item}
-                  </span>
+                  </StyledLink>
                 }
               />
             </ListItemButton>
@@ -28,6 +30,6 @@ const NavList = () => {
       </List>
     </StyledNavList>
   );
-}
+};
 
-export default NavList
+export default NavList;

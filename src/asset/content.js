@@ -2,13 +2,12 @@ import { Email, LocationOn, Phone } from "@mui/icons-material";
 import React from "react";
 
 export const navItems = [
-  "Home",
-  "About",
-  "Services",
-  "Trainning",
-  "Portfolio",
-  "Team",
-  "Contact",
+  "home",
+  "about",
+  "services",
+  "training",
+  "portfolio",
+  "contact",
 ];
 
 export const heroText = [
@@ -126,13 +125,15 @@ export const portfolio = [
 export const contact = [
   {
     h3: "Address",
-    content:
-      ["No 1 Pius Anolue Street Nkwere Ogidi Anambra State Nigeria", "RC: 110 5062"],
+    content: [
+      "No 1 Pius Anolue Street Nkwere Ogidi Anambra State Nigeria",
+      "RC: 110 5062",
+    ],
     icon: <LocationOn fontSize="large" />,
   },
   {
     h3: "Telephone",
-    content:[ "+2348104080042", "+49 1521-4144270"],
+    content: ["+2348104080042", "+49 1521-4144270"],
     icon: <Phone fontSize="large" />,
   },
   {

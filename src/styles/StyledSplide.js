@@ -1,11 +1,11 @@
-import styled from "@emotion/styled";
 import { Container } from "@mui/material";
 import { Splide } from "@splidejs/react-splide";
+import styled from "styled-components";
 
 const StyledSplide = styled(Splide)`
-h1 {
-  font-weight: bold;
-}
+  h1 {
+    font-weight: bold;
+  }
 
   @media (min-width: 1024px) {
     p {
@@ -15,7 +15,7 @@ h1 {
 `;
 
 export const StyledContainer = styled(Container)`
-  display: flex;
+  display: flex !important;
   height: 100%;
   justify-content: center;
   align-items: center;

@@ -39,7 +39,7 @@ const Contact = () => {
                   {item.h3}
                 </Typography>
                 {item.content.map((one) => (
-                  <Typography variant="body1" component="p">
+                  <Typography key={one} variant="body1" component="p">
                     {one}
                   </Typography>
                 ))}
