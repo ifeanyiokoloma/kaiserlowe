@@ -17,7 +17,10 @@ const Team = () => {
             overflow="hidden"
             className="img-box"
           >
-            <img src="/images/team/ceo.jpg" alt="ceo" />
+            <img
+              src="/images/team/ceo.jpg?nf_resize=fit&w=300"
+              alt="ceo"
+            />
           </Box>
           <Stack
             color="white"

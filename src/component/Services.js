@@ -10,7 +10,7 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <Box bgcolor="primary.main" className="py-5">
-      <Container >
+      <Container>
         <Typography
           mb={5}
           sx={{ fontWeight: "bold" }}
@@ -28,7 +28,7 @@ const Services = () => {
                   lazy={false}
                   cache={true}
                   debounce={0}
-                  src={service.img}
+                  src={`${service.img}?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}`}
                   alt={service.h3}
                 />
               </Box>

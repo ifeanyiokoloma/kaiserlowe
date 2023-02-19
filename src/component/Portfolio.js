@@ -13,7 +13,7 @@ const Portfolio = () => {
       display={{ xs: "none", lg: "block" }}
       sx={{
         background:
-          "url(/images/portfolio/bg.jpg) center/cover no-repeat fixed",
+          `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(255, 152, 0, .5)" }}>
@@ -25,7 +25,10 @@ const Portfolio = () => {
             {portfolio.map((project) => (
               <div key={project.work} className="box">
                 <div className="img-box">
-                  <Img src={project.img} alt={project.work} />
+                  <Img
+                    src={`${project.img}?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}`}
+                    alt={project.work}
+                  />
                 </div>
                 <div className="text">
                   <h3>{t(project.work)}</h3>

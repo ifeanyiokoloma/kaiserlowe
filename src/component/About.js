@@ -18,7 +18,9 @@ const About = () => {
           </Typography>
           <div className="content">
             <article>
-              <Typography variant="h5" component="h3">{t("Meet us")}</Typography>
+              <Typography variant="h5" component="h3">
+                {t("Meet us")}
+              </Typography>
               <Typography
                 sx={{ fontWeight: 200 }}
                 variant="body2"
@@ -32,18 +34,7 @@ const About = () => {
                 lazy={false}
                 cache={true}
                 debounce={0}
-                src={`${about[0].img}?nf_resize=fit&w=${
-                  window.innerWidth < 768
-                    ? window.innerWidth * 4
-                    : window.innerWidth
-                }`}
-                alt={about[0].h2}
-              />
-              <Img
-                lazy={false}
-                cache={true}
-                debounce={0}
-                src={about[0].img}
+                src={`${about[0].img}?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}`}
                 alt={about[0].h2}
               />
             </div>

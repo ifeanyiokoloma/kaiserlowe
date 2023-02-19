@@ -6,7 +6,11 @@ import Img from "react-cool-img";
 const Hero = ({ imgSrc, h1, lead }) => {
   return (
     <Box height="100vh" position="relative">
-      <Img style={{ position: "relative" }} src={imgSrc} alt="background" />
+      <Img
+        style={{ position: "relative" }}
+        src={`${imgSrc}?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}`}
+        alt="background"
+      />
       <Box
         component="header"
         position="absolute"
@@ -30,7 +34,12 @@ const Hero = ({ imgSrc, h1, lead }) => {
           <Typography textAlign="center" variant="h2" component="h1">
             {h1}
           </Typography>
-          <Typography fontWeight="100" textAlign="center" variant="subtitle1" component="p">
+          <Typography
+            fontWeight="100"
+            textAlign="center"
+            variant="subtitle1"
+            component="p"
+          >
             {lead}
           </Typography>
         </Container>
