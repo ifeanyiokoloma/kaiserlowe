@@ -35,10 +35,28 @@ export const heroText = [
 
 export const about = [
   {
-    h2: "About us",
+    h2: "Meet us",
     content:
       "Kaiser Löwe starts 2013 to operates in Nigeria as a building development company. We offer the whole spectrum of services in building and managing. If you are interested for more information just take a look an enjoy… Our business philosophy is based on continuity and organic growth, on team spirit, respect and partnership. For us, high tech, tradition and diligence go hand in hand with a sense for the more pleasant things in life.",
     img: "/images/about/kaiserlowe.jpg",
+  },
+  {
+    h2: "Goals",
+    content:
+      "These are the goals that we have set for ourselves: To build lasting relationships with our clients. To continually enhance our services. To create a trouble-free experience for our clients.",
+    img: "/images/about/two-construction-workers.jpg",
+  },
+  {
+    h2: "Mission",
+    content:
+      "Kaiser Löwe´s Mission is to carry out its projects and provide its services, using the most up to date technology and best management techniques.“ Kaiser Löwe follows the Nigeria Vision 20 Actions in: Fostering private sector-led non-oil growth to build the foundation for economic diversification Investing in human capital development to enhance national competitiveness Changing the value system to encourage honesty, industry and eliminating the culture of worshipping money Entrenching merit as a fundamental principle and core value Addressing threats to national security Deepening reforms in the social sector and extending reforms to the states and local governments Correcting the weaknesses inherent in the revenue allocation framework Intensifying the war against corruption Establishing the process for free and fair elections.",
+    img: "/images/about/mission.jpg",
+  },
+  {
+    h2: "Profile",
+    content:
+      "Founded in 2013, Kaiser Löwe started as an local Player in the property development market. With our head office in Nkwere Ogidi (Anambra State) and Partners in Europe we are active in property development process. Areas of activity Project development, Housing, Industrial Building, Commercial Building, Public Building, Energy, Real Estate, Facility Management Our business philosophy is based on continuity and organic growth, on team spirit, respect and partnership. For us, high tech, tradition and diligence go hand in hand with a sense for the more pleasant things in life. Quality management The quality of our services is our first and foremost selling point. Throughout the company we operate to ISO 9001 and work only with suppliers who meet the same standards. Our quality management is not only confined to the technical parts, it extends to the definition and monitoring of all company-related processes. The continuous improvement of these processes is our obligation. In terms of Compliance Management we follow international rules of cooperation. In terms of environmental aspects we strive to operate economically as well as sustainably with a strong focus on saving resources.",
+    img: "/images/about/profile.jpg",
   },
 ];
 

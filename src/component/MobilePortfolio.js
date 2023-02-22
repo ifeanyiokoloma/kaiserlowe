@@ -48,7 +48,7 @@ const MobilePortfolio = () => {
             aria-label="Portfolio images"
           >
             {portfolio.map((project) => (
-              <StyledMobilePortfolio>
+              <StyledMobilePortfolio key={project.work}>
                 <div key={project.work} className="box">
                   <div className="img-box">
                     <Img
