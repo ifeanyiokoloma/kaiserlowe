@@ -71,7 +71,7 @@ const About = () => {
                   />
                 </div>
               </div>
-              <LearnMore link="/about" color="var(--primary)" />
+              <LearnMore link="/about" />
             </SplideSlide>
           ))}
         </Splide>

@@ -48,7 +48,7 @@ const Services = () => {
           ))}
           <div className="bar"></div>
         </StyledServices>
-        <LearnMore link="/services" color="var(--primary)" bgc="white" />
+        <LearnMore link="/services" />
       </Container>
     </Box>
   );

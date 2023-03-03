@@ -36,17 +36,27 @@ const Team = () => {
             <Container>
               <Typography
                 component="p"
-                fontWeight="bold"
+                fontWeight="400"
                 variant="h6"
                 textAlign="center"
               >
                 Christopher Okonkwo
               </Typography>
-              <Typography component="p" variant="subtitle1" textAlign="center">
+              <Typography
+                fontWeight="200"
+                component="p"
+                variant="subtitle2"
+                textAlign="center"
+              >
                 MD/CEO
               </Typography>
               <Container maxWidth="xs" sx={{ mt: 2 }}>
-                <Typography component="p" variant="body1" textAlign="center">
+                <Typography
+                  fontWeight="lighter"
+                  component="p"
+                  variant="body1"
+                  textAlign="center"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque cum adipisci nihil optio possimus saepe numquam iure
                   dolorum beatae fugit.

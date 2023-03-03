@@ -13,6 +13,10 @@ const StyledLink = styled(NavLink)`
 export const LinkBtn = styled(Link)`
   color: inherit;
   text-decoration: inherit;
+
+  &:hover {
+    color: inherit;
+  }
 `;
 
 export default StyledLink;

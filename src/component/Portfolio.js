@@ -36,7 +36,7 @@ const Portfolio = () => {
               </div>
             ))}
           </StyledPortfolio>
-          <LearnMore link="/portfolio" color="white" bgc="var(--primary)" />
+          <LearnMore link="/portfolio" />
         </Container>
       </Box>
     </Box>
