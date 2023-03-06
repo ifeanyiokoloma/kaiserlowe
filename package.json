@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
     "@fontsource/poppins": "^4.5.10",
     "@fontsource/raleway": "^4.5.12",
     "@fontsource/roboto-slab": "^4.5.11",
@@ -23,8 +22,7 @@
     "react-i18next": "^12.1.4",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.6",
-    "tt-truncate": "^1.1.4"
+    "styled-components": "^5.3.6"
   },
   "scripts": {
     "start": "react-dotenv && react-scripts start",
