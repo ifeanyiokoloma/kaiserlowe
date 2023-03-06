@@ -26,7 +26,7 @@ const Section = ({ imgSrc, content, header, imgPos }) => {
         gap={{ xs: "1rem", lg: "3rem" }}
       >
         <Box order={{ lg: imgPos }}>
-          <Img src={`${imgSrc}?nf-resize=smartcrop&w=${window.innerWidth}`} />
+          <Img src={`${imgSrc}?nf_resize=smartcrop&w=${window.innerWidth}`} />
         </Box>
 
         <Box className="content" justifyContent={{ lg: "center" }} px={{xs: "1rem"}}>
