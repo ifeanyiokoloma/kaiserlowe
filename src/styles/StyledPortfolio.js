@@ -1,12 +1,27 @@
 import styled from "styled-components";
 
 const StyledPortfolio = styled.div`
-    display: grid;
+  display: grid;
   grid-auto-rows: 50vh;
   width: 100%;
   overflow-x: auto;
   gap: 1rem;
   padding-block: 3rem;
+
+  h2 {
+    position: relative;
+  }
+
+  h2:after {
+    background: white none repeat scroll 0 0;
+    bottom: -20px;
+    content: "";
+    height: 4px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    width: 70px;
+  }
 
   .box {
     position: relative;

@@ -29,7 +29,7 @@ const Training = () => {
                       lazy={false}
                       cache={true}
                       debounce={0}
-                      src={`${item.img}?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}`}
+                      src={`${item.img}?nf_resize=smartcrop&w=${window.innerWidth}`}
                       alt={item.h2}
                     />
                   </div>

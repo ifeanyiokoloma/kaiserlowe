@@ -9,6 +9,21 @@ const StyledServices = styled.section`
   padding-left: 0.5rem;
   width: 100%;
 
+  h2 {
+    position: relative;
+  }
+
+  h2:after {
+    background: white none repeat scroll 0 0;
+    bottom: -20px;
+    content: "";
+    height: 4px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    width: 70px;
+  }
+
   .myCard {
     display: flex;
     flex-direction: column;
