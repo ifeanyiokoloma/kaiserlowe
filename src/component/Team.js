@@ -27,7 +27,7 @@ const Team = () => {
             className="img-box"
           >
             <img
-              src={`/images/team/ceo.jpg?nf_resize=smartcrop&w=300&h=${window.innerHeight/2}`}
+              src={`/images/team/ceo.jpg?nf_resize=smartcrop&w=300&h=300`}
               alt="ceo"
             />
           </Box>
