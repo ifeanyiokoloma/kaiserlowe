@@ -26,10 +26,18 @@ const Section = ({ imgSrc, content, header, imgPos }) => {
         gap={{ xs: "1rem", lg: "3rem" }}
       >
         <Box order={{ lg: imgPos }}>
-          <Img src={`${imgSrc}?nf_resize=smartcrop&w=${window.innerWidth}`} />
+          <Img
+            src={`${imgSrc}?nf_resize=smartcrop&w=${window.innerWidth}&h=${
+              window.innerHeight
+            }`}
+          />
         </Box>
 
-        <Box className="content" justifyContent={{ lg: "center" }} px={{xs: "1rem"}}>
+        <Box
+          className="content"
+          justifyContent={{ lg: "center" }}
+          px={{ xs: "1rem" }}
+        >
           <Typography variant="h5" component="h2" mb="1em" color="secondary">
             {header}
           </Typography>

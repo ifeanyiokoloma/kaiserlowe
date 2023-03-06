@@ -26,7 +26,10 @@ const Team = () => {
             overflow="hidden"
             className="img-box"
           >
-            <img src="/images/team/ceo.jpg?nf_resize=smartcrop&w=300" alt="ceo" />
+            <img
+              src={`/images/team/ceo.jpg?nf_resize=smartcrop&w=300&h=${window.innerHeight/2}`}
+              alt="ceo"
+            />
           </Box>
           <Stack
             color="white"

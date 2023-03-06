@@ -12,8 +12,7 @@ const Portfolio = () => {
     <Box
       display={{ xs: "none", lg: "block" }}
       sx={{
-        background:
-          `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
+        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(255, 152, 0, .5)" }}>
@@ -26,7 +25,9 @@ const Portfolio = () => {
               <div key={project.work} className="box">
                 <div className="img-box">
                   <Img
-                    src={`${project.img}?nf_resize=smartcrop&w=${window.innerWidth}`}
+                    src={`${project.img}?nf_resize=smartcrop&w=${
+                      window.innerWidth
+                    }&h=${window.innerHeight}`}
                     alt={project.work}
                   />
                 </div>

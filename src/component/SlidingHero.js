@@ -51,7 +51,7 @@ const SlidingHero = () => {
             </StyledContainer>
           </Overlay>
           <img
-            src={`${text.img}?nf_resize=smartcrop&w=${window.innerWidth}`}
+            src={`${text.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
             alt={text.h1}
           />
         </SplideSlide>
