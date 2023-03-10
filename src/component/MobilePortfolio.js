@@ -22,7 +22,7 @@ const MobilePortfolio = () => {
     <Box
       display={{ xs: "block", lg: "none" }}
       sx={{
-        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
+        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.innerWidth}) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
