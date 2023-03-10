@@ -2,25 +2,25 @@ import { SplideSlide } from "@splidejs/react-splide";
 import styled from "styled-components";
 
 const StyledMobilePortfolio = styled(SplideSlide)`
-  padding-block: 1rem;
+  // padding-block: 1rem;
 
   .box {
     position: relative;
     overflow: hidden;
     height: 100%;
 
-    &:hover > .text {
-      opacity: 1;
-    }
+    // &:hover > .text {
+    //   opacity: 1;
+    // }
 
-    &:hover > .img-box {
-      transform: scale(1.2);
+    // &:hover > .img-box {
+    //   transform: scale(1.2);
     }
   }
 
   .img-box {
     position: relative;
-    height: 100%;
+    height: 300px;
     transition: transform 500ms;
   }
 

@@ -3,11 +3,8 @@ import styled from "styled-components";
 
 export const StyledAbout = styled(Box)`
   position: relative;
-  padding-block: 3rem;
 
   .content {
-    display: flex;
-    flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -16,29 +13,8 @@ export const StyledAbout = styled(Box)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline: 1rem;
+    // padding-inline: 1rem;
     text-align: justify;
-  }
-
-  article {
-    padding: 1rem;
-    color: white !important;
-  }
-
-  h2 {
-    color: whitesmoke;
-    position: relative;
-  }
-
-  h2:after {
-    background: white none repeat scroll 0 0;
-    bottom: -20px;
-    content: "";
-    height: 4px;
-    left: 50%;
-    margin-left: -40px;
-    position: absolute;
-    width: 70px;
   }
 
   .img-box {
@@ -48,6 +24,11 @@ export const StyledAbout = styled(Box)`
   img {
     height: 100%;
     width: 100%;
+  }
+
+  p {
+    overflow: hidden;
+    textoverflow: ellipsis;
   }
 
   @media (min-width: 1024px) {

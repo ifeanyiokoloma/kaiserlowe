@@ -1,19 +1,15 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
+import H2 from "./H2";
 
 const Team = () => {
   return (
-    <Box bgcolor="primary.main" p={5}>
+    <Box bgcolor="primary.main" py={5}>
       <Container>
-        <Typography
-          variant="h4"
-          color="white"
-          component="h2"
-          mb={5}
-          textAlign="center"
+        <H2
         >
           Team
-        </Typography>
+        </H2>
         <Stack
           justifyContent="center"
           alignItems="center"
@@ -25,6 +21,7 @@ const Team = () => {
             borderRadius="50%"
             overflow="hidden"
             className="img-box"
+            px="1rem"
           >
             <img
               src={`/images/team/ceo.jpg?nf_resize=smartcrop&w=300&h=300`}

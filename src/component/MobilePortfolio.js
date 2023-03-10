@@ -1,15 +1,22 @@
 import { Splide } from "@splidejs/react-splide";
-import React from "react";
+import React, { useState } from "react";
 import { portfolio } from "../asset/content";
 import Img from "react-cool-img";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
 import { Box } from "@mui/system";
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 import StyledMobilePortfolio from "../styles/StyledMobilePortfolio";
 import LearnMore from "./LearnMore";
+import H2 from "./H2";
 
 const MobilePortfolio = () => {
+  const [scale, setScale] = useState(false);
+
+  function handleClick(e) {
+    setScale(!scale);
+  }
+
   const { t } = useTranslation();
   return (
     <Box
@@ -18,16 +25,9 @@ const MobilePortfolio = () => {
         background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
       }}
     >
-      <Box sx={{ background: "rgba(255, 152, 0, .5)" }}>
+      <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
-          <Typography
-            variant="h4"
-            component="h2"
-            color="white"
-            className="pb-3"
-          >
-            Portfolio
-          </Typography>
+          <H2>Portfolio</H2>
           <Splide
             options={{
               autoplay: true,
@@ -35,29 +35,37 @@ const MobilePortfolio = () => {
               cover: true,
               arrows: false,
               pagination: false,
-              drag: false,
+              drag: true,
               reducedMotion: true,
               type: "loop",
               speed: 500,
               interval: 6000,
               lazyLoad: false,
               keyboard: true,
-              height: "50vh",
+              height: "auto",
             }}
             aria-label="Portfolio images"
           >
             {portfolio.map((project) => (
               <StyledMobilePortfolio key={project.work}>
-                <div key={project.work} className="box">
-                  <div className="img-box">
+                <div onClick={handleClick} key={project.work} className="box">
+                  <div
+                    style={{
+                      transform: scale && "scale(1.2)",
+                    }}
+                    className="img-box"
+                  >
                     <Img
-                      src={`${project.img}?nf_resize=smartcrop&w=${
-                        window.innerWidth
-                      }&h=${window.innerHeight}`}
+                      src={`${project.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
                       alt={project.work}
                     />
                   </div>
-                  <div className="text">
+                  <div
+                    style={{
+                      opacity: scale && 1,
+                    }}
+                    className="text"
+                  >
                     <h3>{t(project.work)}</h3>
                   </div>
                 </div>

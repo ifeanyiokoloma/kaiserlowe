@@ -5,21 +5,14 @@ import { services } from "../asset/content";
 import { useTranslation } from "react-i18next";
 import Img from "react-cool-img";
 import LearnMore from "./LearnMore";
+import H2 from "./H2";
 
 const Services = () => {
   const { t } = useTranslation();
   return (
     <Box bgcolor="primary.main" className="py-5">
       <Container>
-        <Typography
-          mb={5}
-          sx={{ fontWeight: "bold" }}
-          variant="h4"
-          component="h2"
-          color="white"
-        >
-          {t("Services")}
-        </Typography>
+        <H2>{t("Services")}</H2>
         <StyledServices>
           {services.map((service) => (
             <div key={service.h3} className="myCard">
@@ -28,9 +21,7 @@ const Services = () => {
                   lazy={false}
                   cache={true}
                   debounce={0}
-                  src={`${service.img}?nf_resize=smartcrop&w=${
-                    window.innerWidth
-                  }&h=${window.innerHeight}`}
+                  src={`${service.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
                   alt={service.h3}
                 />
               </Box>

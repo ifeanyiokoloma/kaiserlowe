@@ -37,14 +37,16 @@ const SlidingHero = () => {
                 variant="h2"
                 component="h1"
                 className="text-uppercase"
+                color="primary"
               >
                 {t(text.h1)}
               </Typography>
               <Typography
-                variant="subtitle1"
+                variant="subtitle2"
                 component="p"
-                sx={{ color: "#d3d3d3" }}
-                className="tablet-width raleway"
+                
+                fontWeight="300"
+                className="tablet-width raleway light-font"
               >
                 {t(text.p)}
               </Typography>

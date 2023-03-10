@@ -5,6 +5,7 @@ import LearnMore from "./LearnMore";
 import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
 import Img from "react-cool-img";
+import H2 from "./H2";
 
 const Training = () => {
   const { t } = useTranslation();
@@ -14,12 +15,12 @@ const Training = () => {
         background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
       }}
     >
-      <Box sx={{ background: "rgba(255, 152, 0, .5)" }}>
+      <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <StyledTraining className="py-5">
           <Container>
-            <Typography variant="h4" color="white" component="h2" mb={5}>
+            <H2>
               {t("Training")}
-            </Typography>
+            </H2>
             <div className="cards">
               {training.map((item) => (
                 <div key={item.h2} className="card">

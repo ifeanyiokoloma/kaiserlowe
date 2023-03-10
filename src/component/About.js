@@ -1,4 +1,4 @@
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { about } from "../asset/content";
@@ -6,21 +6,14 @@ import LearnMore from "./LearnMore";
 import { StyledAbout } from "../styles/StyledAbout";
 import Img from "react-cool-img";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import H2 from "./H2";
 
 const About = () => {
   const { t } = useTranslation();
   return (
     <StyledAbout className="py-5" bgcolor="primary.main">
       <Container>
-        <Typography
-          color="white"
-          sx={{ fontWeight: "bolder" }}
-          variant="h4"
-          component="h2"
-          mb={5}
-        >
-          {t("About Us")}
-        </Typography>
+        <H2>{t("About Us")}</H2>
         <Splide
           options={{
             autoplay: true,
@@ -37,40 +30,41 @@ const About = () => {
             keyboard: true,
             rewind: "true",
           }}
-          aria-label="My Favorite Images"
+          aria-label="about kaiser lowe contruction company"
           className="articleContainer"
         >
           {about.map((item) => (
-            <SplideSlide key={item.h2}>
-              <div className="content">
-                <article>
+            <SplideSlide
+              style={{
+                height: "auto",
+              }}
+              key={item.h2}
+            >
+              <Stack
+                direction={{ xs: "column", md: "row" }}
+                className="content"
+                spacing={{ xs: "1rem", lg: "3rem" }}
+              >
+                <Box component="article" color="white">
                   <Typography variant="h5" component="h3">
                     {t(item.h2)}
                   </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: 200,
-                      overflow: "hidden",
-                      textOverflow: "ellipsis",
-                    }}
-                    variant="body2"
-                    component="p"
-                  >
+                  <Typography fontWeight="200" variant="body1" component="p">
                     {t(item.content).length > 500
                       ? item.content.substring(0, 501) + "..."
                       : t(item.content)}
                   </Typography>
-                </article>
+                </Box>
                 <div className="img-box">
                   <Img
                     lazy={false}
                     cache={true}
                     debounce={0}
-                    src={`${item.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
+                    src={`${item.img}`}
                     alt={item.h2}
                   />
                 </div>
-              </div>
+              </Stack>
               <LearnMore link="/about" />
             </SplideSlide>
           ))}

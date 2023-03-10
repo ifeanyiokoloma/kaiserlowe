@@ -1,21 +1,6 @@
 import styled from "styled-components";
 
 export const StyledTraining = styled.section`
-  h2 {
-    position: relative;
-  }
-
-  h2:after {
-    background: var(--secondary) none repeat scroll 0 0;
-    bottom: -20px;
-    content: "";
-    height: 4px;
-    left: 50%;
-    margin-left: -40px;
-    position: absolute;
-    width: 70px;
-  }
-
   .cards {
     display: flex;
     flex-direction: column;

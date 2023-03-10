@@ -4,25 +4,10 @@ const StyledServices = styled.section`
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 70vh;
+  height: 400px;
   padding-block: 1rem;
   padding-left: 0.5rem;
   width: 100%;
-
-  h2 {
-    position: relative;
-  }
-
-  h2:after {
-    background: white none repeat scroll 0 0;
-    bottom: -20px;
-    content: "";
-    height: 4px;
-    left: 50%;
-    margin-left: -40px;
-    position: absolute;
-    width: 70px;
-  }
 
   .myCard {
     display: flex;
