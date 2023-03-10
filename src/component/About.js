@@ -60,7 +60,9 @@ const About = () => {
                     lazy={false}
                     cache={true}
                     debounce={0}
-                    src={`${item.img}`}
+                    src={`${item.img}?nf_resize=smartcrop&w=${
+                      window.innerWidth - 30
+                    }&h=${window.innerHeight - 40}`}
                     alt={item.h2}
                   />
                 </div>
