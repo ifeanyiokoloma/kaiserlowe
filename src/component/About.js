@@ -43,7 +43,7 @@ const About = () => {
               <Stack
                 direction={{ xs: "column", md: "row" }}
                 className="content"
-                spacing={{ xs: "1rem", lg: "3rem" }}
+                spacing={{ xs: "1rem", md: "3rem" }}
               >
                 <Box component="article" color="white">
                   <Typography variant="h5" component="h3">
@@ -74,6 +74,16 @@ const About = () => {
                     src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
                       window.innerWidth - 48
                     )}&h=${Math.round((35 / 100) * window.innerHeight)}`}
+                    alt={item.h2}
+                  />
+                  <Img
+                    lazy={false}
+                    cache={true}
+                    debounce={0}
+                    class="lg"
+                    src={`${item.img}?nf_resize=fit&w=${Math.round(
+                      (40 / 100) * window.innerWidth - 48
+                    )}`}
                     alt={item.h2}
                   />
                 </div>

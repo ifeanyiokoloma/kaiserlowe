@@ -13,7 +13,6 @@ export const StyledAbout = styled(Box)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // padding-inline: 1rem;
     text-align: justify;
   }
 
@@ -50,17 +49,21 @@ export const StyledAbout = styled(Box)`
       height: 100%;
     }
 
-    .img-box {
-      height: auto;
+    img.xs {
+      display: none;
     }
 
-    .articleContainer {
-      height: calc(100vh - 60px);
+    img.sm {
+      display: none;
+    }
+
+    img.lg {
+      display: block;
     }
 
     article {
       flex-basis: 60%;
-      padding-inline: 3rem;
+      padding-left: 3rem;
       color: white;
       display: flex;
       flex-direction: column;
@@ -70,7 +73,7 @@ export const StyledAbout = styled(Box)`
 
     .img-box {
       flex-basis: 40%;
-      max-height: 100%;
+      height: auto;
     }
   }
 `;
