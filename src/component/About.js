@@ -62,7 +62,7 @@ const About = () => {
                     debounce={0}
                     src={`${item.img}?nf_resize=smartcrop&w=${
                       window.innerWidth - 30
-                    }&h=${window.innerHeight - 40}`}
+                    }&h=${60 / 100 * window.innerHeight}`}
                     alt={item.h2}
                   />
                 </div>
