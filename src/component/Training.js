@@ -12,7 +12,7 @@ const Training = () => {
   return (
     <Box
       sx={{
-        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
+        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.innerWidth}) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
@@ -27,9 +27,9 @@ const Training = () => {
                       lazy={false}
                       cache={true}
                       debounce={0}
-                      src={`${item.img}?nf_resize=fit&w=${
-                        Math.round(window.innerWidth - 30)
-                      }`}
+                      src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
+                        window.innerWidth - 30
+                      )}&h=200`}
                       alt={item.h2}
                     />
                   </div>

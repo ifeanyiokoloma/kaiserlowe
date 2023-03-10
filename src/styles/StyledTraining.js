@@ -7,6 +7,10 @@ export const StyledTraining = styled.section`
     row-gap: 1rem;
   }
 
+  .img-box {
+    height: 200px
+  }
+
   .card-text {
     height: 50%;
 
