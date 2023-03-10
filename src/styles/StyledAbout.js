@@ -44,10 +44,14 @@ export const StyledAbout = styled(Box)`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 900px) {
     .content {
       background: rgba(0, 0, 0, 0.2);
-      height: 60%;
+      height: 100%;
+    }
+
+    .img-box {
+      height: auto;
     }
 
     .articleContainer {
@@ -56,7 +60,7 @@ export const StyledAbout = styled(Box)`
 
     article {
       flex-basis: 60%;
-      padding-inline: 5rem;
+      padding-inline: 3rem;
       color: white;
       display: flex;
       flex-direction: column;
