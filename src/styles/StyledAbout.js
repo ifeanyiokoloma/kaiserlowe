@@ -21,9 +21,8 @@ export const StyledAbout = styled(Box)`
     max-height: 60vh;
   }
 
-  img {
-    height: 100%;
-    width: 100%;
+  img.sm {
+    display: none;
   }
 
   p {
@@ -31,9 +30,22 @@ export const StyledAbout = styled(Box)`
     textoverflow: ellipsis;
   }
 
+  @media (min-width: 600px) {
+    .img-box {
+      max-height: 35vh;
+    }
+
+    img.xs {
+      display: none;
+    }
+
+    img.sm {
+      display: block;
+    }
+  }
+
   @media (min-width: 1024px) {
     .content {
-      flex-direction: row;
       background: rgba(0, 0, 0, 0.2);
       height: 60%;
     }
