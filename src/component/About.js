@@ -72,7 +72,7 @@ const About = () => {
                     debounce={0}
                     class="sm"
                     src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
-                      window.innerWidth - 30
+                      window.innerWidth - 68
                     )}&h=${Math.round((35 / 100) * window.innerHeight)}`}
                     alt={item.h2}
                   />

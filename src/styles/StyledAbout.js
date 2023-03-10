@@ -18,7 +18,7 @@ export const StyledAbout = styled(Box)`
   }
 
   .img-box {
-    max-height: 60vh;
+    height: 60vh;
   }
 
   img.sm {
@@ -32,7 +32,7 @@ export const StyledAbout = styled(Box)`
 
   @media (min-width: 600px) {
     .img-box {
-      max-height: 35vh;
+      height: 35vh;
     }
 
     img.xs {
