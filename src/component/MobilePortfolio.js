@@ -56,7 +56,9 @@ const MobilePortfolio = () => {
                     className="img-box"
                   >
                     <Img
-                      src={`${project.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
+                      src={`${project.img}?nf_resize=smartcrop&w=${Math.round(
+                        window.innerWidth - 30
+                      )}&h=300`}
                       alt={project.work}
                     />
                   </div>
