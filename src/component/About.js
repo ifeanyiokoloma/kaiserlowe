@@ -60,9 +60,9 @@ const About = () => {
                     lazy={false}
                     cache={true}
                     debounce={0}
-                    src={`${item.img}?nf_resize=smartcrop&w=${
+                    src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
                       window.innerWidth - 30
-                    }&h=${60 / 100 * window.innerHeight}`}
+                    )}&h=${Math.round((60 / 100) * window.innerHeight)}`}
                     alt={item.h2}
                   />
                 </div>
