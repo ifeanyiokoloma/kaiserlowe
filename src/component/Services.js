@@ -21,7 +21,9 @@ const Services = () => {
                   lazy={false}
                   cache={true}
                   debounce={0}
-                  src={`${service.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
+                  src={`${service.img}?nf_resize=smartcrop&w=${Math.round(
+                    (60 / 100) * window.innerWidth
+                  )}&h=${Math.round((40 / 100) * window.innerHeight)}`}
                   alt={service.h3}
                 />
               </Box>
