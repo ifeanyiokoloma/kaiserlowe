@@ -43,6 +43,13 @@ const MobilePortfolio = () => {
               lazyLoad: false,
               keyboard: true,
               height: "auto",
+              mediaQuery: "min",
+              breakpoints: {
+                600: {
+                  perPage: 2,
+                  gap: "1rem"
+                },
+              },
             }}
             aria-label="Portfolio images"
           >

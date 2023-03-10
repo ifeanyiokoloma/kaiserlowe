@@ -25,9 +25,7 @@ const Portfolio = () => {
               <div key={project.work} className="box">
                 <div className="img-box">
                   <Img
-                    src={`${project.img}?nf_resize=smartcrop&w=${
-                      window.innerWidth
-                    }&h=${window.innerHeight}`}
+                    src={`${project.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
                     alt={project.work}
                   />
                 </div>

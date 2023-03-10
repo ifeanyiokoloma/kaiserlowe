@@ -31,7 +31,7 @@ export const StyledAbout = styled(Box)`
 
   @media (min-width: 600px) {
     .img-box {
-      height: 35vh;
+      height: 45vh;
     }
 
     img.xs {

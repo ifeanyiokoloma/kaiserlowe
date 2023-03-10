@@ -73,7 +73,7 @@ const About = () => {
                     class="sm"
                     src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
                       window.innerWidth - 48
-                    )}&h=${Math.round((35 / 100) * window.innerHeight)}`}
+                    )}&h=${Math.round((45 / 100) * window.innerHeight)}`}
                     alt={item.h2}
                   />
                   <Img

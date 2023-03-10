@@ -63,7 +63,7 @@ const StyledPortfolio = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 900px) {
     grid-template-columns: repeat(4, 1fr);
   }
 `;
