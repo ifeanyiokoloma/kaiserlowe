@@ -24,11 +24,22 @@ const Training = () => {
                 <div key={item.h2} className="card">
                   <div className="img-box">
                     <Img
+                    className="xs"
                       lazy={false}
                       cache={true}
                       debounce={0}
                       src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
                         window.innerWidth - 30
+                      )}&h=200`}
+                      alt={item.h2}
+                    />
+                    <Img
+                    className="sm"
+                      lazy={false}
+                      cache={true}
+                      debounce={0}
+                      src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
+                        (window.innerWidth - 40) / 2
                       )}&h=200`}
                       alt={item.h2}
                     />

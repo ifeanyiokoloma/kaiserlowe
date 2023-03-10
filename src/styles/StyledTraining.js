@@ -8,7 +8,7 @@ export const StyledTraining = styled.section`
   }
 
   .img-box {
-    height: 200px
+    height: 200px;
   }
 
   .card-text {
@@ -23,7 +23,11 @@ export const StyledTraining = styled.section`
     border-width: 0;
   }
 
-  @media (min-width: 768px) {
+  img.sm {
+    display: none;
+  }
+
+  @media (min-width: 600px) {
     .cards {
       flex-direction: row;
       flex-flow: wrap;
@@ -31,14 +35,27 @@ export const StyledTraining = styled.section`
 
     .card {
       flex-basis: 50%;
+      height: 400px;
+    }
+
+    .card-text {
+      height: 50%;
     }
 
     .img-box {
-      height: 50%;
+      height: 200px;
+    }
+
+    img.xs {
+      display: none;
+    }
+
+    img.sm {
+      display: block;
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .cards {
       flex-direction: row;
       flex-flow: nowrap;
