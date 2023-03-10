@@ -18,9 +18,7 @@ const Training = () => {
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <StyledTraining className="py-5">
           <Container>
-            <H2>
-              {t("Training")}
-            </H2>
+            <H2>{t("Training")}</H2>
             <div className="cards">
               {training.map((item) => (
                 <div key={item.h2} className="card">
@@ -29,7 +27,9 @@ const Training = () => {
                       lazy={false}
                       cache={true}
                       debounce={0}
-                      src={`${item.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${window.innerHeight}`}
+                      src={`${item.img}?nf_resize=fit&w=${
+                        Math.round(window.innerWidth - 30)
+                      }`}
                       alt={item.h2}
                     />
                   </div>
