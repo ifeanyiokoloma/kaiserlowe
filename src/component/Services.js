@@ -3,7 +3,6 @@ import StyledServices from "../styles/StyledServices";
 import { Box, Container, Typography } from "@mui/material";
 import { services } from "../asset/content";
 import { useTranslation } from "react-i18next";
-import Img from "react-cool-img";
 import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
