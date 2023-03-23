@@ -7,6 +7,9 @@ export const StyledAbout = styled(Box)`
   .content {
     border-radius: 10px;
     overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    height: 80%;
+    justify-content: space-between;
   }
 
   .articleContainer {
@@ -16,49 +19,52 @@ export const StyledAbout = styled(Box)`
     text-align: justify;
   }
 
-  .img-box {
-    height: 60vh;
+  article {
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
   }
 
-  img.sm {
-    display: none;
+  .img-box {
+    height: 50vh;
   }
 
   p {
     overflow: hidden;
     textoverflow: ellipsis;
+    text-align: justify;
+    text-justify: distribute;
+    hyphens: auto;
+  }
+
+  li {
+    text-align: left;
   }
 
   @media (min-width: 600px) {
+    .content {
+      background: rgba(0, 0, 0, 0.2);
+      height: 80%;
+    }
+
+    article {
+      flex-basis: 50%;
+      padding-left: 2rem;
+      padding-block: 2rem;
+    }
+
     .img-box {
-      height: 45vh;
-    }
-
-    img.xs {
-      display: none;
-    }
-
-    img.sm {
-      display: block;
+      flex-basis: 50%;
+      height: auto;
     }
   }
 
   @media (min-width: 900px) {
     .content {
       background: rgba(0, 0, 0, 0.2);
-      height: 100%;
-    }
-
-    img.xs {
-      display: none;
-    }
-
-    img.sm {
-      display: none;
-    }
-
-    img.lg {
-      display: block;
+      height: 80%;
     }
 
     article {

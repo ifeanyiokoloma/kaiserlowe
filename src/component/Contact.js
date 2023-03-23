@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Box
       sx={{
-        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}) center/cover no-repeat fixed`,
+        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(255, 152, 0, .8)" }}>
@@ -27,7 +27,7 @@ const Contact = () => {
                 className="item"
                 flexBasis="33.3%"
                 paddingX="3rem"
-                paddingBottom={{xs: "1rem", sm: null}}
+                paddingBottom={{ xs: "1rem", sm: null }}
                 display="inherit"
                 flexDirection="column"
                 gap="1rem"
@@ -38,7 +38,7 @@ const Contact = () => {
                 }}
                 borderBottom={{
                   xs: index === items.length - 1 ? null : "1px dashed white",
-                  sm: "none"
+                  sm: "none",
                 }}
               >
                 {item.icon}
@@ -46,7 +46,12 @@ const Contact = () => {
                   {item.h3}
                 </Typography>
                 {item.content.map((one) => (
-                  <Typography textAlign="center" key={one} variant="body1" component="p">
+                  <Typography
+                    textAlign="center"
+                    key={one}
+                    variant="body1"
+                    component="p"
+                  >
                     {one}
                   </Typography>
                 ))}

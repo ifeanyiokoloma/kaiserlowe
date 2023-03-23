@@ -63,7 +63,7 @@ export const StyledTraining = styled.section`
 
     .card {
       flex-basis: 33.3%;
-      height: 80vh;
+      height: 60vh;
     }
   }
 `;

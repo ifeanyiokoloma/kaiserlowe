@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import Img from "react-cool-img";
 import styled from "styled-components";
+import Image from "./Image";
 
 const StyledSection = styled(Box)`
   & > * {
@@ -26,10 +26,8 @@ const Section = ({ imgSrc, content, header, imgPos }) => {
         gap={{ xs: "1rem", lg: "3rem" }}
       >
         <Box order={{ lg: imgPos }}>
-          <Img
-            src={`${imgSrc}?nf_resize=smartcrop&w=${window.innerWidth}&h=${
-              window.innerHeight
-            }`}
+          <Image
+            imageName={imgSrc}
           />
         </Box>
 

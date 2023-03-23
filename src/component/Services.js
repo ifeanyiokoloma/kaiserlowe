@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import Img from "react-cool-img";
 import LearnMore from "./LearnMore";
 import H2 from "./H2";
+import Image from "./Image";
 
 const Services = () => {
   const { t } = useTranslation();
@@ -17,14 +18,8 @@ const Services = () => {
           {services.map((service) => (
             <div key={service.h3} className="myCard">
               <Box className="img-box">
-                <Img
-                  lazy={false}
-                  cache={true}
-                  debounce={0}
-                  src={`${service.img}?nf_resize=smartcrop&w=${Math.round(
-                    (60 / 100) * window.innerWidth
-                  )}&h=${Math.round((40 / 100) * window.innerHeight)}`}
-                  alt={service.h3}
+                <Image
+                  imageName={service.img}
                 />
               </Box>
               <article>

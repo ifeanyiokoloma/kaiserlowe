@@ -5,6 +5,17 @@ import styled from "styled-components";
 const StyledSplide = styled(Splide)`
   h1 {
     font-weight: bold;
+    color: var(--primary);
+  }
+
+  && .lead {
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 600px) {
+    && .lead {
+      font-size: 1rem;
+    }
   }
 
   @media (min-width: 1024px) {

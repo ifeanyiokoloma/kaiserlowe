@@ -1,7 +1,6 @@
 import { Splide } from "@splidejs/react-splide";
 import React, { useState } from "react";
 import { portfolio } from "../asset/content";
-import Img from "react-cool-img";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
 import { Box } from "@mui/system";
@@ -9,6 +8,7 @@ import { Container } from "@mui/material";
 import StyledMobilePortfolio from "../styles/StyledMobilePortfolio";
 import LearnMore from "./LearnMore";
 import H2 from "./H2";
+import Image from "./Image";
 
 const MobilePortfolio = () => {
   const [scale, setScale] = useState(false);
@@ -22,7 +22,7 @@ const MobilePortfolio = () => {
     <Box
       display={{ xs: "block", lg: "none" }}
       sx={{
-        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.innerWidth}) center/cover no-repeat fixed`,
+        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
@@ -47,7 +47,7 @@ const MobilePortfolio = () => {
               breakpoints: {
                 600: {
                   perPage: 2,
-                  gap: "1rem"
+                  gap: "1rem",
                 },
               },
             }}
@@ -62,12 +62,7 @@ const MobilePortfolio = () => {
                     }}
                     className="img-box"
                   >
-                    <Img
-                      src={`${project.img}?nf_resize=smartcrop&w=${Math.round(
-                        window.innerWidth - 30
-                      )}&h=300`}
-                      alt={project.work}
-                    />
+                    <Image imageName={project.img} alt={project.work} />
                   </div>
                   <div
                     style={{

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css";
 import { heroText } from "../asset/content";
 import StyledSplide, { Overlay, StyledContainer } from "../styles/StyledSplide";
-import { Typography } from "@mui/material";
+import Image from "./Image";
 
 const SlidingHero = () => {
   const { t } = useTranslation();
@@ -33,30 +33,13 @@ const SlidingHero = () => {
         <SplideSlide key={text.h1}>
           <Overlay>
             <StyledContainer>
-              <Typography
-                variant="h2"
-                component="h1"
-                className="text-uppercase"
-                color="primary"
-              >
-                {t(text.h1)}
-              </Typography>
-              <Typography
-                variant="subtitle2"
-                component="p"
-                fontWeight="300"
-                className="tablet-width raleway light-font"
-              >
+              <h1 className="display-2">{t(text.h1)}</h1>
+              <p className="tablet-width raleway light-font lead">
                 {t(text.p)}
-              </Typography>
+              </p>
             </StyledContainer>
           </Overlay>
-          <img
-            src={`${text.img}?nf_resize=smartcrop&w=${window.innerWidth}&h=${
-              window.innerHeight - 58
-            }`}
-            alt={text.h1}
-          />
+          <Image imageName={text.img} />
         </SplideSlide>
       ))}
     </StyledSplide>

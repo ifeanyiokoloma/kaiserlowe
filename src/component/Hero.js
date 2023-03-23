@@ -1,14 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
-import Img from "react-cool-img";
+import Image from "./Image";
 
 const Hero = ({ imgSrc, h1, lead }) => {
   return (
     <Box height="100vh" position="relative">
-      <Img
+      <Image
         style={{ position: "relative" }}
-        src={`${imgSrc}?nf_resize=fit&w=${window.outerWidth}&h=${window.outerHeight}`}
+        imageName={imgSrc}
         alt="background"
       />
       <Box

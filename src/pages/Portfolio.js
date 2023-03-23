@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <Layout>
       <Hero
-        imgSrc="/images/portfolio/architecture.jpg"
+        imgSrc="portfolio/architecture_e9ypau.jpg"
         h1="Portfolio"
         lead="Welcome to Kaiserlowe's portfolio page, showcasing our exceptional construction projects and unparalleled expertise in delivering high-quality solutions."
       />

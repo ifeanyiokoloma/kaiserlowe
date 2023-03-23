@@ -4,15 +4,15 @@ import { useTranslation } from "react-i18next";
 import { about } from "../asset/content";
 import LearnMore from "./LearnMore";
 import { StyledAbout } from "../styles/StyledAbout";
-import Img from "react-cool-img";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import H2 from "./H2";
+import Image from "./Image";
 
 const About = () => {
   const { t } = useTranslation();
   return (
     <StyledAbout className="py-5" bgcolor="primary.main">
-      <Container>
+      <Container maxWidth="md">
         <H2>{t("About Us")}</H2>
         <Splide
           options={{
@@ -41,7 +41,7 @@ const About = () => {
               key={item.h2}
             >
               <Stack
-                direction={{ xs: "column", md: "row" }}
+                direction={{ xs: "column", sm: "row" }}
                 className="content"
                 spacing={{ xs: "1rem", md: "3rem" }}
               >
@@ -49,44 +49,48 @@ const About = () => {
                   <Typography variant="h5" component="h3">
                     {t(item.h2)}
                   </Typography>
-                  <Typography fontWeight="200" variant="body1" component="p">
-                    {t(item.content).length > 500
-                      ? item.content.substring(0, 501) + "..."
-                      : t(item.content)}
+
+                  {item.content.length > 400 ? (
+                    <Typography
+                      fontWeight="200"
+                      variant="caption"
+                      component="p"
+                    >
+                      {t(item.content.substring(0, 401) + "...")}
+                    </Typography>
+                  ) : item.content.hasOwnProperty("title") &&
+                    typeof item.content === "object" &&
+                    !Array.isArray(item.content) &&
+                    item.content !== null ? (
+                    <Typography fontWeight="300" variant="subtitle2">
+                      {t(item.content.title)}
+                    </Typography>
+                  ) : (
+                    <Typography
+                      fontWeight="200"
+                      variant="body2"
+                      component="p"
+                    >
+                      {t(item.content)}
+                    </Typography>
+                  )}
+
+                  <Typography
+                    component="ul"
+                    variant="body2"
+                    display="flex"
+                    flexDirection="column"
+                    gap=".3rem"
+                  >
+                    {item.content.hasOwnProperty("list") &&
+                      item.content?.list.map((item) => (
+                        <li key={item}>{t(item)}</li>
+                      ))}
                   </Typography>
                 </Box>
-                <div className="img-box">
-                  <Img
-                    lazy={false}
-                    cache={true}
-                    debounce={0}
-                    class="xs"
-                    src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
-                      window.innerWidth - 30
-                    )}&h=${Math.round((60 / 100) * window.innerHeight)}`}
-                    alt={item.h2}
-                  />
-                  <Img
-                    lazy={false}
-                    cache={true}
-                    debounce={0}
-                    class="sm"
-                    src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
-                      window.innerWidth - 48
-                    )}&h=${Math.round((45 / 100) * window.innerHeight)}`}
-                    alt={item.h2}
-                  />
-                  <Img
-                    lazy={false}
-                    cache={true}
-                    debounce={0}
-                    class="lg"
-                    src={`${item.img}?nf_resize=fit&w=${Math.round(
-                      (40 / 100) * window.innerWidth - 48
-                    )}`}
-                    alt={item.h2}
-                  />
-                </div>
+                <Box className="img-box">
+                  <Image imageName={item.img} />
+                </Box>
               </Stack>
               <LearnMore link="/about" />
             </SplideSlide>

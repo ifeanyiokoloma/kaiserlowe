@@ -4,15 +4,15 @@ import { Box, Container, Typography } from "@mui/material";
 import LearnMore from "./LearnMore";
 import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
-import Img from "react-cool-img";
 import H2 from "./H2";
+import Image from "./Image";
 
 const Training = () => {
   const { t } = useTranslation();
   return (
     <Box
       sx={{
-        background: `url(/images/portfolio/bg.jpg?nf_resize=fit&w=${window.innerWidth}) center/cover no-repeat fixed`,
+        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
       }}
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
@@ -23,26 +23,7 @@ const Training = () => {
               {training.map((item) => (
                 <div key={item.h2} className="card">
                   <div className="img-box">
-                    <Img
-                    className="xs"
-                      lazy={false}
-                      cache={true}
-                      debounce={0}
-                      src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
-                        window.innerWidth - 30
-                      )}&h=200`}
-                      alt={item.h2}
-                    />
-                    <Img
-                    className="sm"
-                      lazy={false}
-                      cache={true}
-                      debounce={0}
-                      src={`${item.img}?nf_resize=smartcrop&w=${Math.round(
-                        (window.innerWidth - 40) / 2
-                      )}&h=200`}
-                      alt={item.h2}
-                    />
+                    <Image imageName={item.img} />
                   </div>
                   <Box
                     component="section"

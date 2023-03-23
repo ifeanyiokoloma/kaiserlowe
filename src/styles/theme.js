@@ -24,6 +24,7 @@ export let Theme = createTheme({
     },
     body2: {
       fontWeight: 200,
+      fontSize: ".8rem",
     },
   },
 

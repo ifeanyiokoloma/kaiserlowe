@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <Layout>
       <Hero
-        imgSrc="/images/contact/bulb.jpg"
+        imgSrc="contact/bulb_mhvflb.jpg"
         h1="Contact Us"
         lead="We would love to hear from you! Contact Kaiserlowe's dedicated team of construction professionals today to discuss your project needs and how we can help bring your vision to life."
       />
