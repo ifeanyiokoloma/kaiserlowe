@@ -33,11 +33,15 @@ img {
 }
 
 h1 {
-  font-family: roboto-slab !important;
+  font-weight: 800 !important;
+}
+
+h1,
+h2 {
+  font-family: poppins;
 }
 
 h2 {
-  font-family: poppins;
   font-weight: bolder !important;
 }
 
@@ -50,5 +54,12 @@ h2 {
 p,
 li {
   font-weight: 200;
-  font-size: 0.8rem;
+  font-size: 0.7rem !important;
+}
+
+@media screen and (min-width: 1000px) {
+  p,
+  li {
+    font-size: 0.9rem !important;
+  }
 }

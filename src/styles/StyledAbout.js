@@ -4,6 +4,12 @@ import styled from "styled-components";
 export const StyledAbout = styled(Box)`
   position: relative;
 
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .content {
     border-radius: 10px;
     overflow: hidden;
@@ -53,6 +59,9 @@ export const StyledAbout = styled(Box)`
       flex-basis: 50%;
       padding-left: 2rem;
       padding-block: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .img-box {
@@ -69,7 +78,7 @@ export const StyledAbout = styled(Box)`
 
     article {
       flex-basis: 60%;
-      padding-left: 3rem;
+      padding-left: 6rem;
       color: white;
       display: flex;
       flex-direction: column;

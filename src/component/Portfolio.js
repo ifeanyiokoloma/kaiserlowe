@@ -1,10 +1,11 @@
 import React from "react";
 import { portfolio } from "../asset/content";
 import StyledPortfolio from "../styles/StyledPortfolio";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import LearnMore from "./LearnMore";
 import Image from "./Image";
+import H2 from "./H2";
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -17,9 +18,9 @@ const Portfolio = () => {
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
-          <Typography color="white" variant="h4" component="h2">
+          <H2 linecolor="var(--primary)">
             {t("Portfolio")}
-          </Typography>
+          </H2>
           <StyledPortfolio>
             {portfolio.map((project) => (
               <div key={project.work} className="box">

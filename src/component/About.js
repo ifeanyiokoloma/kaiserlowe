@@ -12,7 +12,7 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <StyledAbout className="py-5" bgcolor="primary.main">
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <H2>{t("About Us")}</H2>
         <Splide
           options={{
@@ -37,13 +37,16 @@ const About = () => {
             <SplideSlide
               style={{
                 height: "auto",
+                display: "flex",
+                flexDirection: "column",
+                gap: "3rem"
               }}
               key={item.h2}
             >
               <Stack
                 direction={{ xs: "column", sm: "row" }}
                 className="content"
-                spacing={{ xs: "1rem", md: "3rem" }}
+                spacing={{ xs: "1rem", md: "6rem" }}
               >
                 <Box component="article" color="white">
                   <Typography variant="h5" component="h3">
@@ -51,11 +54,7 @@ const About = () => {
                   </Typography>
 
                   {item.content.length > 400 ? (
-                    <Typography
-                      fontWeight="200"
-                      variant="caption"
-                      component="p"
-                    >
+                    <Typography fontWeight="200" variant="body2" component="p">
                       {t(item.content.substring(0, 401) + "...")}
                     </Typography>
                   ) : item.content.hasOwnProperty("title") &&
@@ -66,11 +65,7 @@ const About = () => {
                       {t(item.content.title)}
                     </Typography>
                   ) : (
-                    <Typography
-                      fontWeight="200"
-                      variant="body2"
-                      component="p"
-                    >
+                    <Typography fontWeight="200" variant="body2" component="p">
                       {t(item.content)}
                     </Typography>
                   )}

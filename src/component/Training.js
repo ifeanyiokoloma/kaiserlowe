@@ -18,10 +18,10 @@ const Training = () => {
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <StyledTraining className="py-5">
           <Container>
-            <H2>{t("Training")}</H2>
+            <H2 linecolor="var(--primary)">{t("Training")}</H2>
             <div className="cards">
               {training.map((item) => (
-                <div key={item.h2} className="card">
+                <div key={item.h2} className="myCard">
                   <div className="img-box">
                     <Image imageName={item.img} />
                   </div>
@@ -53,8 +53,8 @@ const Training = () => {
                 </div>
               ))}
             </div>
-            <LearnMore link="/training" />
           </Container>
+          <LearnMore link="/training" />
         </StyledTraining>
       </Box>
     </Box>

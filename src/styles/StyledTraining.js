@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const StyledTraining = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
   .cards {
     display: flex;
     flex-direction: column;
@@ -13,15 +17,16 @@ export const StyledTraining = styled.section`
 
   .card-text {
     height: 50%;
-
+    padding-bottom: 1rem;
+    
     h3 {
       text-transform: uppercase;
     }
   }
 
-  .card {
-    border-width: 0;
-  }
+  // .myCard {
+  //   padding-bottom: 3rem;
+  // }
 
   img.sm {
     display: none;
@@ -33,17 +38,17 @@ export const StyledTraining = styled.section`
       flex-flow: wrap;
     }
 
-    .card {
+    .myCard {
       flex-basis: 50%;
       height: 400px;
     }
 
     .card-text {
-      height: 50%;
+      height: 40%;
     }
 
     .img-box {
-      height: 200px;
+      height: 300px;
     }
 
     img.xs {
@@ -61,9 +66,9 @@ export const StyledTraining = styled.section`
       flex-flow: nowrap;
     }
 
-    .card {
+    .myCard {
       flex-basis: 33.3%;
-      height: 60vh;
+      height: 80vh;
     }
   }
 `;

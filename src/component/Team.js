@@ -11,7 +11,7 @@ const Team = () => {
         <Stack
           justifyContent="center"
           alignItems="center"
-          direction={{ xs: "column" }}
+          direction={{ xs: "column", sm: "row" }}
           spacing={3}
         >
           <Box

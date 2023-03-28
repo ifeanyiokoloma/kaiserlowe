@@ -2,6 +2,7 @@ import React from "react";
 import { contact } from "../asset/content";
 import { Box } from "@mui/system";
 import { Container, Typography } from "@mui/material";
+import H2 from "./H2";
 
 const Contact = () => {
   return (
@@ -12,9 +13,9 @@ const Contact = () => {
     >
       <Box sx={{ background: "rgba(255, 152, 0, .8)" }}>
         <Container component="section" className="py-5">
-          <Typography color="white" variant="h4" component="h2">
+          <H2>
             Contact
-          </Typography>
+          </H2>
           <Box
             display="flex"
             flexDirection={{ xs: "column", sm: "row" }}

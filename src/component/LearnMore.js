@@ -6,7 +6,7 @@ import { StyledLearnMore } from "../styles/StyledLearnMore";
 const LearnMore = ({color, bgc, link}) => {
   const {t} = useTranslation()
   return (
-    <div className="text-center mt-5">
+    <div className="text-center">
       <StyledLearnMore
         className="btn poppins"
       >
