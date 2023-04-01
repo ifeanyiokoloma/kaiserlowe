@@ -13,9 +13,13 @@ const NavbarProvider = ({ children, window }) => {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  const closeDrawer = () => {
+    setMobileOpen(false);
+  };
   return (
     <NavbarContext.Provider
-      value={{ mobileOpen, container, handleDrawerToggle, drawerWidth }}
+      value={{ mobileOpen, container, handleDrawerToggle, drawerWidth, closeDrawer }}
     >
       {children}
     </NavbarContext.Provider>

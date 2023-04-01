@@ -23,7 +23,7 @@ const Training = () => {
               {training.map((item) => (
                 <div key={item.h2} className="myCard">
                   <div className="img-box">
-                    <Image imageName={item.img} />
+                    <Image alt={item.h2} imageName={item.img} />
                   </div>
                   <Box
                     component="section"
@@ -54,7 +54,7 @@ const Training = () => {
               ))}
             </div>
           </Container>
-          <LearnMore link="/training" />
+          <LearnMore text="Training Page" link="/training" />
         </StyledTraining>
       </Box>
     </Box>

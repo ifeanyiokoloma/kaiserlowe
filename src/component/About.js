@@ -84,10 +84,10 @@ const About = () => {
                   </Typography>
                 </Box>
                 <Box className="img-box">
-                  <Image imageName={item.img} />
+                  <Image alt={item.h2} imageName={item.img} />
                 </Box>
               </Stack>
-              <LearnMore link="/about" />
+              <LearnMore text="About Page" link="/about" />
             </SplideSlide>
           ))}
         </Splide>

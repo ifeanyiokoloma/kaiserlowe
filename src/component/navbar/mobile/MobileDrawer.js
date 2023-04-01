@@ -7,12 +7,12 @@ import Logo from "../Logo";
 import { IconButton } from "@mui/material";
 
 const MobileDrawer = () => {
-  const { handleDrawerToggle } = useContext(NavbarContext);
+  const { closeDrawer } = useContext(NavbarContext);
   return (
     <GlassBox>
       <TopBar className="pt-3">
         <IconButton
-          onClick={handleDrawerToggle}
+          onClick={closeDrawer}
           aria-label="close"
           color="black"
           size="large"

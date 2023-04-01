@@ -13,7 +13,7 @@ import Image from "./Image";
 const MobilePortfolio = () => {
   const [scale, setScale] = useState(false);
 
-  function handleClick(e) {
+  function handleScale() {
     setScale(!scale);
   }
 
@@ -27,7 +27,7 @@ const MobilePortfolio = () => {
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
-          <H2>Portfolio</H2>
+          <H2 linecolor="var(--primary)">Portfolio</H2>
           <Splide
             options={{
               autoplay: true,
@@ -55,7 +55,7 @@ const MobilePortfolio = () => {
           >
             {portfolio.map((project) => (
               <StyledMobilePortfolio key={project.work}>
-                <div onClick={handleClick} key={project.work} className="box">
+                <div onClick={handleScale} key={project.work} className="box">
                   <div
                     style={{
                       transform: scale && "scale(1.2)",
@@ -76,7 +76,7 @@ const MobilePortfolio = () => {
               </StyledMobilePortfolio>
             ))}
           </Splide>
-          <LearnMore color="white" bgc="var(--primary)" />
+          <LearnMore text="Portfolio Page" color="white" bgc="var(--primary)" className="mt-5" />
         </Container>
       </Box>
     </Box>

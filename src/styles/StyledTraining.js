@@ -48,15 +48,7 @@ export const StyledTraining = styled.section`
     }
 
     .img-box {
-      height: 300px;
-    }
-
-    img.xs {
-      display: none;
-    }
-
-    img.sm {
-      display: block;
+      height: 250px;
     }
   }
 
@@ -68,7 +60,7 @@ export const StyledTraining = styled.section`
 
     .myCard {
       flex-basis: 33.3%;
-      height: 80vh;
+      height: 70vh;
     }
   }
 `;

@@ -39,7 +39,7 @@ const SlidingHero = () => {
               </p>
             </StyledContainer>
           </Overlay>
-          <Image imageName={text.img} />
+          <Image alt={text.h1} imageName={text.img} />
         </SplideSlide>
       ))}
     </StyledSplide>

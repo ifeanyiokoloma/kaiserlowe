@@ -17,9 +17,7 @@ const Services = () => {
           {services.map((service) => (
             <div key={service.h3} className="myCard">
               <Box className="img-box">
-                <Image
-                  imageName={service.img}
-                />
+                <Image imageName={service.img} alt={service.h3} />
               </Box>
               <article>
                 <Typography variant="h5" component="h3">
@@ -37,7 +35,7 @@ const Services = () => {
           ))}
           <div className="bar"></div>
         </StyledServices>
-        <LearnMore link="/services" />
+        <LearnMore text="Portfolio Page" className="mt-5" link="/services" />
       </Container>
     </Box>
   );

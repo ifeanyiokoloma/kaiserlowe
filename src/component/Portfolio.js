@@ -18,14 +18,12 @@ const Portfolio = () => {
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
-          <H2 linecolor="var(--primary)">
-            {t("Portfolio")}
-          </H2>
+          <H2 linecolor="var(--primary)">{t("Portfolio")}</H2>
           <StyledPortfolio>
             {portfolio.map((project) => (
               <div key={project.work} className="box">
                 <div className="img-box">
-                  <Image imageName={project.img} />
+                  <Image alt={project.work} imageName={project.img} />
                 </div>
                 <div className="text">
                   <h3>{t(project.work)}</h3>
@@ -33,7 +31,7 @@ const Portfolio = () => {
               </div>
             ))}
           </StyledPortfolio>
-          <LearnMore link="/portfolio" />
+          <LearnMore text="Portfolio Page" link="/portfolio" />
         </Container>
       </Box>
     </Box>

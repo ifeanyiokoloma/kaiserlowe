@@ -5,7 +5,7 @@ import MobileDrawer from "./MobileDrawer";
 import { GlassDrawer } from "../../../styles/StyledNavBar";
 
 const ControlDrawer = () => {
-  const { handleDrawerToggle, container, mobileOpen, drawerWidth } =
+  const { container, mobileOpen, drawerWidth, closeDrawer } =
     useContext(NavbarContext);
   return (
     <Box component="nav">
@@ -13,7 +13,7 @@ const ControlDrawer = () => {
         container={container}
         variant="temporary"
         open={mobileOpen}
-        onClose={handleDrawerToggle}
+        onClose={closeDrawer}
         ModalProps={{
           keepMounted: true, // Better open performance on mobile.
         }}
