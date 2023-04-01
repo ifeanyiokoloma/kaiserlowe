@@ -13,7 +13,7 @@ const SlidingHero = () => {
       options={{
         autoplay: true,
         interval: 6000,
-        lazyLoad: false,
+        lazyLoad: true,
         keyboard: true,
         height: "100vh",
         width: "100%",
