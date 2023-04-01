@@ -35,7 +35,7 @@ const Services = () => {
           ))}
           <div className="bar"></div>
         </StyledServices>
-        <LearnMore text="Portfolio Page" className="mt-5" link="/services" />
+        <LearnMore text="Services Page" className="mt-5" link="/services" />
       </Container>
     </Box>
   );

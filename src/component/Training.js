@@ -51,7 +51,7 @@ const Training = () => {
               ))}
             </div>
           </Container>
-          <LearnMore text="Training Page" link="/training" />
+          <LearnMore text="More Courses" link="/training" />
         </StyledTraining>
       </Box>
     </BG>
