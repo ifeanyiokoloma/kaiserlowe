@@ -17,7 +17,6 @@ const About = () => {
         <Splide
           options={{
             autoplay: true,
-            arrow: false,
             cover: true,
             arrows: false,
             pagination: false,
@@ -26,7 +25,7 @@ const About = () => {
             type: "fade",
             speed: 1000,
             interval: 6000,
-            lazyLoad: false,
+            lazyLoad: true,
             keyboard: true,
             rewind: "true",
           }}

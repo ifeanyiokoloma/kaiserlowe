@@ -100,7 +100,7 @@ const StyledServices = styled.section`
     }
 
     & > .myCard:nth-child(6):hover {
-      transform: translateX(-7rem);
+      transform: translateX(-9rem);
     }
 
     & > .bar {
