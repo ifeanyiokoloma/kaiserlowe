@@ -9,6 +9,7 @@ import StyledMobilePortfolio from "../styles/StyledMobilePortfolio";
 import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
+import BG from "./BG";
 
 const MobilePortfolio = () => {
   const [scale, setScale] = useState(false);
@@ -19,11 +20,8 @@ const MobilePortfolio = () => {
 
   const { t } = useTranslation();
   return (
-    <Box
+    <BG
       display={{ xs: "block", lg: "none" }}
-      sx={{
-        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
-      }}
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
@@ -79,7 +77,7 @@ const MobilePortfolio = () => {
           <LearnMore text="Portfolio Page" color="white" bgc="var(--primary)" className="mt-5" />
         </Container>
       </Box>
-    </Box>
+    </BG>
   );
 };
 

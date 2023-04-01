@@ -3,19 +3,14 @@ import { contact } from "../asset/content";
 import { Box } from "@mui/system";
 import { Container, Typography } from "@mui/material";
 import H2 from "./H2";
+import BG from "./BG";
 
 const Contact = () => {
   return (
-    <Box
-      sx={{
-        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
-      }}
-    >
+    <BG>
       <Box sx={{ background: "rgba(255, 152, 0, .8)" }}>
         <Container component="section" className="py-5">
-          <H2>
-            Contact
-          </H2>
+          <H2>Contact</H2>
           <Box
             display="flex"
             flexDirection={{ xs: "column", sm: "row" }}
@@ -61,7 +56,7 @@ const Contact = () => {
           </Box>
         </Container>
       </Box>
-    </Box>
+    </BG>
   );
 };
 

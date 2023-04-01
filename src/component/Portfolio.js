@@ -6,15 +6,13 @@ import { useTranslation } from "react-i18next";
 import LearnMore from "./LearnMore";
 import Image from "./Image";
 import H2 from "./H2";
+import BG from "./BG";
 
 const Portfolio = () => {
   const { t } = useTranslation();
   return (
-    <Box
+    <BG
       display={{ xs: "none", lg: "block" }}
-      sx={{
-        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
-      }}
     >
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
@@ -34,7 +32,7 @@ const Portfolio = () => {
           <LearnMore text="Portfolio Page" link="/portfolio" />
         </Container>
       </Box>
-    </Box>
+    </BG>
   );
 };
 

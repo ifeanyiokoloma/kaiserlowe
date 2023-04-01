@@ -6,15 +6,12 @@ import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
 import H2 from "./H2";
 import Image from "./Image";
+import BG from "./BG";
 
 const Training = () => {
   const { t } = useTranslation();
   return (
-    <Box
-      sx={{
-        background: `url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_limit/v1679359338/kaiserlowe/portfolio/bg_hqmoqj.jpg) center/cover no-repeat fixed`,
-      }}
-    >
+    <BG>
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <StyledTraining className="py-5">
           <Container>
@@ -57,7 +54,7 @@ const Training = () => {
           <LearnMore text="Training Page" link="/training" />
         </StyledTraining>
       </Box>
-    </Box>
+    </BG>
   );
 };
 

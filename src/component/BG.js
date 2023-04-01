@@ -1,0 +1,34 @@
+import { Box } from "@mui/material";
+import React from "react";
+import styled from "styled-components";
+
+const StyledBG = styled(Box)`
+  background: url(https://res.cloudinary.com/kaiserlowe/image/upload/w_600,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp)
+    center/cover no-repeat fixed;
+
+  @media (min-width: 600px) {
+    background: url(https://res.cloudinary.com/kaiserlowe/image/upload/w_900,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp)
+      center/cover no-repeat fixed;
+  }
+
+  @media (min-width: 900px) {
+    background: url(https://res.cloudinary.com/kaiserlowe/image/upload/w_1200,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp)
+      center/cover no-repeat fixed;
+  }
+
+  @media (min-width: 1200px) {
+    background: url(https://res.cloudinary.com/kaiserlowe/image/upload/w_1536,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp)
+      center/cover no-repeat fixed;
+  }
+
+  @media (min-width: 1536px) {
+    background: url(https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp)
+      center/cover no-repeat fixed;
+  }
+`;
+
+const BG = ({ children, display }) => {
+  return <StyledBG display={display}>{children}</StyledBG>;
+};
+
+export default BG;
