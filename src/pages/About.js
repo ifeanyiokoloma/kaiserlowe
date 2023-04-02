@@ -22,9 +22,7 @@ const About = () => {
       <Section
         imgSrc={about[1].img}
         title={about[1].content.title}
-        list={about[1].content.list.map((one) => (
-          <li>{one}</li>
-        ))}
+        list={about[1].content.list}
         header={about[1].h2}
       />
       <Section

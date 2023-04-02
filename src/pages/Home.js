@@ -6,7 +6,6 @@ import Services from '../component/Services';
 import Portfolio from '../component/Portfolio';
 import MobilePortfolio from '../component/MobilePortfolio';
 import Team from '../component/Team';
-import Contact from '../component/Contact';
 import Layout from '../component/Layout';
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
       <Portfolio />
       <MobilePortfolio />
       <Team />
-      <Contact />
     </Layout>
   );
 }

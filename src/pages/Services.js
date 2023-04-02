@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../component/Layout";
 import Hero from "../component/Hero";
 import Section from "../component/Section";
-import { services } from "../asset/content";
+import { servicesPage } from "../asset/content";
 
 const Services = () => {
   return (
@@ -13,38 +13,40 @@ const Services = () => {
         lead="Welcome to Kaiserlowe, the premier construction company offering a wide range of services to help bring your building projects to life."
       />
       <Section
-        imgSrc={services[0].img}
-        content={services[0].p}
-        header={services[0].h3}
+        imgSrc={servicesPage[0].img}
+        content={servicesPage[0].p}
+        header={servicesPage[0].h3}
       />
       <Section
-        imgSrc={services[1].img}
-        content={services[1].p}
-        header={services[1].h3}
+        imgSrc={servicesPage[1].img}
+        title={servicesPage[1].title}
+        header={servicesPage[1].h3}
         imgPos={2}
+        list={servicesPage[1].li}
       />
       <Section
-        imgSrc={services[2].img}
-        content={services[2].p}
-        header={services[2].h3}
+        imgSrc={servicesPage[2].img}
+        content={servicesPage[2].p}
+        header={servicesPage[2].h3}
       />
       <Section
-        imgSrc={services[3].img}
-        content={services[3].p}
-        header={services[3].h3}
+        imgSrc={servicesPage[3].img}
+        content={servicesPage[3].p}
+        header={servicesPage[3].h3}
         imgPos={2}
       />
 
       <Section
-        imgSrc={services[4].img}
-        content={services[4].p}
-        header={services[4].h3}
+        imgSrc={servicesPage[4].img}
+        title={servicesPage[4].title}
+        header={servicesPage[4].h3}
+        list={servicesPage[4].li}
       />
 
       <Section
-        imgSrc={services[5].img}
-        content={services[5].p}
-        header={services[5].h3}
+        imgSrc={servicesPage[5].img}
+        content={servicesPage[5].p}
+        header={servicesPage[5].h3}
         imgPos={2}
       />
     </Layout>
