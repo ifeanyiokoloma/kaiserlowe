@@ -27,8 +27,12 @@ const StyledBG = styled(Box)`
   }
 `;
 
-const BG = ({ children, display }) => {
-  return <StyledBG display={display}>{children}</StyledBG>;
+const BG = ({ children, display, overlay }) => {
+  return (
+    <StyledBG display={display}>
+      <Box sx={{ background: overlay || "rgba(0, 0, 0, .5)" }}>{children}</Box>
+    </StyledBG>
+  );
 };
 
 export default BG;
