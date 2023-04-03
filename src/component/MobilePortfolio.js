@@ -20,9 +20,7 @@ const MobilePortfolio = () => {
 
   const { t } = useTranslation();
   return (
-    <BG
-      display={{ xs: "block", lg: "none" }}
-    >
+    <BG display={{ xs: "block", lg: "none" }}>
       <Box sx={{ background: "rgba(0, 0, 0, .5)" }}>
         <Container className="py-5">
           <H2 linecolor="var(--primary)">Portfolio</H2>
@@ -74,7 +72,13 @@ const MobilePortfolio = () => {
               </StyledMobilePortfolio>
             ))}
           </Splide>
-          <LearnMore text="Portfolio Page" color="white" bgc="var(--primary)" className="mt-5" />
+          <LearnMore
+            link="/portfolio"
+            text="See More Projects"
+            color="white"
+            bgc="var(--primary)"
+            className="mt-5"
+          />
         </Container>
       </Box>
     </BG>

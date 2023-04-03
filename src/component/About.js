@@ -86,7 +86,7 @@ const About = () => {
                   <Image alt={item.h2} imageName={item.img} />
                 </Box>
               </Stack>
-              <LearnMore text="About Page" link="/about" />
+              <LearnMore text="Read more" link="/about" />
             </SplideSlide>
           ))}
         </Splide>

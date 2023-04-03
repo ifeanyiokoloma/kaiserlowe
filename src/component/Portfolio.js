@@ -29,7 +29,7 @@ const Portfolio = () => {
               </div>
             ))}
           </StyledPortfolio>
-          <LearnMore text="Portfolio Page" link="/portfolio" />
+          <LearnMore text="See More Projects" link="/portfolio" />
         </Container>
       </Box>
     </BG>
