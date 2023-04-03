@@ -1,7 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import Image from "./Image";
+import H1 from "./H1";
+import Lead from "./Lead";
 
 const Hero = ({ imgSrc, h1, lead }) => {
   return (
@@ -31,17 +33,8 @@ const Hero = ({ imgSrc, h1, lead }) => {
           alignItems="center"
           maxWidth="md"
         >
-          <Typography textAlign="center" variant="h2" component="h1">
-            {h1}
-          </Typography>
-          <Typography
-            fontWeight="100"
-            textAlign="center"
-            variant="subtitle1"
-            component="p"
-          >
-            {lead}
-          </Typography>
+          <H1>{h1}</H1>
+          <Lead>{lead}</Lead>
         </Container>
       </Box>
     </Box>

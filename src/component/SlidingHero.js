@@ -5,6 +5,8 @@ import "@splidejs/react-splide/css";
 import { heroText } from "../asset/content";
 import StyledSplide, { Overlay, StyledContainer } from "../styles/StyledSplide";
 import Image from "./Image";
+import H1 from "./H1";
+import Lead from "./Lead";
 
 const SlidingHero = () => {
   const { t } = useTranslation();
@@ -27,16 +29,16 @@ const SlidingHero = () => {
       }}
       aria-label="Hero Images"
       tag="section"
-      className="text-white"
+      className="text-white bg-dark"
     >
       {heroText.map((text) => (
         <SplideSlide key={text.h1}>
           <Overlay>
             <StyledContainer>
-              <h1 className="display-2">{t(text.h1)}</h1>
-              <p className="tablet-width raleway light-font lead">
+              <H1>{t(text.h1)}</H1>
+              <Lead>
                 {t(text.p)}
-              </p>
+              </Lead>
             </StyledContainer>
           </Overlay>
           <Image alt={text.h1} imageName={text.img} />

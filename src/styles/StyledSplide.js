@@ -3,11 +3,6 @@ import { Splide } from "@splidejs/react-splide";
 import styled from "styled-components";
 
 const StyledSplide = styled(Splide)`
-  h1 {
-    font-weight: bold;
-    color: var(--primary);
-  }
-
   && .lead {
     font-size: 0.8rem;
   }
