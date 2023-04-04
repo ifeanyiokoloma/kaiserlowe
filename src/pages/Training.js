@@ -11,7 +11,11 @@ const TrainingPage = () => {
         h1="Training"
         lead="At Kaiserlowe, we understand that a skilled and knowledgeable workforce is crucial to the success of any construction project, which is why we offer comprehensive training programs designed to meet the unique needs of our clients."
       />
-      <Training />
+      <Training
+        headerColor="secondary"
+        headerLineColor="var(--primary)"
+        header="Courses"
+      />
     </Layout>
   );
 };

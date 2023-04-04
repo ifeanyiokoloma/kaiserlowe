@@ -16,14 +16,13 @@ const StyledTypography = styled(Typography)`
     margin-left: -40px;
     position: absolute;
     width: 85px;
-    color: ;
   }
 `;
 
-const H2 = ({ children, linecolor }) => {
+const H2 = ({ children, linecolor, color }) => {
   return (
     <StyledTypography
-      color="white"
+      color={color}
       fontWeight="900"
       variant="h4"
       component="h2"

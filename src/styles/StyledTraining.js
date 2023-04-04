@@ -5,6 +5,14 @@ export const StyledTraining = styled.section`
   flex-direction: column;
   gap: 3rem;
 
+  a {
+    transition: 500ms;
+  }
+
+  a:hover {
+    transform: scale(1.1)
+  }
+
   .cards {
     display: flex;
     flex-direction: column;

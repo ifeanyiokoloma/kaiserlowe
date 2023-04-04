@@ -9,13 +9,21 @@ import Team from "../component/Team";
 import Layout from "../component/Layout";
 import BG from "../component/BG";
 
+import { useTranslation } from "react-i18next";
+
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <Layout>
       <SlidingHero />
       <About />
       <BG>
-        <Training extraBtn header />
+        <Training
+          extraBtn
+          headerColor="white"
+          headerLineColor="var(--primary)"
+          header={t("Training")}
+        />
       </BG>
       <Services />
       <Portfolio />
