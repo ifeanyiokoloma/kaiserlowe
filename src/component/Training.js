@@ -6,6 +6,7 @@ import { StyledTraining } from "../styles/StyledTraining";
 import { useTranslation } from "react-i18next";
 import H2 from "./H2";
 import Image from "./Image";
+import StyledLink from "../styles/StyledLink";
 
 const Training = ({ extraBtn, header }) => {
   const { t } = useTranslation();
@@ -15,7 +16,7 @@ const Training = ({ extraBtn, header }) => {
           {header && <H2 linecolor="var(--primary)">{t("Training")}</H2>}
           <div className="cards">
             {training.map((item) => (
-              <div key={item.h2} className="myCard">
+              <StyledLink to={`/${item.link}#`} key={item.h2} className="myCard">
                 <div className="img-box">
                   <Image alt={item.h2} imageName={item.img} />
                 </div>
@@ -40,7 +41,7 @@ const Training = ({ extraBtn, header }) => {
                     ))}
                   </ul>
                 </Box>
-              </div>
+              </StyledLink>
             ))}
           </div>
         </Container>

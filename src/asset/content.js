@@ -68,32 +68,72 @@ export const about = [
 
 export const training = [
   {
-    h2: "Welder",
+    h2: "Welding",
     list: [
       "Introduction and Safety",
       "Oxy-fuel Cutting",
       "Welding and Brazing",
     ],
     img: "training/welding_qusfhl.jpg",
+    link: "welding",
+    content: [
+      "Looking to start a career in welding? Look no further than KaiserLowe! Our welding training program is designed to prepare you for a successful career in this in-demand field.",
+
+      "Our experienced instructors will guide you through hands-on training in welding techniques, safety practices, and equipment operation. You'll learn how to work with different types of metals and welding processes, including MIG, TIG, and stick welding.",
+
+      "At KaiserLowe, we understand that welding is a crucial skill in many industries, from construction to manufacturing. That's why our training program is designed to give you the practical skills and knowledge you need to excel in the workforce.",
+
+      "Whether you're looking to start a new career or enhance your existing skills, our welding training program can help you achieve your goals. Contact us today to learn more about our program and how to get started.",
+    ],
   },
   {
-    h2: "Carpenter",
+    h2: "Carpentry",
     list: [
       "Introduction and Safety",
       "Building methods and construction technology",
       "Material handling",
     ],
     img: "training/carpentry_ucbuoh.jpg",
+    link: "carpentry",
+    content: [
+      "Looking to start a career in carpentry? Look no further than KaiserLowe! Our carpentry training program is designed to prepare you for a successful career in this exciting field.",
+
+      "Our experienced instructors will guide you through hands-on training in carpentry techniques, safety practices, and equipment operation. You'll learn how to work with different types of wood and other building materials, and you'll gain valuable experience in everything from framing to finishing work.",
+
+      "At KaiserLowe, we understand that carpentry is a crucial skill in many industries, from construction to home renovation. That's why our training program is designed to give you the practical skills and knowledge you need to excel in the workforce.",
+
+      "Whether you're looking to start a new career or enhance your existing skills, our carpentry training program can help you achieve your goals. Contact us today to learn more about our program and how to get started.",
+    ],
   },
   {
-    h2: "Electrical Worker",
+    h2: "Electrical Work",
     list: ["Introduction and Safety", "Installation", "Electrical maintenance"],
     img: "training/electrician_ghnltu.jpg",
+    link: "electrical",
+    content: [
+      "Looking to start a career in electrical work? KaiserLowe has got you covered! Our electrical training program is designed to prepare you for a successful career in this dynamic and growing field.",
+
+      "Our experienced instructors will guide you through hands-on training in electrical systems, safety practices, and equipment operation. You'll learn everything from wiring techniques to advanced electrical theory, and you'll gain valuable experience working with a wide variety of electrical components and systems.",
+
+      "At KaiserLowe, we understand that electrical work is a crucial skill in many industries, from construction to manufacturing. That's why our training program is designed to give you the practical skills and knowledge you need to excel in the workforce.",
+
+      "Whether you're looking to start a new career or enhance your existing skills, our electrical training program can help you achieve your goals. Contact us today to learn more about our program and how to get started.",
+    ],
   },
   {
-    h2: "Floor Tiler",
+    h2: "Floor Tiling",
     list: ["Introduction and Safety", "Material handling", "Building methods"],
     img: "training/floor-tiler_mqsiyq.jpg",
+    link: "tiling",
+    content: [
+      "Looking for a career in floor tiling? Look no further than KaiserLowe! Our floor tiling training program is designed to prepare you for a successful career in this in-demand field.",
+
+      "Our experienced instructors will guide you through hands-on training in tiling techniques, safety practices, and equipment operation. You'll learn how to work with different types of tiles and adhesives, and you'll gain valuable experience in everything from preparing surfaces to laying tiles and finishing work.",
+
+      "At KaiserLowe, we understand that floor tiling is a crucial skill in many industries, from construction to home renovation. That's why our training program is designed to give you the practical skills and knowledge you need to excel in the workforce.",
+
+      "Whether you're looking to start a new career or enhance your existing skills, our floor tiling training program can help you achieve your goals. Contact us today to learn more about our program and how to get started.",
+    ],
   },
 ];
 
@@ -183,7 +223,8 @@ export const servicesPage = [
   },
   {
     h3: "Planning and Building",
-    title: "Are you seeking a partner for property development and building? Look no further than Kaiser Löwe LTD.",
+    title:
+      "Are you seeking a partner for property development and building? Look no further than Kaiser Löwe LTD.",
     li: [
       "Our team of experienced architects, engineers, and builders are dedicated to providing high-quality, innovative solutions for all types of property development projects.",
       "Whether you're looking to build a new home, remodel an existing property, or develop a large commercial project, Kaiser Löwe LTD has the expertise and resources to help you succeed.",
@@ -221,7 +262,8 @@ export const servicesPage = [
   },
   {
     h3: "Facilities Management",
-    title: "We manage your Buildings, Building Technology, Building Cleaning, Security Services, Catering, Garden and landscape services.",
+    title:
+      "We manage your Buildings, Building Technology, Building Cleaning, Security Services, Catering, Garden and landscape services.",
     li: [
       "Health and safety: We are responsible for ensuring that buildings and facilities are safe and comply with relevant health and safety regulations. This includes conducting regular safety inspections, implementing emergency procedures, and providing appropriate training to staff.",
 

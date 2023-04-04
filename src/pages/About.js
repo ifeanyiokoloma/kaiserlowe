@@ -6,7 +6,7 @@ import { about } from "../asset/content";
 
 const About = () => {
   return (
-    <Layout>
+    <Layout id="#">
       <Hero
         imgSrc="about/about_lgqwzw.jpg"
         h1="About Us"

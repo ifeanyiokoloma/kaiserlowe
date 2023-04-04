@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "./Image";
 
-const StyledSection = styled(Box)`
+const StyledArticle = styled(Box)`
   & > * {
     flex-basis: 50%;
   }
@@ -14,11 +14,16 @@ const StyledSection = styled(Box)`
   }
 `;
 
-const Section = ({ imgSrc, content, header, imgPos, list, title }) => {
+const Section = ({ imgSrc, content, header, imgPos, list, title, h1 }) => {
   return (
     <Box minHeight="50vh" display="flex" flexDirection="column" py="3rem">
-      <StyledSection
-        component="section"
+      {h1 && (
+        <Typography my={3} color="secondary" component="h1" variant="h2">
+          {h1}
+        </Typography>
+      )}
+      <StyledArticle
+        component="article"
         display="flex"
         flexDirection={{ xs: "column", sm: "row" }}
         alignItems={{ sm: "center" }}
@@ -26,16 +31,18 @@ const Section = ({ imgSrc, content, header, imgPos, list, title }) => {
         px={{ sm: "1rem", lg: "3rem" }}
         gap={{ xs: "1rem", lg: "3rem" }}
       >
-        <Typography
-          display={{ xs: "block", sm: "none" }}
-          variant="h5"
-          component="h2"
-          mb="1em"
-          color="secondary"
-        >
-          {header}
-        </Typography>
-        <Box height="500px" order={{ lg: imgPos }}>
+        {header && (
+          <Typography
+            display={{ xs: "block", sm: "none" }}
+            variant="h5"
+            component="h2"
+            mb="1em"
+            color="secondary"
+          >
+            {header}
+          </Typography>
+        )}
+        <Box height="400px" order={{ lg: imgPos }}>
           <Image imageName={imgSrc} />
         </Box>
 
@@ -45,15 +52,17 @@ const Section = ({ imgSrc, content, header, imgPos, list, title }) => {
           px={{ xs: "1rem" }}
           component="article"
         >
-          <Typography
-            display={{ xs: "none", sm: "block" }}
-            variant="h5"
-            component="h2"
-            mb="1em"
-            color="secondary"
-          >
-            {header}
-          </Typography>
+          {header && (
+            <Typography
+              display={{ xs: "none", sm: "block" }}
+              variant="h5"
+              component="h2"
+              mb="1em"
+              color="secondary"
+            >
+              {header}
+            </Typography>
+          )}
           {content && Array.isArray(content) ? (
             <Stack spacing={2}>
               {content.map((paragraph) => (
@@ -78,7 +87,7 @@ const Section = ({ imgSrc, content, header, imgPos, list, title }) => {
             </Stack>
           )}
         </Box>
-      </StyledSection>
+      </StyledArticle>
     </Box>
   );
 };

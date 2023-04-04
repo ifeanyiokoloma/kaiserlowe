@@ -10,7 +10,7 @@ const NavList = () => {
     <Box sx={{ display: { xs: "none", lg: "block" } }}>
       {navItems.map((item) => (
         <Button key={item} sx={{ color: "#000", fontFamily: "poppins" }}>
-          <StyledLink to={item === "home" ? "/" : `/${item}`}>
+          <StyledLink to={item === "home" ? "/#" : `/${item}#`}>
             {t(item)}
           </StyledLink>
         </Button>
