@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledPortfolio = styled.div`
   display: grid;
-  grid-auto-rows: 50vh;
+  grid-auto-rows: 40vh;
   width: 100%;
   overflow-x: auto;
   gap: 1rem;
