@@ -8,9 +8,8 @@ import MobilePortfolio from "../component/MobilePortfolio";
 import Team from "../component/Team";
 import Layout from "../component/Layout";
 import BG from "../component/BG";
-
-import { useTranslation } from "react-i18next";
 import { portfolio } from "../asset/content";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -33,7 +32,12 @@ const Home = () => {
       >
         <Portfolio content={portfolio} btn header />
       </BG>
-      <MobilePortfolio />
+      <BG
+        imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp"
+        display={{ xs: "block", lg: "none" }}
+      >
+        <MobilePortfolio content={portfolio} header btn />
+      </BG>
       <Team />
     </Layout>
   );
