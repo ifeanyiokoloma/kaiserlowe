@@ -7,7 +7,10 @@ import BG from "./BG";
 
 const Contact = () => {
   return (
-    <BG overlay="rgba(255, 152, 0, .8)">
+    <BG
+      imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/contact/telephone_idr9uu.webp"
+      overlay="rgba(255, 152, 0, .8)"
+    >
       <Container component="section" className="py-5">
         <H2>Contact</H2>
         <Box

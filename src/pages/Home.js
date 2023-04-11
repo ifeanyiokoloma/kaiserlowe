@@ -10,6 +10,7 @@ import Layout from "../component/Layout";
 import BG from "../component/BG";
 
 import { useTranslation } from "react-i18next";
+import { portfolio } from "../asset/content";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ const Home = () => {
     <Layout>
       <SlidingHero />
       <About />
-      <BG>
+      <BG imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp">
         <Training
           extraBtn
           headerColor="white"
@@ -26,7 +27,12 @@ const Home = () => {
         />
       </BG>
       <Services />
-      <Portfolio />
+      <BG
+        imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp"
+        display={{ xs: "none", lg: "block" }}
+      >
+        <Portfolio content={portfolio} btn header />
+      </BG>
       <MobilePortfolio />
       <Team />
     </Layout>

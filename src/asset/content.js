@@ -170,25 +170,6 @@ export const services = [
   },
 ];
 
-export const portfolio = [
-  {
-    work: "construction project",
-    img: "portfolio/construction_xnklli.jpg",
-  },
-  {
-    work: "house renovation project",
-    img: "portfolio/renovation_ohdbdk.jpg",
-  },
-  {
-    work: "architecture project",
-    img: "portfolio/architecture_e9ypau.jpg",
-  },
-  {
-    work: "interior design project",
-    img: "portfolio/interior-design_nrt8nf.jpg",
-  },
-];
-
 export const contact = [
   {
     h3: "Address",
@@ -293,5 +274,52 @@ export const servicesPage = [
       "So, if you are looking for a reliable and experienced road construction partner, look no further. Contact us today to discuss your project and see how we can help you build a better tomorrow.",
     ],
     img: "services/road_r8bhtz.jpg",
+  },
+];
+
+export const portfolio = [
+  {
+    work: "construction project",
+    img: "portfolio/construction_xnklli.jpg",
+  },
+  {
+    work: "house renovation project",
+    img: "portfolio/renovation_ohdbdk.jpg",
+  },
+  {
+    work: "architecture project",
+    img: "portfolio/architecture_e9ypau.jpg",
+  },
+  {
+    work: "interior design project",
+    img: "portfolio/interior-design_nrt8nf.jpg",
+  },
+];
+
+export const constructionProjects = [
+  {
+    work: "construction project",
+    img: "portfolio/construction_xnklli.jpg",
+  },
+];
+
+export const HouseRenovations = [
+  {
+    work: "House Renovations",
+    img: "portfolio/renovation_ohdbdk.jpg",
+  },
+];
+
+export const architectureProjects = [
+  {
+    work: "architecture projects",
+    img: "portfolio/architecture_e9ypau.jpg",
+  },
+];
+
+export const interiorDesigns = [
+  {
+    work: "interior design",
+    img: "portfolio/interior-design_nrt8nf.jpg",
   },
 ];
