@@ -34,7 +34,7 @@ const SlidingHero = () => {
       {heroText.map((text) => (
         <SplideSlide key={text.h1}>
           <Overlay>
-            <StyledContainer>
+            <StyledContainer component="header">
               <H1>{t(text.h1)}</H1>
               <Lead>
                 {t(text.p)}

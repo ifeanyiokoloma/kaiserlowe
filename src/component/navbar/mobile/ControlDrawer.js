@@ -9,6 +9,7 @@ const ControlDrawer = () => {
     useContext(NavbarContext);
   return (
     <Box component="nav">
+      <h2 style={{ display: "none" }}>Main Navigation</h2>
       <GlassDrawer
         container={container}
         variant="temporary"

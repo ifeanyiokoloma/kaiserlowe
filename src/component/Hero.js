@@ -7,7 +7,7 @@ import Lead from "./Lead";
 
 const Hero = ({ imgSrc, h1, lead }) => {
   return (
-    <Box sx={{ height: "100vh", position: "relative" }}>
+    <Box component="section" sx={{ height: "100vh", position: "relative" }}>
       <Image
         style={{ position: "relative" }}
         imageName={imgSrc}
@@ -36,6 +36,7 @@ const Hero = ({ imgSrc, h1, lead }) => {
             alignItems: "center",
           }}
           maxWidth="md"
+          component="header"
         >
           <H1>{h1}</H1>
           <Lead>{lead}</Lead>

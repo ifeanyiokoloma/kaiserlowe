@@ -21,9 +21,9 @@ const Training = ({ extraBtn, header, headerLineColor, headerColor }) => {
         <div className="cards">
           {training.map((item) => (
             <StyledLink to={`/${item.link}#`} key={item.h2} className="myCard">
-              <div className="img-box">
+              <figure className="img-box">
                 <Image alt={item.h2} imageName={item.img} />
-              </div>
+              </figure>
               <Box
                 component="section"
                 bgcolor="primary.main"

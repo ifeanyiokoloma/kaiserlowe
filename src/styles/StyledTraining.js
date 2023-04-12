@@ -5,11 +5,17 @@ export const StyledTraining = styled.section`
   flex-direction: column;
   gap: 3rem;
 
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
   a {
     transition: 500ms;
   }
 
-  a:hover, a:active {
+  a:hover,
+  a:active {
     filter: saturate(300%);
   }
 
@@ -26,7 +32,7 @@ export const StyledTraining = styled.section`
   .card-text {
     height: 50%;
     padding-bottom: 1rem;
-    
+
     h3 {
       text-transform: uppercase;
     }

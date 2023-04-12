@@ -12,7 +12,7 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <StyledAbout className="py-5" sx={{ bgcolor: "primary.main" }}>
-      <Container maxWidth="lg">
+      <Container component="section" maxWidth="lg">
         <H2 color="white" linecolor="white">
           {t("About Us")}
         </H2>
@@ -94,7 +94,7 @@ const About = () => {
                       ))}
                   </Typography>
                 </Box>
-                <Box className="img-box">
+                <Box component="figure" className="img-box">
                   <Image alt={item.h2} imageName={item.img} />
                 </Box>
               </Stack>

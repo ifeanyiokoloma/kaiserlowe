@@ -11,7 +11,9 @@ const Portfolio = () => {
         h1="Portfolio"
         lead="Welcome to Kaiserlowe's portfolio page, showcasing our exceptional construction projects and unparalleled expertise in delivering high-quality solutions."
       />
-      <CenteredTabs sx={{mt: 5}} />
+      <main>
+        <CenteredTabs sx={{ mt: 5 }} />
+      </main>
     </Layout>
   );
 };

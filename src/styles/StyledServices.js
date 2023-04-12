@@ -9,6 +9,11 @@ const StyledServices = styled.section`
   padding-left: 0.5rem;
   width: 100%;
 
+  figure {
+    padding: 0;
+    margin: 0
+  }
+
   .myCard {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 import React from "react";
 import StyledPortfolio from "../styles/StyledPortfolio";
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import LearnMore from "./LearnMore";
 import Image from "./Image";
@@ -17,11 +17,11 @@ const Portfolio = ({ content, btn, header }) => {
       )}
       <StyledPortfolio>
         {content.map((project) => (
-          <div key={project.work} className="box">
+          <Box key={project.work} className="box">
             <figure className="img-box">
               <Image alt={project.work} imageName={project.img} />
             </figure>
-            <div className="text">
+            <Box className="text">
               <Typography
                 sx={{ fontWeight: "bold" }}
                 variant="h5"
@@ -29,8 +29,8 @@ const Portfolio = ({ content, btn, header }) => {
               >
                 {t(project.work)}
               </Typography>
-            </div>
-          </div>
+            </Box>
+          </Box>
         ))}
       </StyledPortfolio>
       {btn && <LearnMore text="See More Projects" link="/portfolio" />}

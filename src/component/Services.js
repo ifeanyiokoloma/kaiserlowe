@@ -11,15 +11,15 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <Box bgcolor="primary.main" className="py-5">
-      <Container>
+      <Container component="section">
         <H2 color="white" linecolor="white">{t("Services")}</H2>
         <StyledServices>
           {services.map((service) => (
-            <div key={service.h3} className="myCard">
-              <Box className="img-box">
+            <Box key={service.h3} className="myCard">
+              <Box component="figure" className="img-box">
                 <Image imageName={service.img} alt={service.h3} />
               </Box>
-              <article>
+              <Box component="article">
                 <Typography variant="h5" component="h3">
                   {t(service.h3)}
                 </Typography>
@@ -30,8 +30,8 @@ const Services = () => {
                 >
                   {t(service.p)}
                 </Typography>
-              </article>
-            </div>
+              </Box>
+            </Box>
           ))}
           <div className="bar"></div>
         </StyledServices>

@@ -6,7 +6,7 @@ import Image from "./Image";
 const Team = () => {
   return (
     <Box bgcolor="primary.main" py={5}>
-      <Container>
+      <Container component="section">
         <H2 color="rgba(255,255,255,.8)" linecolor="rgba(255,255,255,.8)">
           Team
         </H2>
@@ -17,6 +17,7 @@ const Team = () => {
           spacing={3}
         >
           <Box
+            component="figure"
             width={250}
             borderRadius="50%"
             overflow="hidden"

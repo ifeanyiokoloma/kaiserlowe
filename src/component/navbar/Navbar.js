@@ -7,7 +7,7 @@ import LangBtn from "./LangBtn";
 import StyledNavBar from "../../styles/StyledNavBar";
 import Logo from "./Logo";
 import MobileNav from "./NavList";
-import HamburgerIcon from "./mobile/HamburgerIcon"
+import HamburgerIcon from "./mobile/HamburgerIcon";
 import BrandName from "../BrandName";
 
 function Navbar() {
@@ -15,6 +15,7 @@ function Navbar() {
     <StyledNavBar>
       <CssBaseline />
       <AppBar color="secondary" component="nav">
+        <h2 style={{ display: "none" }}>Main Navigation</h2>
         <Container maxWidth="xl">
           <Toolbar className="d-flex justify-content-between">
             <HamburgerIcon />

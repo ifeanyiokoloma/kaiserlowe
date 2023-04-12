@@ -16,29 +16,31 @@ const Home = () => {
   return (
     <Layout>
       <SlidingHero />
-      <About />
-      <BG imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp">
-        <Training
-          extraBtn
-          headerColor="white"
-          headerLineColor="var(--primary)"
-          header={t("Training")}
-        />
-      </BG>
-      <Services />
-      <BG
-        imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp"
-        display={{ xs: "none", lg: "block" }}
-      >
-        <Portfolio content={portfolio} btn header />
-      </BG>
-      <BG
-        imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp"
-        display={{ xs: "block", lg: "none" }}
-      >
-        <MobilePortfolio content={portfolio} header btn />
-      </BG>
-      <Team />
+      <main>
+        <About />
+        <BG imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp">
+          <Training
+            extraBtn
+            headerColor="white"
+            headerLineColor="var(--primary)"
+            header={t("Training")}
+          />
+        </BG>
+        <Services />
+        <BG
+          imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp"
+          display={{ xs: "none", lg: "block" }}
+        >
+          <Portfolio content={portfolio} btn header />
+        </BG>
+        <BG
+          imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp"
+          display={{ xs: "block", lg: "none" }}
+        >
+          <MobilePortfolio content={portfolio} header btn />
+        </BG>
+        <Team />
+      </main>
     </Layout>
   );
 };
