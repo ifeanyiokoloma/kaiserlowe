@@ -10,7 +10,7 @@ const Portfolio = ({ content, btn, header }) => {
   const { t } = useTranslation();
   return (
     <Container className="py-5">
-      {header && <H2 linecolor="var(--primary)">{t("Portfolio")}</H2>}
+      {header && <H2 color="white" linecolor="var(--primary)">{t("Portfolio")}</H2>}
       <StyledPortfolio>
         {content.map((project) => (
           <div key={project.work} className="box">

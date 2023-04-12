@@ -18,7 +18,7 @@ const MobilePortfolio = ({ content, header, btn }) => {
   const { t } = useTranslation();
   return (
     <Container className="py-5">
-      {header && <H2 linecolor="var(--primary)">{t("Portfolio")}</H2>}
+      {header && <H2 color="white" linecolor="var(--primary)">{t("Portfolio")}</H2>}
       <Splide
         options={{
           autoplay: true,

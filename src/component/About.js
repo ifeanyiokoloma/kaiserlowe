@@ -13,7 +13,7 @@ const About = () => {
   return (
     <StyledAbout className="py-5" bgcolor="primary.main">
       <Container maxWidth="lg">
-        <H2>{t("About Us")}</H2>
+        <H2 color="white" linecolor="white">{t("About Us")}</H2>
         <Splide
           options={{
             autoplay: true,

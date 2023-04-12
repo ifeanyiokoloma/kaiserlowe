@@ -7,7 +7,9 @@ const Team = () => {
   return (
     <Box bgcolor="primary.main" py={5}>
       <Container>
-        <H2>Team</H2>
+        <H2 color="rgba(255,255,255,.8)" linecolor="rgba(255,255,255,.8)">
+          Team
+        </H2>
         <Stack
           justifyContent="center"
           alignItems="center"
@@ -15,7 +17,7 @@ const Team = () => {
           spacing={3}
         >
           <Box
-            width={300}
+            width={250}
             borderRadius="50%"
             overflow="hidden"
             className="img-box"

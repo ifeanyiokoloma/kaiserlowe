@@ -21,8 +21,8 @@ export const router = createBrowserRouter(
       <Route path="services" element={<Services />} />,
       <Route path="training" element={<TrainingPage />} />,
       {training.map((course) => {
-        let {link, h2, img, content} = course;
-        return <Route key={link} path={`${link}`} element={<Course h1={h2} img={img} article={content} />}  />;
+        let {link, h2, img, list} = course;
+        return <Route key={link} path={`${link}`} element={<Course h1={h2} img={img} list={list} title="Course Outline" />}  />;
       })}
       ,
       <Route path="portfolio" element={<Portfolio />} />,

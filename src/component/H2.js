@@ -19,15 +19,16 @@ const StyledTypography = styled(Typography)`
   }
 `;
 
-const H2 = ({ children, linecolor, color }) => {
+const H2 = ({ children, linecolor, color, sx }) => {
   return (
     <StyledTypography
-      color={color}
+      color={color || "black"}
       fontWeight="900"
       variant="h4"
       component="h2"
       mb={5}
-      linecolor={linecolor}
+      sx={sx}
+      linecolor={linecolor || "var(--primary)"}
     >
       {children}
     </StyledTypography>

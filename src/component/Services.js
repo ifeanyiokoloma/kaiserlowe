@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <Box bgcolor="primary.main" className="py-5">
       <Container>
-        <H2>{t("Services")}</H2>
+        <H2 color="white" linecolor="white">{t("Services")}</H2>
         <StyledServices>
           {services.map((service) => (
             <div key={service.h3} className="myCard">

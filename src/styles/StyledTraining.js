@@ -9,8 +9,8 @@ export const StyledTraining = styled.section`
     transition: 500ms;
   }
 
-  a:hover {
-    transform: scale(1.1)
+  a:hover, a:active {
+    filter: saturate(300%);
   }
 
   .cards {
@@ -31,10 +31,6 @@ export const StyledTraining = styled.section`
       text-transform: uppercase;
     }
   }
-
-  // .myCard {
-  //   padding-bottom: 3rem;
-  // }
 
   img.sm {
     display: none;

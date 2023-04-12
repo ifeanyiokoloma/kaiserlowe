@@ -37,7 +37,7 @@ const ContactForm = () => {
     <Paper
       sx={{
         p: { xs: "3rem 2rem", sm: "4rem" },
-        bgcolor: "rgba(255, 255, 255, .95)",
+        bgcolor: "rgba(255, 255, 255, .85)",
         boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
       }}
     >

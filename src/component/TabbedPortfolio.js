@@ -11,6 +11,7 @@ import {
 } from "../asset/content";
 import Portfolio from "./Portfolio";
 import MobilePortfolio from "./MobilePortfolio";
+import H2 from "./H2";
 
 export default function CenteredTabs({ sx }) {
   const [value, setValue] = React.useState(0);
@@ -30,19 +31,42 @@ export default function CenteredTabs({ sx }) {
     <>
       <Box display={{ xs: "none", lg: "block" }} sx={sx}>
         <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
+          <H2 color="black" linecolor="var(--primary)">
+            Projects
+          </H2>
           <Tabs
             value={value}
             onChange={handleChange}
             centered
             textColor="secondary"
-            indicatorColor="secondary"
+            indicatorColor="primary"
             aria-label="portfolio tabs"
           >
-            <Tab label="All" {...a11yProps(0)} />
-            <Tab label="Construction Works" {...a11yProps(1)} />
-            <Tab label="House Renovations" {...a11yProps(2)} />
-            <Tab label="Architectural Designs" {...a11yProps(3)} />
-            <Tab label="Interior Designs" {...a11yProps(4)} />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black" }}
+              label="All"
+              {...a11yProps(0)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black" }}
+              label="Construction Works"
+              {...a11yProps(1)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black" }}
+              label="House Renovations"
+              {...a11yProps(2)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black" }}
+              label="Architectural Designs"
+              {...a11yProps(3)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black" }}
+              label="Interior Designs"
+              {...a11yProps(4)}
+            />
           </Tabs>
         </Box>
 
@@ -71,6 +95,9 @@ export default function CenteredTabs({ sx }) {
 
       <Box display={{ xs: "block", lg: "none" }} sx={sx}>
         <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
+          <H2 color="black" linecolor="var(--primary)">
+            Projects
+          </H2>
           <Tabs
             value={value}
             onChange={handleChange}
@@ -82,11 +109,31 @@ export default function CenteredTabs({ sx }) {
             allowScrollButtonsMobile
             wrapped
           >
-            <Tab label="All" {...a11yProps(0)} />
-            <Tab label="Construction Works" {...a11yProps(1)} />
-            <Tab label="House Renovations" {...a11yProps(2)} />
-            <Tab label="Architectural Designs" {...a11yProps(3)} />
-            <Tab label="Interior Designs" {...a11yProps(4)} />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black", width: "100%" }}
+              label="All"
+              {...a11yProps(0)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black", width: "100%" }}
+              label="Construction Works"
+              {...a11yProps(1)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black", width: "100%" }}
+              label="House Renovations"
+              {...a11yProps(2)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black", width: "100%" }}
+              label="Architectural Designs"
+              {...a11yProps(3)}
+            />
+            <Tab
+              sx={{ fontWeight: "bold", color: "black", width: "100%" }}
+              label="Interior Designs"
+              {...a11yProps(4)}
+            />
           </Tabs>
         </Box>
 

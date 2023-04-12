@@ -33,7 +33,7 @@ const Training = ({ extraBtn, header, headerLineColor, headerColor }) => {
                   {t(item.h2)}
                 </Typography>
                 <ul>
-                  {item.list.map((item) => (
+                  {item.list.slice(0, 3).map((item) => (
                     <Typography
                       className="mt-1"
                       component="li"

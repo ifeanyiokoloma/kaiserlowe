@@ -12,7 +12,9 @@ const Contact = () => {
       overlay="rgba(255, 152, 0, .8)"
     >
       <Container component="section" className="py-5">
-        <H2>Contact</H2>
+        <H2 color="rgba(255,255,255,.8)" linecolor="rgba(255,255,255,.8)">
+          Contact
+        </H2>
         <Box
           display="flex"
           flexDirection={{ xs: "column", sm: "row" }}
