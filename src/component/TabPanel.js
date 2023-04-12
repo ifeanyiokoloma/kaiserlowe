@@ -1,5 +1,3 @@
-import { Box, Typography } from "@mui/material";
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -11,11 +9,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <>{children}</>}
     </div>
   );
 }
@@ -26,4 +20,4 @@ function TabPanel(props) {
 //   value: PropTypes.number.isRequired,
 // };
 
-export default TabPanel
+export default TabPanel;

@@ -17,32 +17,40 @@ const StyledArticle = styled(Box)`
 
 const Section = ({ imgSrc, content, header, imgPos, list, title, h1 }) => {
   return (
-    <Box minHeight="50vh" display="flex" flexDirection="column" py="3rem">
+    <Box
+      sx={{
+        minHeight: "50vh",
+        display: "flex",
+        flexDirection: "column",
+        py: "3rem",
+      }}
+    >
       {h1 && (
-        <Typography my={3} color="black" component="h1" variant="h3">
+        <Typography sx={{ color: "black" }} my={3} component="h1" variant="h3">
           {h1}
         </Typography>
       )}
       <StyledArticle
         component="article"
-        display="flex"
-        flexDirection={{ xs: "column", sm: "row" }}
-        alignItems={{ sm: "center" }}
-        height="70%"
-        px={{ sm: "1rem", lg: "3rem" }}
-        gap={{ xs: "1rem", lg: "3rem" }}
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          alignItems: { sm: "center" },
+          height: "70%",
+          px: { sm: "1rem", lg: "3rem" },
+          gap: { xs: "1rem", lg: "3rem" },
+        }}
       >
         {header && (
           <H2 sx={{ display: { xs: "block", sm: "none" }, mb: 7 }}>{header}</H2>
         )}
-        <Box height="400px" order={{ lg: imgPos }}>
+        <Box sx={{ height: "400px", order: { sm: imgPos } }}>
           <Image imageName={imgSrc} />
         </Box>
 
         <Box
           className="content"
-          justifyContent={{ sm: "center" }}
-          px={{ xs: "1rem" }}
+          sx={{ justifyContent: { sm: "center" }, px: { xs: "1rem" } }}
           component="article"
         >
           {header && (
@@ -53,7 +61,7 @@ const Section = ({ imgSrc, content, header, imgPos, list, title, h1 }) => {
           {content && Array.isArray(content) ? (
             <Stack spacing={2}>
               {content.map((paragraph) => (
-                <Typography>{paragraph}</Typography>
+                <Typography key={paragraph}>{paragraph}</Typography>
               ))}
             </Stack>
           ) : (
@@ -62,8 +70,7 @@ const Section = ({ imgSrc, content, header, imgPos, list, title, h1 }) => {
           {list && (
             <Stack spacing={2} component="section">
               <Typography
-                sx={{ fontWeight: "bold" }}
-                color="secondary"
+                sx={{ fontWeight: "bold", color: "secondary" }}
                 component="h3"
                 variant="subtitle1"
               >
@@ -72,7 +79,7 @@ const Section = ({ imgSrc, content, header, imgPos, list, title, h1 }) => {
               <Box component="ul">
                 <Stack spacing={2}>
                   {list.map((item) => (
-                    <Typography component="li" variant="body1">
+                    <Typography key={item} component="li" variant="body1">
                       {item}
                     </Typography>
                   ))}

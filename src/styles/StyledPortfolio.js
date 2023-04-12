@@ -56,7 +56,7 @@ const StyledPortfolio = styled.div`
     transition: opacity 500ms;
     padding-inline: 1rem;
 
-    h3 {
+    figcaption {
       text-transform: uppercase;
       text-align: center;
       font-family: poppins;

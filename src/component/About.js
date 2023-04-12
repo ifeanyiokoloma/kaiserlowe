@@ -11,9 +11,11 @@ import Image from "./Image";
 const About = () => {
   const { t } = useTranslation();
   return (
-    <StyledAbout className="py-5" bgcolor="primary.main">
+    <StyledAbout className="py-5" sx={{ bgcolor: "primary.main" }}>
       <Container maxWidth="lg">
-        <H2 color="white" linecolor="white">{t("About Us")}</H2>
+        <H2 color="white" linecolor="white">
+          {t("About Us")}
+        </H2>
         <Splide
           options={{
             autoplay: true,
@@ -38,7 +40,7 @@ const About = () => {
                 height: "auto",
                 display: "flex",
                 flexDirection: "column",
-                gap: "3rem"
+                gap: "3rem",
               }}
               key={item.h2}
             >
@@ -53,18 +55,26 @@ const About = () => {
                   </Typography>
 
                   {item.content.length > 400 ? (
-                    <Typography fontWeight="200" variant="body2" component="p">
+                    <Typography
+                      sx={{ fontWeight: "200" }}
+                      variant="body2"
+                      component="p"
+                    >
                       {t(item.content.substring(0, 401) + "...")}
                     </Typography>
                   ) : item.content.hasOwnProperty("title") &&
                     typeof item.content === "object" &&
                     !Array.isArray(item.content) &&
                     item.content !== null ? (
-                    <Typography fontWeight="300" variant="subtitle2">
+                    <Typography sx={{ fontWeight: "300" }} variant="subtitle2">
                       {t(item.content.title)}
                     </Typography>
                   ) : (
-                    <Typography fontWeight="200" variant="body2" component="p">
+                    <Typography
+                      sx={{ fontWeight: "200" }}
+                      variant="body2"
+                      component="p"
+                    >
                       {t(item.content)}
                     </Typography>
                   )}
@@ -72,9 +82,11 @@ const About = () => {
                   <Typography
                     component="ul"
                     variant="body2"
-                    display="flex"
-                    flexDirection="column"
-                    gap=".3rem"
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: ".3rem",
+                    }}
                   >
                     {item.content.hasOwnProperty("list") &&
                       item.content?.list.map((item) => (

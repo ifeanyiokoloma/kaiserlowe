@@ -70,15 +70,21 @@ export default function CenteredTabs({ sx }) {
           </Tabs>
         </Box>
 
-        <TabPanel value={value} index={0}>
-          <Portfolio
-            content={constructionProjects.concat(
-              HouseRenovations,
-              architectureProjects,
-              interiorDesigns
-            )}
-          />
-        </TabPanel>
+        <TabPanel
+          children={
+            <Box>
+              <Portfolio
+                content={constructionProjects.concat(
+                  HouseRenovations,
+                  architectureProjects,
+                  interiorDesigns
+                )}
+              />
+            </Box>
+          }
+          value={value}
+          index={0}
+        />
         <TabPanel value={value} index={1}>
           <Portfolio content={constructionProjects} />
         </TabPanel>
@@ -107,7 +113,6 @@ export default function CenteredTabs({ sx }) {
             variant="scrollable"
             scrollButtons
             allowScrollButtonsMobile
-            wrapped
           >
             <Tab
               sx={{ fontWeight: "bold", color: "black", width: "100%" }}
