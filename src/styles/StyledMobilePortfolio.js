@@ -4,6 +4,14 @@ import styled from "styled-components";
 const StyledMobilePortfolio = styled(SplideSlide)`
   // padding-block: 1rem;
 
+  .scale .img-box {
+    transform: scale(1.2)
+  }
+
+  .scale .text {
+    opacity: 1;
+  }
+
   .box {
     position: relative;
     overflow: hidden;
