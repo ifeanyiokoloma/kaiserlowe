@@ -12,11 +12,17 @@ export const StyledTraining = styled.section`
 
   a {
     transition: 500ms;
+    overflow: hidden;
   }
 
-  a:hover,
-  a:active {
-    filter: saturate(300%);
+  a img {
+    transition: 500ms;
+  }
+
+  a img:hover,
+  a img:active {
+    filter: brightness(140%);
+    transform: scale(1.2);
   }
 
   .cards {
@@ -27,6 +33,7 @@ export const StyledTraining = styled.section`
 
   .img-box {
     height: 200px;
+    overflow: hidden;
   }
 
   .card-text {

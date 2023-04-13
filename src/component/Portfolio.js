@@ -9,7 +9,7 @@ import H2 from "./H2";
 const Portfolio = ({ content, btn, header }) => {
   const { t } = useTranslation();
   return (
-    <Container className="py-5">
+    <Container className="py-3">
       {header && (
         <H2 color="white" linecolor="var(--primary)">
           {t("Portfolio")}
