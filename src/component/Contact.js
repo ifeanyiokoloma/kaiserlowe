@@ -8,7 +8,7 @@ import BG from "./BG";
 const Contact = () => {
   return (
     <BG
-      imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/contact/telephone_idr9uu.webp"
+      imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill,q_auto/v1679359338/kaiserlowe/contact/telephone_idr9uu.webp"
       overlay="rgba(255, 152, 0, .8)"
     >
       <Container component="address" className="py-5">

@@ -17,7 +17,7 @@ const Contact = () => {
         <BG
           overlay="rgba(0, 0, 0, 0.7)"
           py="3rem"
-          imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill/v1679359338/kaiserlowe/contact/telephone_idr9uu.webp"
+          imagename="https://res.cloudinary.com/kaiserlowe/image/upload/w_auto,c_fill,q_auto/v1679359338/kaiserlowe/contact/telephone_idr9uu.webp"
         >
           <Container maxWidth="sm">
             <ContactForm />
