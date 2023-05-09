@@ -18,7 +18,7 @@ const Home = () => {
       <SlidingHero />
       <main>
         <About />
-        <BG imagename={`/images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}>
+        <BG imagename={`./images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}>
           <Training
             extraBtn
             headerColor="white"
@@ -28,13 +28,13 @@ const Home = () => {
         </BG>
         <Services />
         <BG
-          imagename={`/images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}
+          imagename={`./images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}
           display={{ xs: "none", lg: "block" }}
         >
           <Portfolio content={portfolio} btn header />
         </BG>
         <BG
-          imagename={`/images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}
+          imagename={`./images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}
           display={{ xs: "block", lg: "none" }}
         >
           <MobilePortfolio content={portfolio} header btn />
