@@ -18,7 +18,19 @@ const Home = () => {
       <SlidingHero />
       <main>
         <About />
-        <BG imagename={`./images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}>
+        <BG
+          imagename={`https://res.cloudinary.com/kaiserlowe/image/upload/${
+            window.innerWidth <= 600
+              ? "w_600"
+              : window.innerWidth <= 900
+              ? "w_900"
+              : window.innerWidth <= 1200
+              ? "w_1200"
+              : window.innerWidth <= 1536
+              ? "w_1536"
+              : "w_auto"
+          },c_fill,q_auto:good/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp`}
+        >
           <Training
             extraBtn
             headerColor="white"
@@ -28,13 +40,33 @@ const Home = () => {
         </BG>
         <Services />
         <BG
-          imagename={`./images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}
+          imagename={`https://res.cloudinary.com/kaiserlowe/image/upload/${
+            window.innerWidth <= 600
+              ? "w_600"
+              : window.innerWidth <= 900
+              ? "w_900"
+              : window.innerWidth <= 1200
+              ? "w_1200"
+              : window.innerWidth <= 1536
+              ? "w_1536"
+              : "w_auto"
+          },c_fill,q_auto:good/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp`}
           display={{ xs: "none", lg: "block" }}
         >
           <Portfolio content={portfolio} btn header />
         </BG>
         <BG
-          imagename={`./images/bg_${window.innerWidth <= 600 ? 600 : window.innerWidth <= 900 ? 900 : window.innerWidth <= 1200 ? 1200 : window.innerWidth <= 1536 ? 1536 : "full"}.jpg`}
+          imagename={`https://res.cloudinary.com/kaiserlowe/image/upload/${
+            window.innerWidth <= 600
+              ? "w_600"
+              : window.innerWidth <= 900
+              ? "w_900"
+              : window.innerWidth <= 1200
+              ? "w_1200"
+              : window.innerWidth <= 1536
+              ? "w_1536"
+              : "w_auto"
+          },c_fill,q_auto:good/v1679359338/kaiserlowe/portfolio/bg_qhx21i.webp`}
           display={{ xs: "block", lg: "none" }}
         >
           <MobilePortfolio content={portfolio} header btn />
