@@ -11,7 +11,11 @@ const Animation = ({ children }) => {
   }, [isInView]);
 
   return (
-    <motion.div style={{ opacity: isInView ? 1 : 0, transition: "2s" }} ref={scrollRef}>
+    <motion.div
+      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
+      transition={{ type: "spring", duration: 2, bounce: 0.5 }}
+      ref={scrollRef}
+    >
       {children}
     </motion.div>
   );
