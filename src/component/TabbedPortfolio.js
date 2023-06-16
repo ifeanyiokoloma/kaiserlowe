@@ -12,6 +12,7 @@ import {
 import Portfolio from "./Portfolio";
 import MobilePortfolio from "./MobilePortfolio";
 import H2 from "./H2";
+import Animation from "./Animation";
 
 export default function CenteredTabs({ sx }) {
   const [value, setValue] = React.useState(0);
@@ -28,7 +29,7 @@ export default function CenteredTabs({ sx }) {
   };
 
   return (
-    <>
+    <Animation>
       <Box display={{ xs: "none", lg: "block" }} sx={sx}>
         <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
           <H2 color="black" linecolor="var(--primary)">
@@ -164,6 +165,6 @@ export default function CenteredTabs({ sx }) {
           <MobilePortfolio content={interiorDesigns} />
         </TabPanel>
       </Box>
-    </>
+    </Animation>
   );
 }
