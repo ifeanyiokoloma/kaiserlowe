@@ -17,8 +17,9 @@ const HamburgerIcon = () => {
       width: 25px;
       height: 2px;
       background-color: #333;
-      transition: 0.4s;
+      transition: 1s;
     }
+
     .bar1 {
       transform: ${() => mobileOpen && "translate(0, 7px) rotate(45deg)"};
       background-color: ${() => mobileOpen && "red"};
