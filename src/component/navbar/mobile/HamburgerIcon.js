@@ -1,6 +1,5 @@
 import { IconButton } from "@mui/material";
 import React, { useContext } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
 import { NavbarContext } from "../../../context/NavbarContext";
 import styled from "styled-components";
 
