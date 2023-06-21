@@ -8,7 +8,7 @@ const Animation = ({ children }) => {
   return (
     <motion.div
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       ref={scrollRef}
     >
       {children}
