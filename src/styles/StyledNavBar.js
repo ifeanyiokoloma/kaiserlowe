@@ -20,7 +20,7 @@ export const StyledNavList = styled(Box)`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 `;
 
 export const GlassDrawer = styled(Drawer)`
@@ -30,18 +30,6 @@ export const GlassDrawer = styled(Drawer)`
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: black;
-  }
-  
-  .css-4t3x6l-MuiPaper-rootMuiDrawer-paper {
-    top: 60px !important;
-  }
-
-  .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
-    top: 60px !important;
-  }
-
-  .css-d1iqru-MuiModal-root-MuiDrawer-root {
-    top: 60px !important;
   }
 `;
 

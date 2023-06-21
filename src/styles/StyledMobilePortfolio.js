@@ -5,7 +5,7 @@ const StyledMobilePortfolio = styled(SplideSlide)`
   // padding-block: 1rem;
 
   .scale .img-box {
-    transform: scale(1.2)
+    transform: scale(1.2);
   }
 
   .scale .text {
@@ -23,7 +23,6 @@ const StyledMobilePortfolio = styled(SplideSlide)`
 
     // &:hover > .img-box {
     //   transform: scale(1.2);
-    }
   }
 
   .img-box {

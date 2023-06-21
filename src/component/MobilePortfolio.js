@@ -25,9 +25,8 @@ const MobilePortfolio = ({ content, header, btn }) => {
       <Splide
         options={{
           autoplay: true,
-          arrow: false,
           cover: true,
-          arrows: false,
+          arrows: true,
           pagination: false,
           drag: true,
           reducedMotion: true,

@@ -18,7 +18,7 @@ const ControlDrawer = () => {
         ModalProps={{
           keepMounted: true, // Better open performance on mobile.
         }}
-        
+
         sx={{
           display: { xs: "block", lg: "none" },
           "& .MuiDrawer-paper": {
@@ -27,6 +27,9 @@ const ControlDrawer = () => {
             top: 60,
           },
           "&[role=presentation]": {
+            top: 60,
+          },
+          "& .MuiBackdrop-root": {
             top: 60,
           },
         }}
