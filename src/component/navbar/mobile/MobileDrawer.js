@@ -11,16 +11,16 @@ const MobileDrawer = () => {
   return (
     <GlassBox>
       <TopBar className="pt-3">
-        <IconButton
+        {/* <IconButton
           onClick={closeDrawer}
           aria-label="close"
           color="black"
           size="large"
         >
           <Close style={{fontSize: "1.5rem"}} />
-        </IconButton>
-        <Logo />
-        <span style={{ width: "4rem" }}></span>
+        </IconButton> */}
+        {/* <Logo /> */}
+        {/* <span style={{ width: "4rem" }}></span> */}
       </TopBar>
       <NavList />
     </GlassBox>
