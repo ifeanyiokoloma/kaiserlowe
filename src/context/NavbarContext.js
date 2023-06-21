@@ -12,6 +12,7 @@ const NavbarProvider = ({ children, window }) => {
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+    console.log("worked");
   };
 
   const closeDrawer = () => {

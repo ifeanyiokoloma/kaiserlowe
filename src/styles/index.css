@@ -67,6 +67,14 @@ li {
   top: 60px !important;
 }
 
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  top: 60px !important;
+}
+
+.css-d1iqru-MuiModal-root-MuiDrawer-root {
+  top: 60px !important;
+}
+
 @media screen and (min-width: 1000px) {
   p,
   li {

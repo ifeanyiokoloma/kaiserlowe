@@ -10,6 +10,7 @@ const HamburgerIcon = () => {
     display: flex;
     flex-direction: column;
     gap: 0.2em;
+    z-index: 2000;
 
     .bar1,
     .bar2,
@@ -22,7 +23,6 @@ const HamburgerIcon = () => {
 
     .bar1 {
       transform: ${() => mobileOpen && "translate(0, 7px) rotate(45deg)"};
-      background-color: ${() => mobileOpen && "red"};
     }
 
     .bar2 {
@@ -31,7 +31,6 @@ const HamburgerIcon = () => {
 
     .bar3 {
       transform: ${() => mobileOpen && "translate(0, -7px) rotate(-45deg)"};
-      background-color: ${() => mobileOpen && "red"};
     }
   `;
   return (
