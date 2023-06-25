@@ -8,7 +8,7 @@ const ControlDrawer = () => {
   const { container, mobileOpen, drawerWidth, closeDrawer } =
     useContext(NavbarContext);
   return (
-    <Box component="nav">
+    <Box component="nav" sx={{boxShadow: "unset"}}>
       <h2 style={{ display: "none" }}>Main Navigation</h2>
       <GlassDrawer
         container={container}
@@ -20,11 +20,13 @@ const ControlDrawer = () => {
         }}
 
         sx={{
+          boxShadow: "unset",
           display: { xs: "block", lg: "none" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: drawerWidth,
             top: 60,
+            boxShadow: "unset"
           },
           "&[role=presentation]": {
             top: 60,

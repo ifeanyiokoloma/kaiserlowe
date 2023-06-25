@@ -4,7 +4,7 @@ import NavList from "./NavList";
 const MobileDrawer = () => {
   return (
     <GlassBox>
-      <TopBar className="pt-3"></TopBar>
+      {/* <TopBar className="pt-3"></TopBar> */}
       <NavList />
     </GlassBox>
   );

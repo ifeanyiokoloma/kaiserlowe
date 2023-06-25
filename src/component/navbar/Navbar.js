@@ -12,9 +12,14 @@ import BrandName from "../BrandName";
 
 function Navbar() {
   return (
-    <StyledNavBar>
+    <StyledNavBar
+      sx={{
+        height: "60px",
+        boxShadow: "unset",
+      }}
+    >
       <CssBaseline />
-      <AppBar color="secondary" component="nav">
+      <AppBar color="secondary" component="nav" sx={{ boxShadow: "unset" }}>
         <h2 style={{ display: "none" }}>Main Navigation</h2>
         <Container maxWidth="xl">
           <Toolbar className="d-flex justify-content-between">
