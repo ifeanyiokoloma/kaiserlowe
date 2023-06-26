@@ -9,7 +9,7 @@ import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
 import H3 from "./H3";
-import { Pageview, Search } from "@mui/icons-material";
+import { Pageview } from "@mui/icons-material";
 
 const MobilePortfolio = ({ content, header, btn }) => {
   function handleMotion(e) {
