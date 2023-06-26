@@ -9,7 +9,7 @@ import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
 import H3 from "./H3";
-import { Pageview } from "@mui/icons-material";
+import { Add } from "@mui/icons-material";
 
 const MobilePortfolio = ({ content, header, btn }) => {
   function handleMotion(e) {
@@ -56,11 +56,16 @@ const MobilePortfolio = ({ content, header, btn }) => {
               </div>
               <div className="text">
                 <H3 color="white">{t(project.name)}</H3>
-                <Typography variant="subtitle1" textTransform="capitalize">
+                <Typography variant="subtitle2" textTransform="capitalize">
                   {t(project.work)}
                 </Typography>
-                <IconButton size="large" aria-label="search" color="primary">
-                  <Pageview fontSize="inherit" />
+                <IconButton
+                  // sx={{ display: "flex", flexDirection: "column" }}
+                  size="large"
+                  aria-label="search"
+                  color="primary"
+                >
+                  <Add fontSize="inherit" />
                 </IconButton>
               </div>
             </div>

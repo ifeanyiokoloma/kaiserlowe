@@ -11,7 +11,7 @@ const StyledTypography = styled(Typography)`
       repeat scroll 0 0;
     bottom: -20px;
     content: "";
-    height: 4px;
+    height: 2px;
     left: 50%;
     margin-left: -40px;
     position: absolute;
@@ -23,8 +23,8 @@ const H3 = ({ children, linecolor, color, sx }) => {
   return (
     <StyledTypography
       color={color || "black"}
-      fontWeight="700"
-      variant="h4"
+      fontWeight="500"
+      variant="h5"
       component="h3"
       mb={5}
       sx={sx}
