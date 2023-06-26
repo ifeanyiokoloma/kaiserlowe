@@ -30,6 +30,7 @@ const StyledMobilePortfolio = styled(SplideSlide)`
     top: 0;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -49,7 +50,7 @@ export const StyledSplide = styled(Splide)`
     button {
       opacity: 1;
     }
-    
+
     .splide__arrow:hover:not(:disabled) svg {
       fill: black;
     }
@@ -62,7 +63,7 @@ export const StyledSplide = styled(Splide)`
       right: 0.2em;
     }
 
-    visibility: visible;
+    visibility: visible !important;
     /* button:hover {
 
     } */

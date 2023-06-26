@@ -311,18 +311,22 @@ export const portfolio = [
   {
     work: "construction project",
     img: "portfolio/construction_xnklli.jpg",
+    name: "Tower (uncompleted)",
   },
   {
     work: "house renovation project",
     img: "portfolio/renovation_ohdbdk.jpg",
+    name: "Modern Building"
   },
   {
     work: "architecture project",
     img: "portfolio/architecture_e9ypau.jpg",
+    name: "Masterpiece"
   },
   {
     work: "interior design project",
     img: "portfolio/interior-design_nrt8nf.jpg",
+    name: "White and Gold"
   },
 ];
 

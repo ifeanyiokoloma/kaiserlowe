@@ -1,13 +1,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
-import { Container } from "@mui/material";
+import { Container, IconButton, Typography } from "@mui/material";
 import StyledMobilePortfolio, {
   StyledSplide,
 } from "../styles/StyledMobilePortfolio";
 import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
+import H3 from "./H3";
+import { Pageview, Search } from "@mui/icons-material";
 
 const MobilePortfolio = ({ content, header, btn }) => {
   function handleMotion(e) {
@@ -53,7 +55,13 @@ const MobilePortfolio = ({ content, header, btn }) => {
                 <Image imageName={project.img} alt={project.work} />
               </div>
               <div className="text">
-                <h3>{t(project.work)}</h3>
+                <H3 color="white">{t(project.name)}</H3>
+                <Typography variant="subtitle1" textTransform="capitalize">
+                  {t(project.work)}
+                </Typography>
+                <IconButton size="large" aria-label="search" color="primary">
+                  <Pageview fontSize="inherit" />
+                </IconButton>
               </div>
             </div>
           </StyledMobilePortfolio>
