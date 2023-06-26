@@ -1,15 +1,15 @@
-import { Splide } from "@splidejs/react-splide";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
 import { Container } from "@mui/material";
-import StyledMobilePortfolio from "../styles/StyledMobilePortfolio";
+import StyledMobilePortfolio, {
+  StyledSplide,
+} from "../styles/StyledMobilePortfolio";
 import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
 
 const MobilePortfolio = ({ content, header, btn }) => {
-
   function handleMotion(e) {
     e.currentTarget.classList.toggle("scale");
   }
@@ -22,9 +22,9 @@ const MobilePortfolio = ({ content, header, btn }) => {
           {t("Portfolio")}
         </H2>
       )}
-      <Splide
+      <StyledSplide
         options={{
-          autoplay: true,
+          // autoplay: true,
           cover: true,
           arrows: true,
           pagination: false,
@@ -46,7 +46,7 @@ const MobilePortfolio = ({ content, header, btn }) => {
         }}
         aria-label="Portfolio images"
       >
-        {content.map((project) => (
+        {content.map(project => (
           <StyledMobilePortfolio key={project.work}>
             <div onClick={handleMotion} key={project.work} className="box">
               <div className="img-box">
@@ -58,7 +58,7 @@ const MobilePortfolio = ({ content, header, btn }) => {
             </div>
           </StyledMobilePortfolio>
         ))}
-      </Splide>
+      </StyledSplide>
 
       {btn && (
         <LearnMore

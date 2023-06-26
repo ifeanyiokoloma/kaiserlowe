@@ -1,9 +1,7 @@
-import { SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import styled from "styled-components";
 
 const StyledMobilePortfolio = styled(SplideSlide)`
-  // padding-block: 1rem;
-
   .scale .img-box {
     transform: scale(1.2);
   }
@@ -16,13 +14,6 @@ const StyledMobilePortfolio = styled(SplideSlide)`
     position: relative;
     overflow: hidden;
     height: 100%;
-
-    // &:hover > .text {
-    //   opacity: 1;
-    // }
-
-    // &:hover > .img-box {
-    //   transform: scale(1.2);
   }
 
   .img-box {
@@ -50,6 +41,31 @@ const StyledMobilePortfolio = styled(SplideSlide)`
       text-align: center;
       font-family: poppins;
     }
+  }
+`;
+
+export const StyledSplide = styled(Splide)`
+  .splide__arrows {
+    button {
+      opacity: 1;
+    }
+    
+    .splide__arrow:hover:not(:disabled) svg {
+      fill: black;
+    }
+
+    .splide__arrow--prev {
+      left: 0.2em;
+    }
+
+    .splide__arrow--next {
+      right: 0.2em;
+    }
+
+    visibility: visible;
+    /* button:hover {
+
+    } */
   }
 `;
 
