@@ -19,7 +19,11 @@ function Navbar() {
       }}
     >
       <CssBaseline />
-      <AppBar color="secondary" component="nav" sx={{ boxShadow: "unset" }}>
+      <AppBar
+        color="secondary"
+        component="nav"
+        sx={{ boxShadow: "unset", height: "60px" }}
+      >
         <h2 style={{ display: "none" }}>Main Navigation</h2>
         <Container maxWidth="xl">
           <Toolbar className="d-flex justify-content-between">

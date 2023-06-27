@@ -63,7 +63,7 @@ export const StyledSplide = styled(Splide)`
       right: 0.2em;
     }
 
-    visibility: visible !important;
+    /* visibility: visible !important; */
     /* button:hover {
 
     } */
