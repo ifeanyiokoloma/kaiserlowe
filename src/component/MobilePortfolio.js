@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
-import { Container, IconButton, Typography } from "@mui/material";
+import { Button, Container, IconButton, Typography } from "@mui/material";
 import StyledMobilePortfolio, {
   StyledSplide,
 } from "../styles/StyledMobilePortfolio";
@@ -59,14 +59,9 @@ const MobilePortfolio = ({ content, header, btn }) => {
                 <Typography variant="subtitle2" textTransform="capitalize">
                   {t(project.work)}
                 </Typography>
-                <IconButton
-                  // sx={{ display: "flex", flexDirection: "column" }}
-                  size="large"
-                  aria-label="search"
-                  color="primary"
-                >
-                  <Add fontSize="inherit" />
-                </IconButton>
+                <Button variant="outlined" size="small" mt={3} sx={{ mt: 2 }}>
+                  See More
+                </Button>
               </div>
             </div>
           </StyledMobilePortfolio>
