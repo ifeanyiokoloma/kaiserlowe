@@ -31,7 +31,7 @@ const MobilePortfolio = ({ content, header, btn }) => {
           pagination: false,
           drag: true,
           reducedMotion: true,
-          type: "loop",
+          type: "fade",
           speed: 500,
           interval: 6000,
           lazyLoad: false,
