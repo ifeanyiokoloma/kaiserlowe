@@ -23,7 +23,7 @@ const H3 = ({ children, linecolor, color, sx }) => {
   return (
     <StyledTypography
       color={color || "black"}
-      fontWeight="500"
+      fontWeight="600"
       variant="h5"
       component="h3"
       mb={3}
