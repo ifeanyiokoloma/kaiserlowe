@@ -9,7 +9,7 @@ const StyledTypography = styled(Typography)`
   &:after {
     background: ${({ linecolor }) => (linecolor ? linecolor : "white")} none
       repeat scroll 0 0;
-    bottom: -20px;
+    bottom: -15px;
     content: "";
     height: 2px;
     left: 50%;
@@ -26,7 +26,7 @@ const H3 = ({ children, linecolor, color, sx }) => {
       fontWeight="500"
       variant="h5"
       component="h3"
-      mb={5}
+      mb={3}
       sx={sx}
       linecolor={linecolor || "var(--primary)"}
     >

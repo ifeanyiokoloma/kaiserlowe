@@ -19,7 +19,7 @@ const SlidingHero = () => {
           interval: 6000,
           lazyLoad: true,
           keyboard: true,
-          height: "110vh",
+          height: "calc(100vh - 60px)",
           width: "100%",
           type: "loop",
           speed: 500,
