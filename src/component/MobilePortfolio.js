@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "@splidejs/react-splide/css/skyblue";
-import { Button, Container, IconButton, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import StyledMobilePortfolio, {
   StyledSplide,
 } from "../styles/StyledMobilePortfolio";
@@ -9,7 +9,6 @@ import LearnMore from "./LearnMore";
 import H2 from "./H2";
 import Image from "./Image";
 import H3 from "./H3";
-import { Add } from "@mui/icons-material";
 
 const MobilePortfolio = ({ content, header, btn }) => {
   function handleMotion(e) {
