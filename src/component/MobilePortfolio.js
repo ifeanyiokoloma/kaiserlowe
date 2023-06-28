@@ -55,7 +55,7 @@ const MobilePortfolio = ({ content, header, btn }) => {
               </div>
               <div className="text">
                 <H3 color="white">{t(project.name)}</H3>
-                <Typography variant="subtitle2" textTransform="capitalize">
+                <Typography component="p" variant="subtitle2" textTransform="capitalize">
                   {t(project.work)}
                 </Typography>
                 <Button variant="contained" sx={{color: "white", mt: 2}} size="small" >
