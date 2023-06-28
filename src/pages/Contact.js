@@ -4,10 +4,14 @@ import Layout from "../component/Layout";
 import ContactForm from "../component/ContactForm";
 import { Container } from "@mui/material";
 import BG from "../component/BG";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Contact KaiserLowe Construction Company</title>
+      </Helmet>
       <Hero
         imgSrc="contact/bulb_mhvflb.jpg"
         h1="Contact Us"

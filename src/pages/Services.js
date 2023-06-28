@@ -3,10 +3,15 @@ import Layout from "../component/Layout";
 import Hero from "../component/Hero";
 import Section from "../component/Section";
 import { servicesPage } from "../asset/content";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Services | KaiserLowe Construction Company</title>
+      </Helmet>
+
       <Hero
         imgSrc="services/building_zoygef.jpg"
         h1="Our Services"

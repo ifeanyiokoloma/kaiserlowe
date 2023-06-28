@@ -49,6 +49,7 @@ export const StyledSplide = styled(Splide)`
   .splide__arrows {
     button {
       opacity: 1;
+      background-color: #fff;
     }
 
     .splide__arrow:hover:not(:disabled) svg {

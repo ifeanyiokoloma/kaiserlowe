@@ -6,6 +6,7 @@ import Training from "../component/Training";
 const TrainingPage = () => {
   return (
     <Layout>
+      <title>Training | KaiserLowe Construction Company</title>
       <Hero
         imgSrc="training/bg_cb6rvv.jpg"
         h1="Training"

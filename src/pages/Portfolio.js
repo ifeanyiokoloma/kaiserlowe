@@ -2,10 +2,14 @@ import React from "react";
 import Layout from "../component/Layout";
 import Hero from "../component/Hero";
 import CenteredTabs from "../component/TabbedPortfolio";
+import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Portfolio | KaiserLowe Construction Company</title>
+      </Helmet>
       <Hero
         imgSrc="portfolio/architecture_e9ypau.jpg"
         h1="Portfolio"
