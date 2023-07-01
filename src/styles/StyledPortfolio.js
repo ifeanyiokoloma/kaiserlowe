@@ -51,8 +51,10 @@ const StyledPortfolio = styled.div`
     color: white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     opacity: 0;
+    text-align: center;
     transition: opacity 500ms;
     padding-inline: 1rem;
 
