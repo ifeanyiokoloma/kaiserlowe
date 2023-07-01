@@ -23,6 +23,10 @@ const StyledServicesSection = styled(Box)`
       column-count: 2;
       column-gap: 3rem;
     }
+
+    li {
+      break-inside: avoid;
+    }
   }
 `;
 
