@@ -13,6 +13,7 @@ const StyledArticle = styled(Box)`
   .content {
     display: flex;
     flex-direction: column;
+    text-align: justify;
   }
 `;
 
