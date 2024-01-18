@@ -9,7 +9,7 @@ const NavList = () => {
   const { closeDrawer } = useContext(NavbarContext);
   return (
     <StyledNavList>
-      <List sx={{ pl: 2 }}>
+      <List sx={{ pl: 2, mt: 10 }}>
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton onClick={closeDrawer} sx={{ padding: 0 }}>
@@ -23,7 +23,7 @@ const NavList = () => {
                       textTransform: "uppercase",
                       display: "block",
                       height: "100",
-                      // textAlign: "center",
+                      textAlign: "center",
                       padding: ".8rem",
                     }}
                   >
