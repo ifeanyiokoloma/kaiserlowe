@@ -1,9 +1,9 @@
-import { Box } from '@mui/material';
-import React from 'react'
-import { useTranslation } from 'react-i18next';
+import { Box } from "@mui/material";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const BrandName = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -31,7 +31,7 @@ const BrandName = () => {
             fontSize: ".8rem",
           }}
         >
-          KAISER LOWE
+          KAISERLOWE UGO
         </span>
         <br />
         <span
@@ -47,6 +47,6 @@ const BrandName = () => {
       </span>
     </Box>
   );
-}
+};
 
-export default BrandName
+export default BrandName;
