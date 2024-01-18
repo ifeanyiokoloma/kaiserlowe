@@ -6,7 +6,7 @@ import { LinkBtn } from "../../styles/StyledLink";
 const Logo = ({ brandName }) => {
   return (
     <LinkBtn title="Come home" to="/">
-      <Box sx={{ display: "flex", alignItems: "center" }}>
+      <Box sx={{ display: "flex", alignItems: "center", p: 2 }}>
         <KaiserloweLogo />
         {brandName}
       </Box>
