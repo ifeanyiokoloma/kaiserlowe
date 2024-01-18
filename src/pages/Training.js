@@ -6,11 +6,11 @@ import Training from "../component/Training";
 const TrainingPage = () => {
   return (
     <Layout>
-      <title>Training | KaiserLowe Construction Company</title>
+      <title>Training | KaiserLowe UGO Construction Company</title>
       <Hero
         imgSrc="training/bg_cb6rvv.jpg"
         h1="Training"
-        lead="At Kaiserlowe, we understand that a skilled and knowledgeable workforce is crucial to the success of any construction project, which is why we offer comprehensive training programs designed to meet the unique needs of our clients."
+        lead="At Kaiserlowe UGO, we understand that a skilled and knowledgeable workforce is crucial to the success of any construction project, which is why we offer comprehensive training programs designed to meet the unique needs of our clients."
       />
       <main>
         <Training

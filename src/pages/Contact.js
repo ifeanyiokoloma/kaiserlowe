@@ -10,12 +10,12 @@ const Contact = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Contact KaiserLowe Construction Company</title>
+        <title>Contact KaiserLowe UGO Construction Company</title>
       </Helmet>
       <Hero
         imgSrc="contact/bulb_mhvflb.jpg"
         h1="Contact Us"
-        lead="We would love to hear from you! Contact Kaiserlowe's dedicated team of construction professionals today to discuss your project needs and how we can help bring your vision to life."
+        lead="We would love to hear from you! Contact Kaiserlowe UGO's dedicated team of construction professionals today to discuss your project needs and how we can help bring your vision to life."
       />
       <main>
         <BG

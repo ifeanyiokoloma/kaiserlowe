@@ -8,7 +8,7 @@ const Course = ({ h1, header, img, list, title }) => {
   return (
     <Layout>
       <Helmet>
-        <title>Training on {h1} | KaiserLowe Construction Company</title>
+        <title>Training on {h1} | KaiserLowe UGO Construction Company</title>
       </Helmet>
       <Box component="article">
         <Section

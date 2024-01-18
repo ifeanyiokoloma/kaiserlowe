@@ -9,12 +9,12 @@ const About = () => {
   return (
     <Layout>
       <Helmet>
-        <title>About KaiserLowe Construction Company</title>
+        <title>About KaiserLowe UGO Construction Company</title>
       </Helmet>
       <Hero
         imgSrc="about/about_lgqwzw.jpg"
         h1="About Us"
-        lead="Kaiser Löwe starts 2013 to operates in Nigeria as a building development company. We offer the whole spectrum of services in building and managing. Our business philosophy is based on continuity and organic growth, on team spirit, respect and partnership."
+        lead="Kaiserlowe UGO starts 2013 to operates in Nigeria as a building development company. We offer the whole spectrum of services in building and managing. Our business philosophy is based on continuity and organic growth, on team spirit, respect and partnership."
       />
       <main>
         <Section

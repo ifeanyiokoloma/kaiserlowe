@@ -9,13 +9,13 @@ const Services = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Services | KaiserLowe Construction Company</title>
+        <title>Services | KaiserLowe UGO Construction Company</title>
       </Helmet>
 
       <Hero
         imgSrc="services/building_zoygef.jpg"
         h1="Our Services"
-        lead="Welcome to Kaiserlowe, the premier construction company offering a wide range of services to help bring your building projects to life."
+        lead="Welcome to Kaiserlowe UGO, the premier construction company offering a wide range of services to help bring your building projects to life."
       />
       <main>
         <ServicesSection
