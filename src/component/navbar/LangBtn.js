@@ -40,9 +40,11 @@ const LangBtn = () => {
 
   return (
     <Box>
-      <IconButton onClick={handleClickOpen} sx={{ display: "flex" }}>
+      <IconButton onClick={handleClickOpen} sx={{ display: "flex", p: 0 }}>
         <Language />
-        <Typography className="text-uppercase" variant="caption">{language}</Typography>
+        <Typography className="text-uppercase" variant="caption">
+          {language}
+        </Typography>
         <ArrowDropDown color="primary" />
       </IconButton>
       <Dialog disableEscapeKeyDown open={open} onClose={handleClose}>
