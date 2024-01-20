@@ -205,13 +205,13 @@ export const contact = [
     h3: "Address",
     content: [
       "No 1 Pius Anolue Street Nkwere Ogidi Anambra State Nigeria",
-      "RC: 110 5062",
+      "RC: 7184680",
     ],
     icon: <LocationOn fontSize="large" htmlColor="#ffffff" />,
   },
   {
     h3: "Telephone",
-    content: ["+2348104080042", "+49 1521-4144270"],
+    content: ["+2348104080042", "+49 176 36135504"],
     icon: <Phone fontSize="large" htmlColor="#ffffff" />,
   },
   {
